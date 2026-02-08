@@ -153,3 +153,59 @@ jobs:
         fi
         
         echo "=== 完成 ==="
+        name: 🚀 Update Believess Repository (Keep History)
+
+on:
+  push:
+    paths:
+      - 'debs/**'
+  workflow_dispatch:
+
+jobs:
+  update-index:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 📥 Checkout
+      uses: actions/checkout@v4
+    
+    - name: 🔧 Install tools
+      run: sudo apt-get update && sudo apt-get install -y dpkg-dev bzip2 gzip
+    
+    - name: 📦 Generate Packages with all versions
+      run: |
+        echo "=== 生成包含所有版本的索引 ==="
+        
+        # 进入debs目录
+        cd debs
+        
+        # 生成包含所有deb文件的Packages
+        # 这行命令会让所有版本的deb都出现在Packages文件中
+        dpkg-scanpackages . /dev/null > ../Packages
+        
+        # 统计信息
+        echo "📊 版本统计："
+        find . -name "*.deb" | sed 's|./||' | sort
+        echo ""
+        
+        echo "📋 包名统计："
+        find . -name "*.deb" | sed 's|.*/||' | sed 's|_.*||' | sort | uniq -c
+        
+        cd ..
+    
+    - name: 🗜️ Create compressed files
+      run: |
+        bzip2 -kf Packages
+        gzip -kf Packages
+        
+        echo "⏰ 时间戳：$(date)" > Packages.stamp
+        echo "包含的历史版本：" >> Packages.stamp
+        grep "Version:" Packages | sort -u | head -20 >> Packages.stamp
+    
+    - name: 💾 Commit
+      run: |
+        git config --local user.email "bot@believess.com"
+        git config --local user.name "believess-bot"
+        git add Packages Packages.* Packages.stamp
+        git diff --cached --quiet || git commit -m "🤖 更新索引 - 包含$(date +%Y%m%d)的所有版本"
+        git push
