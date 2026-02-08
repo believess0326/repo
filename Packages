@@ -1,2 +1,17 @@
-# Empty repository - Believess
-等待添加软件包...
+Package: com.netskao.appdata
+Version: 1.4.2
+Architecture: iphoneos-arm64e
+Maintainer: Nets
+Installed-Size: 3772
+Pre-Depends: rootless-compat(>= 0.9)
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
+Filename: ./com.netskao.appdata_1.4.2_iphoneos-arm64e.deb
+Size: 827124
+MD5sum: 1bbe9d7ee2293efc53f65692fefd13b8
+SHA1: 64900f63fec23b993df6b767d12104c410837c03
+SHA256: 8eb69d5c2ac9fe5928017541d053878ec29c4be9b6196c2cd00d7947cc598ca7
+Section: 实用插件
+Description: 可以美化的版本
+Author: Fouad Raheb
+Name: AppData
+
