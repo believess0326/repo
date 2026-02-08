@@ -1,4 +1,4 @@
-nname: 🔄 Update Repository with All Versions
+name: 🔄 Update Repository with All Versions
 
 on:
   push:
