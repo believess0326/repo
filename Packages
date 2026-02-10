@@ -1,5 +1,5 @@
 # Believess Repository
-# Generated: 2026-02-08 13:52:49 UTC
+# Generated: 2026-02-10 02:25:38 UTC
 # This file includes ALL versions of all packages
 
 Package: Flex3beta
@@ -79,6 +79,28 @@ Section: Flex3组合
 Description: Flex 用于 iOS 开发调试工具
 Author: Mr.Zhang <mr_zhang_00@163.com>
 Name: FlexLoader
+
+
+Package: com.sop.settingsrevamp
+Version: 3.0.1
+Architecture: iphoneos-arm64e
+Maintainer: SOPPPra
+Installed-Size: 888
+Pre-Depends: rootless-compat(>= 0.9)
+Depends: mobilesubstrate, preferenceloader, com.mrgcgamer.libgcuniversal, firmware (>= 14)
+Conflicts: com.creaturecoding.shuffle, com.trappledestek.ikset, pro.ikghd.iksettings, xyz.cypwn.settingswidgets, org.mr.settingswidgets, com.trappledestek.settingswidgets, com.shepgoba.settingswidgets, zb.preferenceloader
+Filename: ./debs/com.sop.settingsrevamp_3.0.1_iphoneos-arm64e.deb
+Size: 217484
+MD5sum: 91c23b5c416a7a9a53fa12f384b3ec8c
+SHA1: 09b6145a817dfcb2fb6025dee211810a4eb0b445
+SHA256: 0d6995efc2e6a4b0f2aab65366f079ad398b301fb17073150c953747a0ce9b5c
+Section: 实用插件
+Description: 设置增强插件，已汉化。
+Author: SOPPPra
+Depiction: https://sopppra.mooo.com/depictions/web/com.sop.settingsrevamp.html
+Icon: https://i.postimg.cc/ry1s499R/icon-3x.png
+Name: SettingsRevamp
+Sileodepiction: https://sopppra.mooo.com/depictions/com.sop.settingsrevamp.json
 
 
 Package: com.spark.snowboard.effects
@@ -175,5 +197,24 @@ Section: 滑雪板组合
 Description: 此版本在ios16上不能开启图标抓取功能，但能加载角标，需要抓取图标时回退1.5.26版本。
 Author: Spark & Dennis D. Bednarz
 Name: SnowBoard
+
+
+Package: com.sunshinesong.split-view-pro
+Version: 1.3.7
+Architecture: iphoneos-arm64e
+Maintainer: sunshinesong
+Installed-Size: 5624
+Pre-Depends: rootless-compat(>= 0.9)
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), preferenceloader, com.opa334.altlist
+Filename: ./debs/com.sunshinesong.split-view-pro_1.3.7_iphoneos-arm64e.deb
+Size: 1517552
+MD5sum: f223067ce7899b1fae042e35ac591c85
+SHA1: 33e75286cf992209c08bc449f18e0c260518ebd4
+SHA256: 3975b4d1957e3924547f01d9c61dc766051102cd8a20be40e2ffab45a93683f6
+Section: 实用插件
+Description: svp分屏，去格机代码，放心使用。
+Author: sunshinesong
+Name: split-view-pro
+Ts: sp-sss
 
 
