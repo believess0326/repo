@@ -1,5 +1,5 @@
 # Believess Repository
-# Generated: 2026-02-10 06:02:31 UTC
+# Generated: 2026-02-10 06:37:08 UTC
 # This file includes ALL versions of all packages
 
 Package: Flex3beta
@@ -287,14 +287,14 @@ Installed-Size: 180
 Pre-Depends: rootless-compat(>= 0.9)
 Depends: com.opa334.ccsupport
 Filename: ./debs/com.0xkuj.ccdnd_1.0.0_iphoneos-arm64e.deb
-Size: 11446
-MD5sum: 85cd37ec1daeeac79ce58109c3e40e8e
-SHA1: f92ae52fe5d5056872f7437fe7c410077acbbfb3
-SHA256: 8847027fed8e9c3dedf94c5ce9e24e95734501cd92c8ba563155c845d05c4e24
-Section: Tweaks
-Description: Single DND Toggle for iOS 16
+Size: 10336
+MD5sum: 7dd1c6ed76df77c4c408961b56bcf4f8
+SHA1: 3901d31126a73c61f80ae4c4fe378cce23925609
+SHA256: 062106e85248160f8ddc7b36cb3ff316cb559e8598c83e8f8922f92a905c2643
+Section: 控制中心
+Description: ios16控制中心添加1x1的勿扰模式。
 Author: 0xkuj
-Name: CCDND
+Name: CC勿扰模式1x1
 
 
 Package: com.0xkuj.safarix
