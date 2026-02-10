@@ -1,5 +1,5 @@
 # Believess Repository
-# Generated: 2026-02-10 04:16:00 UTC
+# Generated: 2026-02-10 04:26:03 UTC
 # This file includes ALL versions of all packages
 
 Package: Flex3beta
@@ -20,6 +20,139 @@ Description: Flex 3 beta92 for RootHides Bootstrap & Dopamine by DXcool223
 Author: John Coates
 Name: Flex 3 Beta RootHide Bootstrap
 Recommended: com.rpetrich.rocketbootstrap
+
+
+Package: cn.zqbb.hello.memorystatus
+Version: 3.3.2-1
+Architecture: iphoneos-arm64e
+Maintainer: zqbb
+Installed-Size: 10104
+Depends: mobilesubstrate (>= 0.9.5000) , firmware (>= 15.0), preferenceloader, launchctl
+Filename: ./debs/cn.zqbb.hello.memorystatus_3.3.2-1_iphoneos-arm64e.deb
+Size: 2775470
+MD5sum: 0ea26cc6ed8eda8b636b51311730b4dc
+SHA1: be4eaea58948310b0380d62cbbb92798f6a72ed2
+SHA256: 5262c862309df79b76dd28e198890fa032f262d8a03edd27c2b3022a46e6939c
+Section: Tweaks
+Description: Set memorystatus to avoid being killed by the system
+Author: zqbb
+Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.hello.memorystatus.png
+Name: Hello Memory Status
+Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.hello.memorystatus
+
+
+Package: cn.zqbb.hello.memorystatus
+Version: 3.3.2-2
+Architecture: iphoneos-arm64e
+Maintainer: zqbb
+Installed-Size: 10088
+Depends: mobilesubstrate (>= 0.9.5000) , firmware (>= 14.0), preferenceloader, launchctl
+Filename: ./debs/cn.zqbb.hello.memorystatus_3.3.2-2_iphoneos-arm64e.deb
+Size: 2762520
+MD5sum: cf73f0e01e9dbaa51a083b58aa73e8cc
+SHA1: 4a8613e1cc23d38c49859ddce5190b149de2388d
+SHA256: 6e640d0a3b88dfd190778574af40dac3a82de7a3d3b77e5dd6d09bddb56e182e
+Section: Tweaks
+Description: Set memorystatus to avoid being killed by the system
+Author: zqbb
+Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.hello.memorystatus.png
+Name: Hello Memory Status
+Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.hello.memorystatus
+
+
+Package: cn.zqbb.hello.memorystatus
+Version: 3.3.2-5
+Architecture: iphoneos-arm64e
+Maintainer: zqbb
+Installed-Size: 10120
+Depends: mobilesubstrate (>= 0.9.5000) , firmware (>= 14.0), preferenceloader, launchctl
+Filename: ./debs/cn.zqbb.hello.memorystatus_3.3.2-5_iphoneos-arm64e.deb
+Size: 2784124
+MD5sum: 72086c3f645f83d7f727bc2aba006999
+SHA1: 31bf460b0c462b2c5a5c7483c75d89281791322a
+SHA256: f01102a83cee96b2a7f783ad87d779de2d3a6bdaec12fadc00ee4e4592ddb5c2
+Section: Tweaks
+Description: Set memorystatus to avoid being killed by the system
+Author: zqbb
+Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.hello.memorystatus.png
+Name: Hello Memory Status
+Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.hello.memorystatus
+
+
+Package: cn.zqbb.hello.memorystatus
+Version: 3.3.2-6
+Architecture: iphoneos-arm64e
+Maintainer: zqbb
+Installed-Size: 10152
+Depends: mobilesubstrate (>= 0.9.5000) , firmware (>= 14.0), preferenceloader, launchctl
+Filename: ./debs/cn.zqbb.hello.memorystatus_3.3.2-6_iphoneos-arm64e.deb
+Size: 2807412
+MD5sum: 026537b0d44e8beefbdfbc21f36b2b94
+SHA1: 8ec8f909a73f1aec325771e2d97620946ad54984
+SHA256: f5713d4e5678651902fc8decefc608aaf6560b2b21415bc073ba491808a63d94
+Section: Tweaks
+Description: Set memorystatus to avoid being killed by the system
+Author: zqbb
+Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.hello.memorystatus.png
+Name: Hello Memory Status
+Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.hello.memorystatus
+
+
+Package: cn.zqbb.hello.memorystatus
+Version: 3.3.3-1
+Architecture: iphoneos-arm64e
+Maintainer: zqbb
+Installed-Size: 10364
+Depends: mobilesubstrate (>= 0.9.5000) , firmware (>= 14.0), preferenceloader, launchctl
+Filename: ./debs/cn.zqbb.hello.memorystatus_3.3.3-1_iphoneos-arm64e.deb
+Size: 2876042
+MD5sum: 122f33c64b92b6efbd706b112c14dff3
+SHA1: 870abd6c447d3100db83632839fc6a09e914e60c
+SHA256: 9c578a34240fb91e3ef166102908ebaf56e837dad19217ddae67e225c9810d30
+Section: Tweaks
+Description: Set memorystatus to avoid being killed by the system
+Author: zqbb
+Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.hello.memorystatus.png
+Name: Hello Memory Status
+Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.hello.memorystatus
+
+
+Package: cn.zqbb.hello.memorystatus
+Version: 3.3.3-2
+Architecture: iphoneos-arm64e
+Maintainer: zqbb
+Installed-Size: 10396
+Depends: mobilesubstrate (>= 0.9.5000) , firmware (>= 14.0), preferenceloader, launchctl
+Filename: ./debs/cn.zqbb.hello.memorystatus_3.3.3-2_iphoneos-arm64e.deb
+Size: 2883874
+MD5sum: 14d690d825c6b59cd5a46ed6dbbec265
+SHA1: dfdcdb677051b4987129f2711c7b30a8b4f2314d
+SHA256: c31dfb9f11c72c99533a11de34c0428a2c49e691cdf2e633f90930d7f05e5bbc
+Section: Tweaks
+Description: Set memorystatus to avoid being killed by the system
+Author: zqbb
+Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.hello.memorystatus.png
+Name: Hello Memory Status
+Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.hello.memorystatus
+
+
+Package: cn.zqbb.hello.memorystatus
+Version: 3.3.3-3
+Architecture: iphoneos-arm64e
+Maintainer: zqbb
+Installed-Size: 10348
+Depends: mobilesubstrate (>= 0.9.5000) , firmware (>= 14.0), preferenceloader, launchctl
+Filename: ./debs/cn.zqbb.hello.memorystatus_3.3.3-3_iphoneos-arm64e.deb
+Size: 2848694
+MD5sum: c33dda2967618daf05130bc27e97ca63
+SHA1: 3d2c234040de9b20e5134cbb65fd3ebf02e06a97
+SHA256: a4afbde52c59f28d302243b3853f1c3a2c85c44e21f1dc6981e4cd723b80d543
+Section: Tweaks
+Description: Set memorystatus to avoid being killed by the system
+Author: zqbb
+Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.hello.memorystatus.png
+Name: Hello Memory Status
+Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.hello.memorystatus
 
 
 Package: cn.zqbb.holdcpu
