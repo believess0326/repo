@@ -1,9 +1,9 @@
 === 调试信息 ===
-生成时间: Tue Feb 10 05:32:03 UTC 2026
+生成时间: Tue Feb 10 05:32:22 UTC 2026
 
 **debs文件夹内容：**
 ```
-total 55420
+total 54996
 drwxr-xr-x 2 runner runner     4096 Feb 10 05:32 .
 drwxr-xr-x 5 runner runner     4096 Feb 10 05:32 ..
 -rw-r--r-- 1 runner runner        1 Feb 10 05:32 .gitkeep
@@ -23,7 +23,6 @@ drwxr-xr-x 5 runner runner     4096 Feb 10 05:32 ..
 -rw-r--r-- 1 runner runner  1307670 Feb 10 05:32 cn.zqbb.holdcpu_2.3.5-3_iphoneos-arm64e.deb
 -rw-r--r-- 1 runner runner   325800 Feb 10 05:32 com.0xkuj.safarix_1.9.9.1_iphoneos-arm64e.deb
 -rw-r--r-- 1 runner runner    12332 Feb 10 05:32 com.cannathea.afc2d-arm64e_1.1.7-21_iphoneos-arm64e.deb
--rw-r--r-- 1 runner runner   431636 Feb 10 05:32 com.dao.carbridge13_2.0.14_iphoneos-arm64e.deb
 -rw-r--r-- 1 runner runner  1163968 Feb 10 05:32 com.flex3.processor_1.0-4+debug_iphoneos-arm64e.deb
 -rw-r--r-- 1 runner runner   985448 Feb 10 05:32 com.lclrc.hammerit_1.7.0_iphoneos-arm64e.deb
 -rw-r--r-- 1 runner runner   827124 Feb 10 05:32 com.netskao.appdata_1.4.2_iphoneos-arm64e.deb
@@ -40,9 +39,9 @@ drwxr-xr-x 5 runner runner     4096 Feb 10 05:32 ..
 ```
 
 **Packages文件统计：**
-- 总行数: 585
-- 包条目: 30
-- 版本数: 30
+- 总行数: 567
+- 包条目: 29
+- 版本数: 29
 
 **所有包和版本：**
 ```
@@ -62,7 +61,6 @@ cn.zqbb.holdcpu                2.3.5-2
 cn.zqbb.holdcpu                2.3.5-3
 com.0xkuj.safarix              1.9.9.1
 com.cannathea.afc2d-arm64e     1.1.7-21
-com.dao.carbridge13            2.0.14
 com.flex3.processor            1.0-4+debug
 com.lclrc.hammerit             1.7.0
 com.netskao.appdata            1.4.2
