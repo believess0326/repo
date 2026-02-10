@@ -1,5 +1,5 @@
 # Believess Repository
-# Generated: 2026-02-10 04:10:36 UTC
+# Generated: 2026-02-10 04:13:23 UTC
 # This file includes ALL versions of all packages
 
 Package: Flex3beta
@@ -23,6 +23,47 @@ Recommended: com.rpetrich.rocketbootstrap
 
 
 Package: cn.zqbb.holdcpu
+Version: 2.3.4-16
+Architecture: iphoneos-arm64e
+Maintainer: zqbb
+Installed-Size: 3580
+Depends: mobilesubstrate (>= 0.9.5000) , firmware (>= 15.0), preferenceloader, com.opa334.ccsupport
+Conflicts: com.yourepo.0xash.powercuff, byg.iosios.net.powercuff, com.dao.powercuff, com.rpetrich.powercuff, com.yourepo.0xash.devicemonitor, com.yourepo.0xash.fuckthermal, com.shadow.fuckthermal, com.dao.fuckthermal, byg.iosios.net.monitor, byg.iosios.net.disablethermalmonitord, com.nan.disablethermalmonitord
+Filename: ./debs/cn.zqbb.holdcpu_2.3.4-16_iphoneos-arm64e.deb
+Size: 1289838
+MD5sum: e1d87b33d48e386399bc3907f7752361
+SHA1: 560313e48ce7c70c354b0cf541bf758fdabaab3a
+SHA256: 1822d12f1bf916f791b9a37dae06c4a6121b769bfc2c1e18e9c724abf418e4b6
+Section: Tweaks
+Description: (解除温控) (锁定低电量CPU频率)
+Author: zqbb
+Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.holdcpu
+Name: Hello CPU
+Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.holdcpu
+
+
+Package: cn.zqbb.holdcpu
+Version: 2.3.4-5
+Architecture: iphoneos-arm64e
+Maintainer: zqbb
+Installed-Size: 3384
+Pre-Depends: rootless-compat(>= 0.9)
+Depends: mobilesubstrate (>= 0.9.5000) , firmware (>= 15.0), preferenceloader, com.opa334.ccsupport
+Conflicts: com.yourepo.0xash.powercuff, byg.iosios.net.powercuff, com.dao.powercuff, com.rpetrich.powercuff, com.yourepo.0xash.devicemonitor, com.yourepo.0xash.fuckthermal, com.shadow.fuckthermal, com.dao.fuckthermal, byg.iosios.net.monitor, byg.iosios.net.disablethermalmonitord, com.nan.disablethermalmonitord
+Filename: ./debs/cn.zqbb.holdcpu_2.3.4-5_iphoneos-arm64e.deb
+Size: 3121722
+MD5sum: 9087c4d4b95ee68f00675a00fdae1f80
+SHA1: 0044b297d6882ed0ec558b08784fb6057c844ee0
+SHA256: 62ef0f7b2b86ea6b294e0fa5ef0a50b58d6f6309ac61b063fefb9f1049e0fdfe
+Section: Tweaks
+Description: (解除温控) (锁定低电量CPU频率)
+Author: zqbb
+Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.holdcpu
+Name: Hello CPU
+Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.holdcpu
+
+
+Package: cn.zqbb.holdcpu
 Version: 2.3.5-1
 Architecture: iphoneos-arm64e
 Maintainer: zqbb
@@ -34,6 +75,46 @@ Size: 1268912
 MD5sum: 2212ae0f8b5d82e0b69489a2d33d72af
 SHA1: 0da383f43b97e3c0e00eebaa493de5440beb2c96
 SHA256: 759245710b2ceeebbe64a6bd03826c4715e5021571f1e6619c713fcc41a2d0fc
+Section: Tweaks
+Description: (解除温控) (锁定低电量CPU频率)
+Author: zqbb
+Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.holdcpu
+Name: Hello CPU
+Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.holdcpu
+
+
+Package: cn.zqbb.holdcpu
+Version: 2.3.5-2
+Architecture: iphoneos-arm64e
+Maintainer: zqbb
+Installed-Size: 3664
+Depends: mobilesubstrate (>= 0.9.5000) , firmware (>= 15.0), preferenceloader, com.opa334.ccsupport
+Conflicts: com.yourepo.0xash.powercuff, byg.iosios.net.powercuff, com.dao.powercuff, com.rpetrich.powercuff, com.yourepo.0xash.devicemonitor, com.yourepo.0xash.fuckthermal, com.shadow.fuckthermal, com.dao.fuckthermal, byg.iosios.net.monitor, byg.iosios.net.disablethermalmonitord, com.nan.disablethermalmonitord
+Filename: ./debs/cn.zqbb.holdcpu_2.3.5-2_iphoneos-arm64e.deb
+Size: 1309134
+MD5sum: b22e2eb49773dd32db6913c8cdeb3adc
+SHA1: 35bc766c9561cb8e860f74659813f967c0388a26
+SHA256: 30c5bc51520cd633e46ffcf42d3808d591a4212ca68b0381b9866b41ba3e31d0
+Section: Tweaks
+Description: (解除温控) (锁定低电量CPU频率)
+Author: zqbb
+Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.holdcpu
+Name: Hello CPU
+Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.holdcpu
+
+
+Package: cn.zqbb.holdcpu
+Version: 2.3.5-3
+Architecture: iphoneos-arm64e
+Maintainer: zqbb
+Installed-Size: 3664
+Depends: mobilesubstrate (>= 0.9.5000) , firmware (>= 15.0), preferenceloader, com.opa334.ccsupport
+Conflicts: com.yourepo.0xash.powercuff, byg.iosios.net.powercuff, com.dao.powercuff, com.rpetrich.powercuff, com.yourepo.0xash.devicemonitor, com.yourepo.0xash.fuckthermal, com.shadow.fuckthermal, com.dao.fuckthermal, byg.iosios.net.monitor, byg.iosios.net.disablethermalmonitord, com.nan.disablethermalmonitord
+Filename: ./debs/cn.zqbb.holdcpu_2.3.5-3_iphoneos-arm64e.deb
+Size: 1307670
+MD5sum: a88a116794274340441ee289835d3e4e
+SHA1: e5abdaac1a18432a429858164507f2a894a5ae8a
+SHA256: d12974e3910a945cf81b17735062539606b3f11ed8b66d58d76334ea665605ef
 Section: Tweaks
 Description: (解除温控) (锁定低电量CPU频率)
 Author: zqbb
