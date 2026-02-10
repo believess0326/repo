@@ -1,5 +1,9 @@
 name: 🔄 Update Repository with All Versions
-
+# ===== 添加这3行 =====
+concurrency: 
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+# ====================
 on:
   push:
     paths:
