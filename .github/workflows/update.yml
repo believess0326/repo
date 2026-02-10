@@ -1,4 +1,4 @@
-name: 🔄 Update Repository with All Versions
+name: 🔄 Update Repository with All Versions (GitHub Actions Pages)
 
 on:
   push:
@@ -14,6 +14,10 @@ on:
 jobs:
   rebuild-index:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     
     steps:
     - name: 📥 Checkout repository
@@ -50,18 +54,19 @@ jobs:
       run: |
         echo "=== 生成包含所有版本的Packages文件 ==="
         
-        # 清理旧文件
-        rm -f Packages Packages.bz2 Packages.gz
+        # 为GitHub Pages创建构建目录
+        rm -rf ./_pages_output
+        mkdir -p ./_pages_output
         
         # 如果没有deb文件，创建空的Packages
         if [ ! -d "debs" ] || [ -z "$(find debs -name '*.deb' -print -quit)" ]; then
-          echo "# Empty repository - waiting for packages" > Packages
+          echo "# Empty repository - waiting for packages" > ./_pages_output/Packages
           echo "没有找到.deb文件，创建空索引"
         else
-          echo "# Believess Repository" > Packages
-          echo "# Generated: $(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> Packages
-          echo "# This file includes ALL versions of all packages" >> Packages
-          echo "" >> Packages
+          echo "# Believess Repository" > ./_pages_output/Packages
+          echo "# Generated: $(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> ./_pages_output/Packages
+          echo "# This file includes ALL versions of all packages" >> ./_pages_output/Packages
+          echo "" >> ./_pages_output/Packages
           
           # 使用dpkg-scanpackages处理所有文件
           cd debs
@@ -81,10 +86,10 @@ jobs:
               
               # 生成这个deb的条目
               dpkg-scanpackages "$TEMP_DIR" /dev/null 2>/dev/null | \
-                sed "s|Filename: $TEMP_DIR/|Filename: ./debs/|" >> ../Packages
+                sed "s|Filename: $TEMP_DIR/|Filename: ./debs/|" >> ../_pages_output/Packages
               
               # 添加空行分隔
-              echo "" >> ../Packages
+              echo "" >> ../_pages_output/Packages
               
               rm -rf "$TEMP_DIR"
             fi
@@ -94,17 +99,19 @@ jobs:
           
           # 手动验证
           echo "📊 生成的条目统计："
-          echo "总条目数: $(grep -c '^Package:' Packages)"
-          echo "唯一包名: $(grep '^Package:' Packages | sort -u | wc -l)"
+          echo "总条目数: $(grep -c '^Package:' ./_pages_output/Packages)"
+          echo "唯一包名: $(grep '^Package:' ./_pages_output/Packages | sort -u | wc -l)"
           echo "所有版本:"
-          grep '^Package:' Packages | sort | uniq -c
+          grep '^Package:' ./_pages_output/Packages | sort | uniq -c
         fi
     
     - name: 🗜️ Create compressed versions
       run: |
         echo "=== 创建压缩文件 ==="
         
-        if [ -f "Packages" ]; then
+        if [ -f "./_pages_output/Packages" ]; then
+          cd ./_pages_output
+          
           # 验证文件内容
           echo "📄 Packages文件前100个字符："
           head -c 100 Packages
@@ -125,58 +132,74 @@ jobs:
           echo "Available Packages:" >> VERSIONS.txt
           awk '/^Package:/ {pkg=$2} /^Version:/ {ver=$2} /^$/ {if(pkg && ver) print pkg " " ver; pkg=""; ver=""}' Packages | \
             sort >> VERSIONS.txt
+          
+          cd ..
         else
           echo "❌ Packages文件不存在"
+          cd ./_pages_output
           touch Packages.bz2 Packages.gz
+          cd ..
         fi
     
     - name: 📝 Create debug info
       run: |
-        echo "=== 调试信息 ===" > DEBUG.md
-        echo "生成时间: $(date)" >> DEBUG.md
-        echo "" >> DEBUG.md
-        echo "**debs文件夹内容：**" >> DEBUG.md
-        echo '```' >> DEBUG.md
-        ls -la debs/ >> DEBUG.md 2>/dev/null || echo "空文件夹" >> DEBUG.md
-        echo '```' >> DEBUG.md
-        echo "" >> DEBUG.md
+        echo "=== 调试信息 ===" > ./_pages_output/DEBUG.md
+        echo "生成时间: $(date)" >> ./_pages_output/DEBUG.md
+        echo "部署模式: GitHub Actions Pages" >> ./_pages_output/DEBUG.md
+        echo "" >> ./_pages_output/DEBUG.md
         
-        echo "**Packages文件统计：**" >> DEBUG.md
-        if [ -f "Packages" ]; then
-          echo "- 总行数: $(wc -l < Packages)" >> DEBUG.md
-          echo "- 包条目: $(grep -c '^Package:' Packages)" >> DEBUG.md
-          echo "- 版本数: $(grep -c '^Version:' Packages)" >> DEBUG.md
-          echo "" >> DEBUG.md
-          echo "**所有包和版本：**" >> DEBUG.md
-          echo '```' >> DEBUG.md
-          awk '/^Package:/ {pkg=$2} /^Version:/ {ver=$2} /^$/ {if(pkg && ver) printf "%-30s %s\n", pkg, ver; pkg=""; ver=""}' Packages | \
-            sort >> DEBUG.md
-          echo '```' >> DEBUG.md
+        echo "**debs文件夹内容：**" >> ./_pages_output/DEBUG.md
+        echo '```' >> ./_pages_output/DEBUG.md
+        ls -la debs/ >> ./_pages_output/DEBUG.md 2>/dev/null || echo "空文件夹" >> ./_pages_output/DEBUG.md
+        echo '```' >> ./_pages_output/DEBUG.md
+        echo "" >> ./_pages_output/DEBUG.md
+        
+        echo "**Packages文件统计：**" >> ./_pages_output/DEBUG.md
+        if [ -f "./_pages_output/Packages" ]; then
+          echo "- 总行数: $(wc -l < ./_pages_output/Packages)" >> ./_pages_output/DEBUG.md
+          echo "- 包条目: $(grep -c '^Package:' ./_pages_output/Packages)" >> ./_pages_output/DEBUG.md
+          echo "- 版本数: $(grep -c '^Version:' ./_pages_output/Packages)" >> ./_pages_output/DEBUG.md
+          echo "" >> ./_pages_output/DEBUG.md
+          echo "**所有包和版本：**" >> ./_pages_output/DEBUG.md
+          echo '```' >> ./_pages_output/DEBUG.md
+          awk '/^Package:/ {pkg=$2} /^Version:/ {ver=$2} /^$/ {if(pkg && ver) printf "%-30s %s\n", pkg, ver; pkg=""; ver=""}' ./_pages_output/Packages | \
+            sort >> ./_pages_output/DEBUG.md
+          echo '```' >> ./_pages_output/DEBUG.md
         else
-          echo "Packages文件未生成" >> DEBUG.md
+          echo "Packages文件未生成" >> ./_pages_output/DEBUG.md
         fi
+        
+        # 添加.nojekyll文件（重要！）
+        touch ./_pages_output/.nojekyll
+        
+        echo "" >> ./_pages_output/DEBUG.md
+        echo "**GitHub Pages信息：**" >> ./_pages_output/DEBUG.md
+        echo "- 源地址: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/" >> ./_pages_output/DEBUG.md
+        echo "- 部署时间: $(date)" >> ./_pages_output/DEBUG.md
     
-    - name: 💾 Commit and push changes
+    - name: 🏗️ Configure GitHub Pages
+      uses: actions/configure-pages@v4
+    
+    - name: 📤 Upload to GitHub Pages
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: './_pages_output'
+    
+    - name: 🚀 Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
+    
+    - name: ✅ 部署完成验证
       run: |
-        echo "=== 提交更改 ==="
-        
-        git config --local user.email "actions@github.com"
-        git config --local user.name "GitHub Actions"
-        
-        # 添加所有生成的文件
-        git add Packages Packages.bz2 Packages.gz VERSIONS.txt DEBUG.md
-        
-        # 检查是否有变化
-        if git diff --cached --quiet; then
-          echo "📭 没有需要提交的更改"
-        else
-          git commit -m "🔄 更新索引 - 包含所有版本 [$(date +%Y%m%d-%H%M%S)]"
-          git push
-          echo "✅ 已提交更改"
-        fi
-        
+        echo "=== 部署成功 ==="
+        echo "✅ 软件源已部署到 GitHub Pages!"
         echo ""
-        echo "🎯 下一步："
-        echo "1. 访问 https://raw.githubusercontent.com/${{ github.repository }}/main/Packages"
-        echo "2. 确认所有版本都在文件中"
-        echo "3. 在Sileo中刷新源"
+        echo "📦 包含的包数量: $(grep -c '^Package:' ./_pages_output/Packages 2>/dev/null || echo '0')"
+        echo ""
+        echo "🌐 访问地址: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"
+        echo "📄 Packages文件: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/Packages"
+        echo ""
+        echo "🎯 在Sileo中添加以下源地址:"
+        echo "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"
+        echo ""
+        echo "🔄 下次更新只需上传.deb文件到debs/目录即可自动部署"
