@@ -1,5 +1,5 @@
 # Believess Repository
-# Generated: 2026-02-10 05:40:50 UTC
+# Generated: 2026-02-10 05:47:58 UTC
 # This file includes ALL versions of all packages
 
 Package: Flex3beta
@@ -294,6 +294,24 @@ Section: 实用插件
 Description: safari增强，已带汉化。
 Author: 0xkuj
 Name: SafariX
+
+
+Package: com.baiy.switchtheme
+Version: 1.0.0
+Architecture: iphoneos-arm64e
+Maintainer: baiy（qq：961666883））
+Installed-Size: 336
+Pre-Depends: rootless-compat(>= 0.9)
+Depends: mobilesubstrate
+Filename: ./debs/com.baiy.switchtheme_1.0.0_iphoneos-arm64e.deb
+Size: 51120
+MD5sum: aecc151e62d44c4de66225f43b49f4f0
+SHA1: 16a39a492efc512e29fd4a6d40626a3cef7fcba9
+SHA256: 29d877bac0afce65f62a88ad0e878df512eda07d2a23c562e67faa8499e63ddb
+Section: 美化插件
+Description: 这是一款全新的开关主题，用皮卡丘的元素来装饰你的开关，让你的开关变得可爱起来
+Author: 白衣
+Name: SwitchTheme-皮卡丘
 
 
 Package: com.cannathea.afc2d-arm64e
