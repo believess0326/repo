@@ -1,9 +1,9 @@
 === 调试信息 ===
-生成时间: Tue Feb 10 03:08:01 UTC 2026
+生成时间: Tue Feb 10 03:08:15 UTC 2026
 
 **debs文件夹内容：**
 ```
-total 29628
+total 26720
 drwxr-xr-x 2 runner runner     4096 Feb 10 03:08 .
 drwxr-xr-x 5 runner runner     4096 Feb 10 03:08 ..
 -rw-r--r-- 1 runner runner        1 Feb 10 03:08 .gitkeep
@@ -21,11 +21,10 @@ drwxr-xr-x 5 runner runner     4096 Feb 10 03:08 ..
 -rw-r--r-- 1 runner runner  1121408 Feb 10 03:08 com.spark.snowboard_1.5.26-Beta4-rootless_iphoneos-arm64e.deb
 -rw-r--r-- 1 runner runner  1129560 Feb 10 03:08 com.spark.snowboard_1.5.37-Beta4-rootless_iphoneos-arm64e.deb
 -rw-r--r-- 1 runner runner  1517552 Feb 10 03:08 com.sunshinesong.split-view-pro_1.3.7_iphoneos-arm64e.deb
--rw-r--r-- 1 runner runner  2975790 Feb 10 03:08 com.xybp888.callassist16.dopamine.roothide_2.1.1_iphoneos-arm64e.deb
 ```
 
 **Packages文件统计：**
-- 总行数: 275
+- 总行数: 274
 - 包条目: 14
 - 版本数: 14
 
