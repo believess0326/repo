@@ -170,3 +170,13 @@ jobs:
         if git diff --cached --quiet; then
           echo "📭 没有需要提交的更改"
         else
+          git commit -m "🔄 更新索引 - 包含所有版本 [$(date +%Y%m%d-%H%M%S)]"
+          git push
+          echo "✅ 已提交更改"
+        fi
+        
+        echo ""
+        echo "🎯 下一步："
+        echo "1. 访问 https://raw.githubusercontent.com/${{ github.repository }}/main/Packages"
+        echo "2. 确认所有版本都在文件中"
+        echo "3. 在Sileo中刷新源"
