@@ -1,5 +1,5 @@
 # Believess Repository
-# Generated: 2026-02-10 04:30:55 UTC
+# Generated: 2026-02-10 04:35:34 UTC
 # This file includes ALL versions of all packages
 
 Package: Flex3beta
@@ -41,6 +41,29 @@ Author: ren7995
 Icon: https://chinesebuilding.club/pic/cydia.png
 Name: Atria桌面图标自定义
 Sponsor: 搬运工
+
+
+Package: cn.zqbb.fix120hz
+Version: 3.3.0-1
+Architecture: iphoneos-arm64e
+Maintainer: zqbb
+Installed-Size: 1084
+Depends: mobilesubstrate (>= 0.9.5000) , firmware (>= 15.0), preferenceloader, com.opa334.altlist
+Conflicts: cn.zqbb.fix120hz15, com.zqbb.fix120hz, com.zqbb.dynamic120hz
+Filename: ./debs/cn.zqbb.fix120hz_3.3.0-1_iphoneos-arm64e.deb
+Size: 314114
+MD5sum: db7e168678f8c615f588b75cbdf1c029
+SHA1: 178ac250916972793a3c9ecf8481a82094b61b1a
+SHA256: 2876170b278c7a7dd9c72f2d860d3f0b77fa9dc3e0607255072606bff1c1e8cb
+Section: Tweaks
+Description:
+ - Unlock dynamic refresh rate from 80hz to 120hz
+ - .
+ - 解锁动态刷新率80hz到120hz.
+Author: zqbb
+Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.fix120hz
+Name: Hello 120Hz
+Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.fix120hz
 
 
 Package: cn.zqbb.hello.memorystatus
