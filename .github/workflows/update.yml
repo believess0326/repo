@@ -1,21 +1,22 @@
-name: 🔄 Build iOS Repository for GitHub Pages
+name: 🔄 Update Repository with All Versions
 
 on:
   push:
     paths:
       - 'debs/**'
   workflow_dispatch:
+    inputs:
+      force_rebuild:
+        description: '强制重建所有索引'
+        required: false
+        default: 'false'
 
 jobs:
-  build:
+  rebuild-index:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
     
     steps:
-    - name: 📥 Checkout code
+    - name: 📥 Checkout repository
       uses: actions/checkout@v4
       with:
         fetch-depth: 0
@@ -24,140 +25,148 @@ jobs:
       run: |
         echo "=== 检查debs文件夹 ==="
         if [ ! -d "debs" ]; then
-          echo "创建debs文件夹"
+          echo "❌ debs文件夹不存在"
           mkdir -p debs
         fi
         
+        echo "📁 文件夹内容："
+        ls -la debs/ || echo "空文件夹"
+        
+        echo "🔍 查找所有.deb文件："
+        find debs -name "*.deb" -type f | while read deb; do
+          echo "  - $deb"
+          # 显示文件信息
+          ls -lh "$deb"
+        done
+        
         COUNT=$(find debs -name "*.deb" -type f | wc -l)
-        echo "找到 $COUNT 个.deb文件"
+        echo "✅ 总共找到 $COUNT 个.deb文件"
         
-        if [ $COUNT -gt 0 ]; then
-          echo "📦 包列表:"
-          find debs -name "*.deb" -type f -exec basename {} \;
+        if [ $COUNT -eq 0 ]; then
+          echo "⚠️  警告：没有找到.deb文件"
         fi
     
-    - name: 🔧 Build repository structure
+    - name: 🔧 Generate Packages with ALL versions
       run: |
-        echo "=== 构建Sileo兼容的仓库结构 ==="
+        echo "=== 生成包含所有版本的Packages文件 ==="
         
-        # 清理并创建构建目录
-        rm -rf ./_build
-        mkdir -p ./_build
+        # 清理旧文件
+        rm -f Packages Packages.bz2 Packages.gz
         
-        # 方法1：直接复制deb文件到构建目录
-        if [ -d "debs" ] && [ -n "$(ls debs/*.deb 2>/dev/null)" ]; then
-          echo "复制deb文件..."
-          mkdir -p ./_build/debs
-          cp debs/*.deb ./_build/debs/
-        fi
-        
-        # 方法2：创建iOS越狱源标准结构
-        echo "创建iOS越狱源标准结构..."
-        mkdir -p ./_build/dists/ios
-        mkdir -p ./_build/dists/ios/main
-        mkdir -p ./_build/dists/ios/main/binary-iphoneos-arm
-        mkdir -p ./_build/dists/ios/main/binary-iphoneos-arm64
-        
-        # 生成Packages文件
-        echo "生成Packages文件..."
-        if [ -d "debs" ] && [ -n "$(ls debs/*.deb 2>/dev/null)" ]; then
-          # 使用简单方法生成Packages
-          dpkg-scanpackages debs /dev/null > ./_build/Packages
-          cp ./_build/Packages ./_build/dists/ios/main/binary-iphoneos-arm/Packages
-          cp ./_build/Packages ./_build/dists/ios/main/binary-iphoneos-arm64/Packages
+        # 如果没有deb文件，创建空的Packages
+        if [ ! -d "debs" ] || [ -z "$(find debs -name '*.deb' -print -quit)" ]; then
+          echo "# Empty repository - waiting for packages" > Packages
+          echo "没有找到.deb文件，创建空索引"
         else
-          echo "# Empty repository" > ./_build/Packages
-          cp ./_build/Packages ./_build/dists/ios/main/binary-iphoneos-arm/Packages
-          cp ./_build/Packages ./_build/dists/ios/main/binary-iphoneos-arm64/Packages
-        fi
-        
-        # 创建压缩版本
-        echo "创建压缩版本..."
-        cd ./_build
-        gzip -9fk < Packages > Packages.gz
-        bzip2 -9fk < Packages > Packages.bz2
-        
-        # 复制压缩版本到各架构目录
-        for arch_dir in dists/ios/main/binary-iphoneos-arm dists/ios/main/binary-iphoneos-arm64; do
-          cp Packages.gz "$arch_dir/"
-          cp Packages.bz2 "$arch_dir/"
-        done
-        
-        # 创建Release文件（Sileo必需）
-        echo "创建Release文件..."
-        cat > dists/ios/Release << 'RELEASE_EOF'
-Origin: believess
-Label: believess Repository
-Suite: stable
-Codename: ios
-Architectures: iphoneos-arm iphoneos-arm64
-Components: main
-Description: believess iOS Repository
-RELEASE_EOF
-        
-        # 计算哈希值
-        echo "计算文件哈希..."
-        echo "MD5Sum:" >> dists/ios/Release
-        for file in Packages Packages.gz Packages.bz2; do
-          for arch in binary-iphoneos-arm binary-iphoneos-arm64; do
-            if [ -f "dists/ios/main/$arch/$file" ]; then
-              md5=$(md5sum "dists/ios/main/$arch/$file" | cut -d' ' -f1)
-              size=$(wc -c < "dists/ios/main/$arch/$file")
-              echo " $md5 $size main/$arch/$file" >> dists/ios/Release
+          echo "# Believess Repository" > Packages
+          echo "# Generated: $(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> Packages
+          echo "# This file includes ALL versions of all packages" >> Packages
+          echo "" >> Packages
+          
+          # 使用dpkg-scanpackages处理所有文件
+          cd debs
+          
+          # 为每个deb文件单独处理，确保所有版本都被包含
+          for DEB in *.deb; do
+            if [ -f "$DEB" ]; then
+              echo "🔨 处理: $DEB"
+              
+              # 提取包名用于临时处理
+              PKG_NAME=$(echo "$DEB" | cut -d_ -f1)
+              
+              # 创建一个临时目录来处理这个deb
+              TEMP_DIR="/tmp/deb_$PKG_NAME"
+              mkdir -p "$TEMP_DIR"
+              cp "$DEB" "$TEMP_DIR/"
+              
+              # 生成这个deb的条目
+              dpkg-scanpackages "$TEMP_DIR" /dev/null 2>/dev/null | \
+                sed "s|Filename: $TEMP_DIR/|Filename: ./debs/|" >> ../Packages
+              
+              # 添加空行分隔
+              echo "" >> ../Packages
+              
+              rm -rf "$TEMP_DIR"
             fi
           done
-        done
-        
-        echo "SHA256:" >> dists/ios/Release
-        for file in Packages Packages.gz Packages.bz2; do
-          for arch in binary-iphoneos-arm binary-iphoneos-arm64; do
-            if [ -f "dists/ios/main/$arch/$file" ]; then
-              sha256=$(sha256sum "dists/ios/main/$arch/$file" | cut -d' ' -f1)
-              size=$(wc -c < "dists/ios/main/$arch/$file")
-              echo " $sha256 $size main/$arch/$file" >> dists/ios/Release
-            fi
-          done
-        done
-        
-        # 创建.nojekyll文件
-        touch .nojekyll
-        
-        echo "✅ 构建完成！"
-        echo "📁 生成的文件:"
-        find . -type f | sort
-        
-        # 显示包含的包
-        echo "📦 包含的包:"
-        if [ -f "Packages" ]; then
-          grep "^Package: " Packages | sort | uniq
+          
+          cd ..
+          
+          # 手动验证
+          echo "📊 生成的条目统计："
+          echo "总条目数: $(grep -c '^Package:' Packages)"
+          echo "唯一包名: $(grep '^Package:' Packages | sort -u | wc -l)"
+          echo "所有版本:"
+          grep '^Package:' Packages | sort | uniq -c
         fi
     
-    - name: 🏗️ Configure GitHub Pages
-      uses: actions/configure-pages@v4
-    
-    - name: 📤 Upload artifact
-      uses: actions/upload-pages-artifact@v3
-      with:
-        path: './_build'
-    
-    - name: 🚀 Deploy to GitHub Pages
-      uses: actions/deploy-pages@v4
-    
-    - name: ✅ Verify deployment
+    - name: 🗜️ Create compressed versions
       run: |
-        echo "=== 部署验证 ==="
-        echo "✅ 部署成功！"
-        echo ""
-        echo "🌐 访问以下链接验证:"
-        echo "1. 根目录Packages: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/Packages"
-        echo "2. iOS结构Packages: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/dists/ios/main/binary-iphoneos-arm/Packages"
-        echo "3. Release文件: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/dists/ios/Release"
-        echo ""
-        echo "🎯 Sileo源地址（尝试以下任一）:"
-        echo "A. https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"
-        echo "B. https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/dists/ios/"
-        echo ""
-        echo "📱 在Sileo中："
-        echo "1. 删除旧源（如果存在）"
-        echo "2. 添加上述任一地址"
-        echo "3. 下拉刷新"
+        echo "=== 创建压缩文件 ==="
+        
+        if [ -f "Packages" ]; then
+          # 验证文件内容
+          echo "📄 Packages文件前100个字符："
+          head -c 100 Packages
+          echo ""
+          
+          echo "📦 创建压缩版本..."
+          bzip2 -9fk Packages
+          gzip -9fk Packages
+          
+          echo "📊 文件大小："
+          ls -lh Packages*
+          
+          # 创建版本清单
+          echo "# Version Manifest" > VERSIONS.txt
+          echo "Repository: believess" >> VERSIONS.txt
+          echo "Updated: $(date)" >> VERSIONS.txt
+          echo "" >> VERSIONS.txt
+          echo "Available Packages:" >> VERSIONS.txt
+          awk '/^Package:/ {pkg=$2} /^Version:/ {ver=$2} /^$/ {if(pkg && ver) print pkg " " ver; pkg=""; ver=""}' Packages | \
+            sort >> VERSIONS.txt
+        else
+          echo "❌ Packages文件不存在"
+          touch Packages.bz2 Packages.gz
+        fi
+    
+    - name: 📝 Create debug info
+      run: |
+        echo "=== 调试信息 ===" > DEBUG.md
+        echo "生成时间: $(date)" >> DEBUG.md
+        echo "" >> DEBUG.md
+        echo "**debs文件夹内容：**" >> DEBUG.md
+        echo '```' >> DEBUG.md
+        ls -la debs/ >> DEBUG.md 2>/dev/null || echo "空文件夹" >> DEBUG.md
+        echo '```' >> DEBUG.md
+        echo "" >> DEBUG.md
+        
+        echo "**Packages文件统计：**" >> DEBUG.md
+        if [ -f "Packages" ]; then
+          echo "- 总行数: $(wc -l < Packages)" >> DEBUG.md
+          echo "- 包条目: $(grep -c '^Package:' Packages)" >> DEBUG.md
+          echo "- 版本数: $(grep -c '^Version:' Packages)" >> DEBUG.md
+          echo "" >> DEBUG.md
+          echo "**所有包和版本：**" >> DEBUG.md
+          echo '```' >> DEBUG.md
+          awk '/^Package:/ {pkg=$2} /^Version:/ {ver=$2} /^$/ {if(pkg && ver) printf "%-30s %s\n", pkg, ver; pkg=""; ver=""}' Packages | \
+            sort >> DEBUG.md
+          echo '```' >> DEBUG.md
+        else
+          echo "Packages文件未生成" >> DEBUG.md
+        fi
+    
+    - name: 💾 Commit and push changes
+      run: |
+        echo "=== 提交更改 ==="
+        
+        git config --local user.email "actions@github.com"
+        git config --local user.name "GitHub Actions"
+        
+        # 添加所有生成的文件
+        git add Packages Packages.bz2 Packages.gz VERSIONS.txt DEBUG.md
+        
+        # 检查是否有变化
+        if git diff --cached --quiet; then
+          echo "📭 没有需要提交的更改"
+        else
