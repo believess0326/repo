@@ -1,5 +1,5 @@
 # Believess Repository
-# Generated: 2026-02-10 04:13:23 UTC
+# Generated: 2026-02-10 04:16:00 UTC
 # This file includes ALL versions of all packages
 
 Package: Flex3beta
@@ -217,6 +217,42 @@ Section: 实用插件
 Description: 可以美化的版本
 Author: Fouad Raheb
 Name: AppData
+
+
+Package: com.netskao.dumpdecrypter
+Version: 1.5-1
+Architecture: iphoneos-arm64e
+Maintainer: Nets
+Installed-Size: 952
+Pre-Depends: rootless-compat(>= 0.9)
+Depends: firmware (>= 15.0), mobilesubstrate
+Filename: ./debs/com.netskao.dumpdecrypter_1.5-1_iphoneos-arm64e.deb
+Size: 535332
+MD5sum: f31759879173b2bd74e08f3217f8f2d4
+SHA1: 1599abbc20963aa4db0b82b8e2017e8cd2696da8
+SHA256: 7fb3af01a9c68e302d27ffcf9f5d9ccba05d100bb3deb119bcf4022f37f1a6d0
+Section: Netskao-Tweaks
+Description: Decrypt iOS Apps and Plugins, Supports iOS15+, Only Tested iOS16.1
+Author: Netskao
+Name: DumpDecrypter
+
+
+Package: com.netskao.filzacrack
+Version: 1.1-9
+Architecture: iphoneos-arm64e
+Maintainer: Nets
+Installed-Size: 120
+Pre-Depends: rootless-compat(>= 0.9)
+Depends: firmware (>= 15.0), mobilesubstrate
+Filename: ./debs/com.netskao.filzacrack_1.1-9_iphoneos-arm64e.deb
+Size: 39582
+MD5sum: b67aa92d34c0f276cca97b214fd0b6c8
+SHA1: d7d8ac93703009439d8b9dd372e31c3e03cfcfb6
+SHA256: a77833dbb1b098e5f9345d4452d060bfe9018ebf7ba0b924875c1c380be7e32c
+Section: Netskao-Tweaks
+Description: Filza Crack
+Author: Netskao
+Name: Filza Crack
 
 
 Package: com.skypain.flexloader
