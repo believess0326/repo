@@ -1,61 +1,63 @@
 === 调试信息 ===
-生成时间: Mon Mar  9 12:53:33 UTC 2026
+生成时间: Mon Mar  9 13:00:49 UTC 2026
 
 **debs文件夹内容：**
 ```
-total 73400
-drwxr-xr-x 2 runner runner     4096 Mar  9 12:53 .
-drwxr-xr-x 5 runner runner     4096 Mar  9 12:53 ..
--rw-r--r-- 1 runner runner        1 Mar  9 12:53 .gitkeep
--rw-r--r-- 1 runner runner 19229172 Mar  9 12:53 Flex3beta_1:3~Beta92_iphoneos-arm64e.deb
--rw-r--r-- 1 runner runner   314114 Mar  9 12:53 cn.zqbb.fix120hz_3.3.0-1_iphoneos-arm64e.deb
--rw-r--r-- 1 runner runner  2775470 Mar  9 12:53 cn.zqbb.hello.memorystatus_3.3.2-1_iphoneos-arm64e.deb
--rw-r--r-- 1 runner runner  2762520 Mar  9 12:53 cn.zqbb.hello.memorystatus_3.3.2-2_iphoneos-arm64e.deb
--rw-r--r-- 1 runner runner  2784124 Mar  9 12:53 cn.zqbb.hello.memorystatus_3.3.2-5_iphoneos-arm64e.deb
--rw-r--r-- 1 runner runner  2807412 Mar  9 12:53 cn.zqbb.hello.memorystatus_3.3.2-6_iphoneos-arm64e.deb
--rw-r--r-- 1 runner runner  2876042 Mar  9 12:53 cn.zqbb.hello.memorystatus_3.3.3-1_iphoneos-arm64e.deb
--rw-r--r-- 1 runner runner  2883874 Mar  9 12:53 cn.zqbb.hello.memorystatus_3.3.3-2_iphoneos-arm64e.deb
--rw-r--r-- 1 runner runner  2848694 Mar  9 12:53 cn.zqbb.hello.memorystatus_3.3.3-3_iphoneos-arm64e.deb
--rw-r--r-- 1 runner runner  2906618 Mar  9 12:53 cn.zqbb.hello.memorystatus_3.3.3-5_iphoneos-arm64e.deb
--rw-r--r-- 1 runner runner  2932642 Mar  9 12:53 cn.zqbb.hello.memorystatus_3.3.3-6_iphoneos-arm64e.deb
--rw-r--r-- 1 runner runner  2956578 Mar  9 12:53 cn.zqbb.hello.memorystatus_3.3.3-8_iphoneos-arm64e.deb
--rw-r--r-- 1 runner runner  2954694 Mar  9 12:53 cn.zqbb.hello.memorystatus_3.5.0-1_iphoneos-arm64e.deb
--rw-r--r-- 1 runner runner  1289838 Mar  9 12:53 cn.zqbb.holdcpu_2.3.4-16_iphoneos-arm64e.deb
--rw-r--r-- 1 runner runner  3121722 Mar  9 12:53 cn.zqbb.holdcpu_2.3.4-5_iphoneos-arm64e.deb
--rw-r--r-- 1 runner runner  1268912 Mar  9 12:53 cn.zqbb.holdcpu_2.3.5-1_iphoneos-arm64e.deb
--rw-r--r-- 1 runner runner  1309134 Mar  9 12:53 cn.zqbb.holdcpu_2.3.5-2_iphoneos-arm64e.deb
--rw-r--r-- 1 runner runner  1307670 Mar  9 12:53 cn.zqbb.holdcpu_2.3.5-3_iphoneos-arm64e.deb
--rw-r--r-- 1 runner runner    10336 Mar  9 12:53 com.0xkuj.ccdnd_1.0.0_iphoneos-arm64e.deb
--rw-r--r-- 1 runner runner   325800 Mar  9 12:53 com.0xkuj.safarix_1.9.9.1_iphoneos-arm64e.deb
--rw-r--r-- 1 runner runner    51120 Mar  9 12:53 com.baiy.switchtheme_1.0.0_iphoneos-arm64e.deb
--rw-r--r-- 1 runner runner    12332 Mar  9 12:53 com.cannathea.afc2d-arm64e_1.1.7-21_iphoneos-arm64e.deb
--rw-r--r-- 1 runner runner   431800 Mar  9 12:53 com.dao.carbridge13_2.0.14_iphoneos-arm64e.deb
--rw-r--r-- 1 runner runner   498152 Mar  9 12:53 com.dao.ccless_2.1.0.1_iphoneos-arm64e.deb
--rw-r--r-- 1 runner runner  1108380 Mar  9 12:53 com.dao.icleanerpro_7.10.0_iphoneos-arm64e.deb
--rw-r--r-- 1 runner runner  1163968 Mar  9 12:53 com.flex3.processor_1.0-4+debug_iphoneos-arm64e.deb
--rw-r--r-- 1 runner runner  2269464 Mar  9 12:53 com.jontelang.snapper3_1.2.1_iphoneos-arm64e.deb
--rw-r--r-- 1 runner runner   985448 Mar  9 12:53 com.lclrc.hammerit_1.7.0_iphoneos-arm64e.deb
--rw-r--r-- 1 runner runner     2236 Mar  9 12:53 com.nan.givemedeb_0.3.1_iphoneos-arm64e .deb
--rw-r--r-- 1 runner runner   827124 Mar  9 12:53 com.netskao.appdata_1.4.2_iphoneos-arm64e.deb
--rw-r--r-- 1 runner runner   535332 Mar  9 12:53 com.netskao.dumpdecrypter_1.5-1_iphoneos-arm64e.deb
--rw-r--r-- 1 runner runner    39582 Mar  9 12:53 com.netskao.filzacrack_1.1-9_iphoneos-arm64e.deb
--rw-r--r-- 1 runner runner  1551126 Mar  9 12:53 com.opa334.crane_1.3.16-4_iphoneos-arm64e.deb
--rw-r--r-- 1 runner runner    98756 Mar  9 12:53 com.qiop1379.swipeextenderx_1.6.1~2_iphoneos-arm64e.deb
--rw-r--r-- 1 runner runner   671456 Mar  9 12:53 com.skypain.flexloader_5.25.19-1_iphoneos-arm64e.deb
--rw-r--r-- 1 runner runner   217484 Mar  9 12:53 com.sop.settingsrevamp_3.0.1_iphoneos-arm64e.deb
--rw-r--r-- 1 runner runner    34552 Mar  9 12:53 com.spark.snowboard.effects_1.2.2-Beta2-rootless_iphoneos-arm64e.deb
--rw-r--r-- 1 runner runner    20240 Mar  9 12:53 com.spark.snowboard.masks_1.2.2-Beta2-rootless_iphoneos-arm64e.deb
--rw-r--r-- 1 runner runner    67060 Mar  9 12:53 com.spark.snowboard.ui_1.3.0~Beta2-rootless_iphoneos-arm64e.deb
--rw-r--r-- 1 runner runner  1121408 Mar  9 12:53 com.spark.snowboard_1.5.26-Beta4-rootless_iphoneos-arm64e.deb
--rw-r--r-- 1 runner runner  1129560 Mar  9 12:53 com.spark.snowboard_1.5.37-Beta4-rootless_iphoneos-arm64e.deb
--rw-r--r-- 1 runner runner  1517552 Mar  9 12:53 com.sunshinesong.split-view-pro_1.3.7_iphoneos-arm64e.deb
--rw-r--r-- 1 runner runner  1045760 Mar  9 12:53 me.tomt000.copylog_1.7.1_iphoneos-arm64e.deb
+total 73672
+drwxr-xr-x 2 runner runner     4096 Mar  9 13:00 .
+drwxr-xr-x 5 runner runner     4096 Mar  9 13:00 ..
+-rw-r--r-- 1 runner runner        1 Mar  9 13:00 .gitkeep
+-rw-r--r-- 1 runner runner 19229172 Mar  9 13:00 Flex3beta_1:3~Beta92_iphoneos-arm64e.deb
+-rw-r--r-- 1 runner runner   314114 Mar  9 13:00 cn.zqbb.fix120hz_3.3.0-1_iphoneos-arm64e.deb
+-rw-r--r-- 1 runner runner  2775470 Mar  9 13:00 cn.zqbb.hello.memorystatus_3.3.2-1_iphoneos-arm64e.deb
+-rw-r--r-- 1 runner runner  2762520 Mar  9 13:00 cn.zqbb.hello.memorystatus_3.3.2-2_iphoneos-arm64e.deb
+-rw-r--r-- 1 runner runner  2784124 Mar  9 13:00 cn.zqbb.hello.memorystatus_3.3.2-5_iphoneos-arm64e.deb
+-rw-r--r-- 1 runner runner  2807412 Mar  9 13:00 cn.zqbb.hello.memorystatus_3.3.2-6_iphoneos-arm64e.deb
+-rw-r--r-- 1 runner runner  2876042 Mar  9 13:00 cn.zqbb.hello.memorystatus_3.3.3-1_iphoneos-arm64e.deb
+-rw-r--r-- 1 runner runner  2883874 Mar  9 13:00 cn.zqbb.hello.memorystatus_3.3.3-2_iphoneos-arm64e.deb
+-rw-r--r-- 1 runner runner  2848694 Mar  9 13:00 cn.zqbb.hello.memorystatus_3.3.3-3_iphoneos-arm64e.deb
+-rw-r--r-- 1 runner runner  2906618 Mar  9 13:00 cn.zqbb.hello.memorystatus_3.3.3-5_iphoneos-arm64e.deb
+-rw-r--r-- 1 runner runner  2932642 Mar  9 13:00 cn.zqbb.hello.memorystatus_3.3.3-6_iphoneos-arm64e.deb
+-rw-r--r-- 1 runner runner  2956578 Mar  9 13:00 cn.zqbb.hello.memorystatus_3.3.3-8_iphoneos-arm64e.deb
+-rw-r--r-- 1 runner runner  2954694 Mar  9 13:00 cn.zqbb.hello.memorystatus_3.5.0-1_iphoneos-arm64e.deb
+-rw-r--r-- 1 runner runner  1289838 Mar  9 13:00 cn.zqbb.holdcpu_2.3.4-16_iphoneos-arm64e.deb
+-rw-r--r-- 1 runner runner  3121722 Mar  9 13:00 cn.zqbb.holdcpu_2.3.4-5_iphoneos-arm64e.deb
+-rw-r--r-- 1 runner runner  1268912 Mar  9 13:00 cn.zqbb.holdcpu_2.3.5-1_iphoneos-arm64e.deb
+-rw-r--r-- 1 runner runner  1309134 Mar  9 13:00 cn.zqbb.holdcpu_2.3.5-2_iphoneos-arm64e.deb
+-rw-r--r-- 1 runner runner  1307670 Mar  9 13:00 cn.zqbb.holdcpu_2.3.5-3_iphoneos-arm64e.deb
+-rw-r--r-- 1 runner runner    10336 Mar  9 13:00 com.0xkuj.ccdnd_1.0.0_iphoneos-arm64e.deb
+-rw-r--r-- 1 runner runner   325800 Mar  9 13:00 com.0xkuj.safarix_1.9.9.1_iphoneos-arm64e.deb
+-rw-r--r-- 1 runner runner    51120 Mar  9 13:00 com.baiy.switchtheme_1.0.0_iphoneos-arm64e.deb
+-rw-r--r-- 1 runner runner    12332 Mar  9 13:00 com.cannathea.afc2d-arm64e_1.1.7-21_iphoneos-arm64e.deb
+-rw-r--r-- 1 runner runner   431800 Mar  9 13:00 com.dao.carbridge13_2.0.14_iphoneos-arm64e.deb
+-rw-r--r-- 1 runner runner   498152 Mar  9 13:00 com.dao.ccless_2.1.0.1_iphoneos-arm64e.deb
+-rw-r--r-- 1 runner runner  1108380 Mar  9 13:00 com.dao.icleanerpro_7.10.0_iphoneos-arm64e.deb
+-rw-r--r-- 1 runner runner  1163968 Mar  9 13:00 com.flex3.processor_1.0-4+debug_iphoneos-arm64e.deb
+-rw-r--r-- 1 runner runner  2269464 Mar  9 13:00 com.jontelang.snapper3_1.2.1_iphoneos-arm64e.deb
+-rw-r--r-- 1 runner runner   985448 Mar  9 13:00 com.lclrc.hammerit_1.7.0_iphoneos-arm64e.deb
+-rw-r--r-- 1 runner runner     2236 Mar  9 13:00 com.nan.givemedeb_0.3.1_iphoneos-arm64e .deb
+-rw-r--r-- 1 runner runner   827124 Mar  9 13:00 com.netskao.appdata_1.4.2_iphoneos-arm64e.deb
+-rw-r--r-- 1 runner runner   535332 Mar  9 13:00 com.netskao.dumpdecrypter_1.5-1_iphoneos-arm64e.deb
+-rw-r--r-- 1 runner runner    39582 Mar  9 13:00 com.netskao.filzacrack_1.1-9_iphoneos-arm64e.deb
+-rw-r--r-- 1 runner runner   112214 Mar  9 13:00 com.opa334.choicy_1.5-1_iphoneos-arm64e.deb
+-rw-r--r-- 1 runner runner   161430 Mar  9 13:00 com.opa334.choicy_1.5.3-2_iphoneos-arm64e.deb
+-rw-r--r-- 1 runner runner  1551126 Mar  9 13:00 com.opa334.crane_1.3.16-4_iphoneos-arm64e.deb
+-rw-r--r-- 1 runner runner    98756 Mar  9 13:00 com.qiop1379.swipeextenderx_1.6.1~2_iphoneos-arm64e.deb
+-rw-r--r-- 1 runner runner   671456 Mar  9 13:00 com.skypain.flexloader_5.25.19-1_iphoneos-arm64e.deb
+-rw-r--r-- 1 runner runner   217484 Mar  9 13:00 com.sop.settingsrevamp_3.0.1_iphoneos-arm64e.deb
+-rw-r--r-- 1 runner runner    34552 Mar  9 13:00 com.spark.snowboard.effects_1.2.2-Beta2-rootless_iphoneos-arm64e.deb
+-rw-r--r-- 1 runner runner    20240 Mar  9 13:00 com.spark.snowboard.masks_1.2.2-Beta2-rootless_iphoneos-arm64e.deb
+-rw-r--r-- 1 runner runner    67060 Mar  9 13:00 com.spark.snowboard.ui_1.3.0~Beta2-rootless_iphoneos-arm64e.deb
+-rw-r--r-- 1 runner runner  1121408 Mar  9 13:00 com.spark.snowboard_1.5.26-Beta4-rootless_iphoneos-arm64e.deb
+-rw-r--r-- 1 runner runner  1129560 Mar  9 13:00 com.spark.snowboard_1.5.37-Beta4-rootless_iphoneos-arm64e.deb
+-rw-r--r-- 1 runner runner  1517552 Mar  9 13:00 com.sunshinesong.split-view-pro_1.3.7_iphoneos-arm64e.deb
+-rw-r--r-- 1 runner runner  1045760 Mar  9 13:00 me.tomt000.copylog_1.7.1_iphoneos-arm64e.deb
 ```
 
 **Packages文件统计：**
-- 总行数: 830
-- 包条目: 43
-- 版本数: 43
+- 总行数: 866
+- 包条目: 45
+- 版本数: 45
 
 **所有包和版本：**
 ```
@@ -91,6 +93,8 @@ com.nan.givemedeb              0.3.1
 com.netskao.appdata            1.4.2
 com.netskao.dumpdecrypter      1.5-1
 com.netskao.filzacrack         1.1-9
+com.opa334.choicy              1.5-1
+com.opa334.choicy              1.5.3-2
 com.opa334.crane               1.3.16-4
 com.qiop1379.swipeextenderx    1.6.1~2
 com.skypain.flexloader         5.25.19-1
