@@ -1,9 +1,7 @@
 name: 🔄 Update Repository with All Versions
 
 on:
-  # 改为特定时间触发，避免与push冲突
-  schedule:
-    - cron: '*/1 * * * *'  # 每1分钟检查一次
+  # 移除自动运行，只保留手动触发
   workflow_dispatch:
     inputs:
       force_rebuild:
