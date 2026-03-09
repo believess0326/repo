@@ -1,5 +1,5 @@
 # Believess Repository
-# Generated: 2026-03-09 12:27:33 UTC
+# Generated: 2026-03-09 12:45:30 UTC
 # This file includes ALL versions of all packages
 
 Package: Flex3beta
@@ -484,6 +484,24 @@ Description: Control your text or translate as you wish.
 Author: lclrc(SquidForce)
 Icon: file:///var/jb/Library/PreferenceBundles/HammerItPrefs.bundle/HammerIt@3x.png
 Name: Hammer It
+
+
+Package: com.nan.givemedeb
+Version: 0.3.1
+Architecture: iphoneos-arm64e
+Maintainer: zhaonan
+Depends: coreutils, sed, gawk
+Filename: ./debs/com.nan.givemedeb_0.3.1_iphoneos-arm64e .deb
+Size: 2236
+MD5sum: f0babc9efcbd9a3952a31ae4599521ce
+SHA1: 7090958cb3e39ceb4eda3c64484bcd7d30ae6392
+SHA256: 74503ab35ce7fdfcc1390c4ea42ecc932288c324d91b87151578718a8c99dc8c
+Section: 实用插件
+Description: 尝试保存 apt 缓存目录下所有 deb。deb存放在/var/mobile/Downloads/dpkg_triggered。
+Author: zhaonan <invalidunit@icloud.com>
+Icon: https://invalidunit.github.io/sileodepiction/Default/image_fix.png
+Name: Give me deb
+Sileodepiction: https://invalidunit.github.io/sileodepiction/com.nan.givemedeb/js.json
 
 
 Package: com.netskao.appdata
