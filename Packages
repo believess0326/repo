@@ -1,7 +1,3 @@
-# Believess Repository
-# Generated: 2026-04-10 12:55:56 UTC
-# This file includes ALL versions of all packages
-
 Package: Flex3beta
 Version: 1:3~Beta92
 Architecture: iphoneos-arm64e
@@ -20,7 +16,6 @@ Description: Flex 3 beta92 for RootHides Bootstrap & Dopamine by DXcool223
 Author: John Coates
 Name: Flex 3 Beta RootHide Bootstrap
 Recommended: com.rpetrich.rocketbootstrap
-
 
 Package: cn.zqbb.fix120hz
 Version: 3.3.0-1
@@ -44,7 +39,6 @@ Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.fix120hz
 Name: Hello 120Hz
 Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.fix120hz
 
-
 Package: cn.zqbb.hello.memorystatus
 Version: 3.3.2-1
 Architecture: iphoneos-arm64e
@@ -62,7 +56,6 @@ Author: zqbb
 Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.hello.memorystatus.png
 Name: Hello Memory Status
 Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.hello.memorystatus
-
 
 Package: cn.zqbb.hello.memorystatus
 Version: 3.3.2-2
@@ -82,7 +75,6 @@ Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.hello.memorystatus.png
 Name: Hello Memory Status
 Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.hello.memorystatus
 
-
 Package: cn.zqbb.hello.memorystatus
 Version: 3.3.2-5
 Architecture: iphoneos-arm64e
@@ -100,7 +92,6 @@ Author: zqbb
 Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.hello.memorystatus.png
 Name: Hello Memory Status
 Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.hello.memorystatus
-
 
 Package: cn.zqbb.hello.memorystatus
 Version: 3.3.2-6
@@ -120,7 +111,6 @@ Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.hello.memorystatus.png
 Name: Hello Memory Status
 Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.hello.memorystatus
 
-
 Package: cn.zqbb.hello.memorystatus
 Version: 3.3.3-1
 Architecture: iphoneos-arm64e
@@ -138,7 +128,6 @@ Author: zqbb
 Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.hello.memorystatus.png
 Name: Hello Memory Status
 Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.hello.memorystatus
-
 
 Package: cn.zqbb.hello.memorystatus
 Version: 3.3.3-2
@@ -158,7 +147,6 @@ Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.hello.memorystatus.png
 Name: Hello Memory Status
 Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.hello.memorystatus
 
-
 Package: cn.zqbb.hello.memorystatus
 Version: 3.3.3-3
 Architecture: iphoneos-arm64e
@@ -176,7 +164,6 @@ Author: zqbb
 Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.hello.memorystatus.png
 Name: Hello Memory Status
 Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.hello.memorystatus
-
 
 Package: cn.zqbb.hello.memorystatus
 Version: 3.3.3-5
@@ -196,7 +183,6 @@ Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.hello.memorystatus.png
 Name: Hello Memory Status
 Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.hello.memorystatus
 
-
 Package: cn.zqbb.hello.memorystatus
 Version: 3.3.3-6
 Architecture: iphoneos-arm64e
@@ -214,7 +200,6 @@ Author: zqbb
 Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.hello.memorystatus.png
 Name: Hello Memory Status
 Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.hello.memorystatus
-
 
 Package: cn.zqbb.hello.memorystatus
 Version: 3.3.3-8
@@ -234,7 +219,6 @@ Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.hello.memorystatus.png
 Name: Hello Memory Status
 Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.hello.memorystatus
 
-
 Package: cn.zqbb.hello.memorystatus
 Version: 3.5.0-1
 Architecture: iphoneos-arm64e
@@ -252,7 +236,6 @@ Author: zqbb
 Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.hello.memorystatus.png
 Name: Hello Memory Status
 Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.hello.memorystatus
-
 
 Package: cn.zqbb.hello.memorystatus
 Version: 3.6.0-1
@@ -272,7 +255,6 @@ Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.hello.memorystatus.png
 Name: Hello Memory Status
 Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.hello.memorystatus
 
-
 Package: cn.zqbb.hello.memorystatus
 Version: 3.6.0-2
 Architecture: iphoneos-arm64e
@@ -290,7 +272,6 @@ Author: zqbb
 Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.hello.memorystatus.png
 Name: Hello Memory Status
 Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.hello.memorystatus
-
 
 Package: cn.zqbb.holdcpu
 Version: 2.3.4-16
@@ -310,7 +291,6 @@ Author: zqbb
 Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.holdcpu
 Name: Hello CPU
 Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.holdcpu
-
 
 Package: cn.zqbb.holdcpu
 Version: 2.3.4-5
@@ -332,7 +312,6 @@ Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.holdcpu
 Name: Hello CPU
 Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.holdcpu
 
-
 Package: cn.zqbb.holdcpu
 Version: 2.3.5-1
 Architecture: iphoneos-arm64e
@@ -351,7 +330,6 @@ Author: zqbb
 Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.holdcpu
 Name: Hello CPU
 Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.holdcpu
-
 
 Package: cn.zqbb.holdcpu
 Version: 2.3.5-2
@@ -372,7 +350,6 @@ Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.holdcpu
 Name: Hello CPU
 Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.holdcpu
 
-
 Package: cn.zqbb.holdcpu
 Version: 2.3.5-3
 Architecture: iphoneos-arm64e
@@ -392,7 +369,6 @@ Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.holdcpu
 Name: Hello CPU
 Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.holdcpu
 
-
 Package: com.0xkuj.ccdnd
 Version: 1.0.0
 Architecture: iphoneos-arm64e
@@ -410,7 +386,6 @@ Description: ios16控制中心添加1x1的勿扰模式。
 Author: 0xkuj
 Name: CC勿扰模式1x1
 
-
 Package: com.0xkuj.safarix
 Version: 1.9.9.1
 Architecture: iphoneos-arm64e
@@ -426,7 +401,6 @@ Section: 实用插件
 Description: safari增强，已带汉化。
 Author: 0xkuj
 Name: SafariX
-
 
 Package: com.baiy.switchtheme
 Version: 1.0.0
@@ -444,7 +418,6 @@ Section: 美化插件
 Description: 这是一款全新的开关主题，用皮卡丘的元素来装饰你的开关，让你的开关变得可爱起来
 Author: 白衣
 Name: SwitchTheme-皮卡丘
-
 
 Package: com.cannathea.afc2d-arm64e
 Version: 1.1.7-21
@@ -469,7 +442,6 @@ Author: saurik, Cannathea, i_82, Shadow-
 Depiction: https://cydia.akemi.ai/?page/com.cannathea.afc2d-arm64
 Name: Apple File Conduit "2" (RootHide)
 
-
 Package: com.dao.carbridge13
 Version: 2.0.14
 Architecture: iphoneos-arm64e
@@ -486,7 +458,6 @@ Section: 实用插件
 Description: 在 CarPlay 中打开任何应用程序！
 Author: leftyfl1p <carbridge@havoc.app>
 Name: CarBridge
-
 
 Package: com.dao.ccless
 Version: 2.1.0.1
@@ -506,7 +477,6 @@ Author: 妖刀
 Name: CCLess++(RootHide)
 Sileodepiction: https://xiangfeidexiaohuo.github.io/sileodepiction/ccless/js.json
 
-
 Package: com.dao.icleanerpro
 Version: 7.10.0
 Architecture: iphoneos-arm64e
@@ -524,7 +494,6 @@ Description: 真正的iOS系统清理和管理实用程序，默认简体中文�
 Author: Ivano Bilenchi
 Name: iCleaner Pro(rootless)
 
-
 Package: com.flex3.processor
 Version: 1.0-4+debug
 Architecture: iphoneos-arm64e
@@ -541,7 +510,6 @@ Section: Flex3组合
 Description: 支持ios16的Flex3解析工具。
 Author: DXcool223
 Name: Flex3 IPA Processor
-
 
 Package: com.jontelang.snapper3
 Version: 1.2.1
@@ -561,7 +529,6 @@ Description: Pin screenshots on the screen.
 Author: Jonathan Winger-lang
 Name: Snapper 3
 
-
 Package: com.lclrc.hammerit
 Version: 1.7.0
 Architecture: iphoneos-arm64e
@@ -580,7 +547,6 @@ Author: lclrc(SquidForce)
 Icon: file:///var/jb/Library/PreferenceBundles/HammerItPrefs.bundle/HammerIt@3x.png
 Name: Hammer It
 
-
 Package: com.nan.givemedeb
 Version: 0.3.1
 Architecture: iphoneos-arm64e
@@ -597,7 +563,6 @@ Author: zhaonan <invalidunit@icloud.com>
 Icon: https://invalidunit.github.io/sileodepiction/Default/image_fix.png
 Name: Give me deb
 Sileodepiction: https://invalidunit.github.io/sileodepiction/com.nan.givemedeb/js.json
-
 
 Package: com.netskao.appdata
 Version: 1.4.2
@@ -616,7 +581,6 @@ Description: 可以美化的版本
 Author: Fouad Raheb
 Name: AppData
 
-
 Package: com.netskao.dumpdecrypter
 Version: 1.5-1
 Architecture: iphoneos-arm64e
@@ -633,7 +597,6 @@ Section: Netskao-Tweaks
 Description: Decrypt iOS Apps and Plugins, Supports iOS15+, Only Tested iOS16.1
 Author: Netskao
 Name: DumpDecrypter
-
 
 Package: com.netskao.filzacrack
 Version: 1.1-9
@@ -652,7 +615,6 @@ Description: Filza Crack
 Author: Netskao
 Name: Filza Crack
 
-
 Package: com.opa334.choicy
 Version: 1.5-1
 Architecture: iphoneos-arm64e
@@ -670,7 +632,6 @@ Author: opa334 <opa334@protonmail.com>
 Depiction: https://opa334.github.io/depic/Choicy/index.html
 Name: Choicy
 
-
 Package: com.opa334.choicy
 Version: 1.5.3-2
 Architecture: iphoneos-arm64e
@@ -687,7 +648,6 @@ Description: Advanced Tweak Configuration!
 Author: opa334 <opa334@protonmail.com>
 Depiction: https://opa334.github.io/depic/Choicy/index.html
 Name: Choicy
-
 
 Package: com.opa334.crane
 Version: 1.3.16-4
@@ -707,7 +667,6 @@ Description: Multiple containers for your applications!
 Author: opa334
 Name: Crane
 
-
 Package: com.opa334.crane
 Version: 1.3.17-2
 Architecture: iphoneos-arm64e
@@ -725,7 +684,6 @@ Section: Tweaks
 Description: Multiple containers for your applications!
 Author: opa334
 Name: Crane
-
 
 Package: com.qiop1379.swipeextenderx
 Version: 1.6.1~2
@@ -747,7 +705,6 @@ Depiction: https://chariz.com/get/swipeextenderx
 Icon: https://img.chariz.cloud/icon/swipeextenderx/icon@3x.png
 Name: SwipeExtenderX
 
-
 Package: com.roothide.lockdown
 Version: 1.0.3
 Architecture: iphoneos-arm64e
@@ -764,7 +721,6 @@ Description: 封堵最近传的很火的网页漏洞，配合最新版的roothid
 Author: roothide
 Name: lockdown
 
-
 Package: com.skypain.flexloader
 Version: 5.25.19-1
 Architecture: iphoneos-arm64e
@@ -780,7 +736,6 @@ Section: Flex3组合
 Description: Flex 用于 iOS 开发调试工具
 Author: Mr.Zhang <mr_zhang_00@163.com>
 Name: FlexLoader
-
 
 Package: com.sop.settingsrevamp
 Version: 3.0.1
@@ -803,61 +758,6 @@ Icon: https://i.postimg.cc/ry1s499R/icon-3x.png
 Name: SettingsRevamp
 Sileodepiction: https://sopppra.mooo.com/depictions/com.sop.settingsrevamp.json
 
-
-Package: com.spark.snowboard.effects
-Version: 1.2.2-Beta2-rootless
-Architecture: iphoneos-arm64e
-Maintainer: Spark
-Installed-Size: 412
-Pre-Depends: rootless-compat(>= 0.9)
-Depends: mobilesubstrate, com.spark.snowboard (>= 1.2.100)
-Filename: ./debs/com.spark.snowboard.effects_1.2.2-Beta2-rootless_iphoneos-arm64e.deb
-Size: 34552
-MD5sum: f1f8e022592cf3299b42365cc68bbd4f
-SHA1: d11af0df24b86d4081e9caa016460ede2259bb54
-SHA256: 31ea6a587c75aaff0f086868d3d11ea60091a8805a22eff0d47251a3f8ec0c0f
-Section: 滑雪板组合
-Description: 滑雪板图标效果拓展
-Author: Spark
-Name: SnowBoard Icon Effects Extension
-
-
-Package: com.spark.snowboard.masks
-Version: 1.2.2-Beta2-rootless
-Architecture: iphoneos-arm64e
-Maintainer: Spark
-Installed-Size: 340
-Pre-Depends: rootless-compat(>= 0.9)
-Depends: mobilesubstrate, com.spark.snowboard (>= 1.2.100)
-Filename: ./debs/com.spark.snowboard.masks_1.2.2-Beta2-rootless_iphoneos-arm64e.deb
-Size: 20240
-MD5sum: 24cf828629bc330179eba37e0ebaa2b0
-SHA1: 13c97101a51fd9f2ebc02f6551343323cf7b86af
-SHA256: 7877d474bff21322ffe7d10088bd0cd7e5678a1d9f33f84824326e8697a44167
-Section: 滑雪板组合
-Description: 滑雪板图标遮罩拓展
-Author: Spark
-Name: SnowBoard Icon Masks Extension
-
-
-Package: com.spark.snowboard.ui
-Version: 1.3.0~Beta2-rootless
-Architecture: iphoneos-arm64e
-Maintainer: Spark
-Installed-Size: 476
-Pre-Depends: rootless-compat(>= 0.9)
-Depends: mobilesubstrate, com.spark.snowboard (>> 1.2.22)
-Filename: ./debs/com.spark.snowboard.ui_1.3.0~Beta2-rootless_iphoneos-arm64e.deb
-Size: 67060
-MD5sum: dc686b4a2c3c3dcae135e859aebdc4f0
-SHA1: 6e161c35026a18fddd3e5e28be70dd337e4fc808
-SHA256: c35359c6d4d8ce0553e253918975282fa3aad8b7ec8b4d8df03acae95d8521e9
-Section: 滑雪板组合
-Description: 滑雪板系统ui拓展
-Author: Spark
-Name: SnowBoard UI Extension
-
-
 Package: com.spark.snowboard
 Version: 1.5.26-Beta4-rootless
 Architecture: iphoneos-arm64e
@@ -877,7 +777,6 @@ Section: 滑雪板组合
 Description: ios16上可以抓取图标的版本
 Author: Spark & Dennis D. Bednarz
 Name: SnowBoard
-
 
 Package: com.spark.snowboard
 Version: 1.5.37-Beta4-rootless
@@ -899,6 +798,56 @@ Description: 此版本在ios16上不能开启图标抓取功能，但能加载�
 Author: Spark & Dennis D. Bednarz
 Name: SnowBoard
 
+Package: com.spark.snowboard.effects
+Version: 1.2.2-Beta2-rootless
+Architecture: iphoneos-arm64e
+Maintainer: Spark
+Installed-Size: 412
+Pre-Depends: rootless-compat(>= 0.9)
+Depends: mobilesubstrate, com.spark.snowboard (>= 1.2.100)
+Filename: ./debs/com.spark.snowboard.effects_1.2.2-Beta2-rootless_iphoneos-arm64e.deb
+Size: 34552
+MD5sum: f1f8e022592cf3299b42365cc68bbd4f
+SHA1: d11af0df24b86d4081e9caa016460ede2259bb54
+SHA256: 31ea6a587c75aaff0f086868d3d11ea60091a8805a22eff0d47251a3f8ec0c0f
+Section: 滑雪板组合
+Description: 滑雪板图标效果拓展
+Author: Spark
+Name: SnowBoard Icon Effects Extension
+
+Package: com.spark.snowboard.masks
+Version: 1.2.2-Beta2-rootless
+Architecture: iphoneos-arm64e
+Maintainer: Spark
+Installed-Size: 340
+Pre-Depends: rootless-compat(>= 0.9)
+Depends: mobilesubstrate, com.spark.snowboard (>= 1.2.100)
+Filename: ./debs/com.spark.snowboard.masks_1.2.2-Beta2-rootless_iphoneos-arm64e.deb
+Size: 20240
+MD5sum: 24cf828629bc330179eba37e0ebaa2b0
+SHA1: 13c97101a51fd9f2ebc02f6551343323cf7b86af
+SHA256: 7877d474bff21322ffe7d10088bd0cd7e5678a1d9f33f84824326e8697a44167
+Section: 滑雪板组合
+Description: 滑雪板图标遮罩拓展
+Author: Spark
+Name: SnowBoard Icon Masks Extension
+
+Package: com.spark.snowboard.ui
+Version: 1.3.0~Beta2-rootless
+Architecture: iphoneos-arm64e
+Maintainer: Spark
+Installed-Size: 476
+Pre-Depends: rootless-compat(>= 0.9)
+Depends: mobilesubstrate, com.spark.snowboard (>> 1.2.22)
+Filename: ./debs/com.spark.snowboard.ui_1.3.0~Beta2-rootless_iphoneos-arm64e.deb
+Size: 67060
+MD5sum: dc686b4a2c3c3dcae135e859aebdc4f0
+SHA1: 6e161c35026a18fddd3e5e28be70dd337e4fc808
+SHA256: c35359c6d4d8ce0553e253918975282fa3aad8b7ec8b4d8df03acae95d8521e9
+Section: 滑雪板组合
+Description: 滑雪板系统ui拓展
+Author: Spark
+Name: SnowBoard UI Extension
 
 Package: com.sunshinesong.split-view-pro
 Version: 1.3.7
@@ -918,6 +867,22 @@ Author: sunshinesong
 Name: split-view-pro
 Ts: sp-sss
 
+Package: com.tigisoftware.filza64bit
+Version: 4.0.1-4~roothide
+Architecture: iphoneos-arm64e
+Maintainer: TIGI Software
+Pre-Depends: patches-com.tigisoftware.filza64bit(= 4.0.1-4~roothide)
+Recommends: zip, unzip, gzip, p7zip, unrar, xz-utils
+Conflicts: com.tigisoftware.filza, com.tigisoftware.filza39
+Filename: ./debs/com.tigisoftware.filza64bit_4.0.1-4~roothide_iphoneos-arm64e.deb
+Size: 6975064
+MD5sum: 33c03649afe50e48d4065b4888b82ef3
+SHA1: 425cf2f5af31384669f56823503a690a408f1769
+SHA256: 35232d0d783b97b704f9074c05299debddf3a437001a623e41a747e679e11717
+Section: Filza及依赖
+Description: File Manager for iPhone, iPad, iPod Touch. Supports iOS 11+. This version only supports 64-bit devices
+Author: TIGI Software
+Name: Filza File Manager 64-bit
 
 Package: me.tomt000.copylog
 Version: 1.7.1
@@ -936,5 +901,4 @@ Section: 实用插件
 Description: 史上最优雅的iOS剪贴板历史管理器！已带汉化。
 Author: TomT000
 Name: CopyLog
-
 
