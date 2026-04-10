@@ -884,6 +884,27 @@ Description: File Manager for iPhone, iPad, iPod Touch. Supports iOS 11+. This v
 Author: TIGI Software
 Name: Filza File Manager 64-bit
 
+Package: gzip
+Version: 1.12
+Architecture: iphoneos-arm64e
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 324
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1)
+Filename: ./debs/gzip_1.12_iphoneos-arm64e.deb
+Size: 95640
+MD5sum: 9b57411e27e15956ef4b8ff09cb5276c
+SHA1: b0429b353999e3dafb67940bddcaecf5212346f9
+SHA256: c62dccc5746b2a8fe9b15b5b0cb063bbd794750225d9c3fd0104743129a21250
+Section: Filza及依赖
+Priority: standard
+Multi-Arch: foreign
+Homepage: http://www.gzip.org/
+Description: GNU compression utilities
+ This package provides the standard GNU file compression utilities, which
+ are also the default compression tools for Debian.  They typically operate
+ on files with names ending in '.gz', but can also decompress files ending
+ in '.Z' created with 'compress'.
+
 Package: me.tomt000.copylog
 Version: 1.7.1
 Architecture: iphoneos-arm64e
@@ -901,4 +922,120 @@ Section: 实用插件
 Description: 史上最优雅的iOS剪贴板历史管理器！已带汉化。
 Author: TomT000
 Name: CopyLog
+
+Package: p7zip
+Version: 17.04
+Architecture: iphoneos-arm64e
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 9764
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1)
+Filename: ./debs/p7zip_17.04_iphoneos-arm64e.deb
+Size: 2160924
+MD5sum: 9908bc3195753973ba1ca4199ba84930
+SHA1: 479db161cb8c8bd6d299546cdb39acbdd8a22599
+SHA256: 5c1c414ffe1fc98d07a0de78e99ea2a4fc1128a2a74b3487131d9cdadbe1cf25
+Section: Filza及依赖
+Priority: optional
+Multi-Arch: foreign
+Description: 7z and 7za file archivers with high compression ratio
+ .
+ p7zip is the Unix command-line port of 7-Zip, a file archiver that handles the 7z format which features very high compression ratios.
+ .
+ p7zip provides utilities to pack and unpack 7z archives within a shell or using a GUI (such as Ark, File  Roller or Nautilus).
+ .
+ Installing p7zip-full allows File Roller to use the very efficient 7z compression format for packing and unpacking files and directories. Additionally, it provides the 7z and 7za commands.
+ .
+ List of supported formats:
+ .
+  - Packing / unpacking: 7z, ZIP, GZIP, BZIP2, XZ and TAR
+  - Unpacking only: APM, ARJ, CAB, CHM, CPIO, CramFS, DEB, DMG, FAT,
+    HFS, ISO, LZH, LZMA, LZMA2, MBR, MSI, MSLZ, NSIS, NTFS, RPM, SquashFS, UDF,
+    VHD, WIM, XAR and Z.
+
+Package: unrar
+Version: 6.2.6
+Architecture: iphoneos-arm64e
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 420
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1)
+Filename: ./debs/unrar_6.2.6_iphoneos-arm64e.deb
+Size: 144340
+MD5sum: 5875ad1688ec158c8dbcbb7b1ceb5217
+SHA1: 261875e6e9e52b394ea49ff769cdc486bde7654c
+SHA256: 2f279d9ccd11e529771a38e2117486e9b3292ae19e9a180fdf2e5714fb2a2f21
+Section: Filza及依赖
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://www.rarlab.com/rar_add.htm
+Description: Unarchiver for .rar files (non-free version)
+ Unrar can extract files from .rar archives. If you want to create .rar
+ archives, install package rar.
+
+Package: unzip
+Version: 6.0-28
+Architecture: iphoneos-arm64e
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 620
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1)
+Filename: ./debs/unzip_6.0-28_iphoneos-arm64e.deb
+Size: 126340
+MD5sum: 64d880b2e20d176eca754f7b5e1f0754
+SHA1: 2f1dbc2d42bdc7a9d77d0bf024dcd10f2e84355a
+SHA256: 7ea26f5f74a255f735f3e97f381985ef7fafd7dd0e34bb49ab94465d74e87777
+Section: Filza及依赖
+Priority: important
+Description: de-compesses files in zip format
+
+Package: xz-utils
+Version: 5.4.1
+Architecture: iphoneos-arm64e
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 888
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), liblzma5 (>= 5.4.1), libintl8
+Conflicts: xz (<<1:0), lzma (<<3:0)
+Replaces: xz, lzma
+Provides: xz (=1:0), lzma (=3:0)
+Filename: ./debs/xz-utils_5.4.1_iphoneos-arm64e.deb
+Size: 176592
+MD5sum: 5f046c82891dc631c1ae0d7d97ec629e
+SHA1: 986bd403bb3b662269e77c159c044198e90bc4f3
+SHA256: 19add6cd9b84b32e2016fde203660763baab6c7d113dbb5ddf11a5e82f64eb17
+Section: Filza及依赖
+Priority: standard
+Homepage: https://tukaani.org/xz/
+Description: XZ-format compression utilities
+ XZ is the successor to the Lempel-Ziv/Markov-chain Algorithm
+ compression format, which provides memory-hungry but powerful
+ compression (often better than bzip2) and fast, easy decompression.
+ .
+ This package provides the command line tools for working with XZ
+ compression, including xz, unxz, xzcat, xzgrep, and so on. They can
+ also handle the older LZMA format, and if invoked via appropriate
+ symlinks will emulate the behavior of the commands in the lzma
+ package.
+ .
+ The XZ format is similar to the older LZMA format but includes some
+ improvements for general use:
+ .
+  * 'file' magic for detecting XZ files;
+  * crc64 data integrity check;
+  * limited random-access reading support;
+  * improved support for multithreading (not used in xz-utils);
+  * support for flushing the encoder.
+
+Package: zip
+Version: 3.0-12
+Architecture: iphoneos-arm64e
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 592
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1)
+Filename: ./debs/zip_3.0-12_iphoneos-arm64e.deb
+Size: 131392
+MD5sum: 8e0911919b3c6af8ead352a1cb306145
+SHA1: b03c4acd3a3e357000635fbbca5d1ed96df653c6
+SHA256: 38d96e48a7b9cc4fa55d73918f511926fb346a0863716022b2ac96b962cf6b09
+Section: Filza及依赖
+Priority: important
+Multi-Arch: foreign
+Description: standard Windows compression tool
 
