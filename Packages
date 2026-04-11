@@ -1226,6 +1226,42 @@ Depiction: https://apt.htv123.com/view/600
 Name: 电话助手iOS16-正式版(Roothide)
 Sileodepiction: https://apt.htv123.com/sileo/600
 
+Package: com.xybp888.noapplemobilerepair
+Version: 0.0.1-104
+Architecture: iphoneos-arm64e
+Maintainer: xybp888
+Installed-Size: 152
+Depends: mobilesubstrate (>= 0.9.5000)
+Filename: ./debs/com.xybp888.noapplemobilerepair_0.0.1-104_iphoneos-arm64e.deb
+Size: 11024
+MD5sum: ebd665199cdf76ddebe0092fe2e6b300
+SHA1: c32678f2f03a3b91a74dab9f5813cb99c01b6e25
+SHA256: e626d32305800f570b2c693d354fc6e8db605f2509c91050ef7ad566b138199c
+Section: Tweaks
+Description: No Apple MobileRepair
+Author: xybp888
+Depiction: https://apt.htv123.com/view/185
+Name: No Apple MobileRepair(RootHide)
+Sileodepiction: https://apt.htv123.com/sileo/185
+
+Package: com.xybp888.perfectdynamiclsland.roothide
+Version: 1.2-30
+Architecture: iphoneos-arm64e
+Maintainer: xybp888
+Depends: firmware (>= 16.0), mobilesubstrate
+Filename: ./debs/com.xybp888.perfectdynamiclsland.roothide_1.2-30_iphoneos-arm64e.deb
+Size: 554116
+MD5sum: 840db65dedc084f7792f453776686162
+SHA1: c2cc1583b0d40ec10dd0359d58ede8b7960a907c
+SHA256: c47e8a253242ffe15684c2822659f79b5c39322dbf1e405effebd9bc774fe420
+Section: System
+Priority: optional
+Description: 完美的使用原生灵动岛展示系统通知等...
+Author: xybp888
+Depiction: https://apt.htv123.com/view/281
+Name: 灵动通知iOS16-正式版(RootHide)
+Sileodepiction: https://apt.htv123.com/sileo/281
+
 Package: gzip
 Version: 1.12
 Architecture: iphoneos-arm64e
