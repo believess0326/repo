@@ -26,11 +26,12 @@ jobs:
         sudo apt-get update
         sudo apt-get install dpkg-dev bzip2 gzip zstd -y
     
-    - name: Check deb files
+    - name: Check and fix permissions
       run: |
         if [ ! -d "debs" ]; then
           mkdir -p debs
         fi
+        chmod -R 755 debs
         COUNT=$(find debs -name "*.deb" -type f | wc -l)
         echo "Found $COUNT .deb files"
     
@@ -39,9 +40,9 @@ jobs:
         rm -f Packages Packages.bz2 Packages.gz
         
         if [ -n "$(find debs -name '*.deb' -print -quit)" ]; then
-          dpkg-scanpackages -m debs /dev/null > Packages
+          sudo dpkg-scanpackages -m debs /dev/null > Packages
           
-          sed -i 's|Filename: debs/|Filename: ./debs/|g' Packages
+          sudo sed -i 's|Filename: debs/|Filename: ./debs/|g' Packages
           
           if [ ! -f "Release" ]; then
             echo "Origin: MyRepo" > Release
