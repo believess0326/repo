@@ -1,4 +1,4 @@
-name: Update Sileo Repository
+Name: Update Sileo Repository
 
 on:
   push:
@@ -24,7 +24,7 @@ jobs:
     - name: Install dependencies
       run: |
         sudo apt-get update
-        sudo apt-get install dpkg-dev bzip2 gzip -y
+        sudo apt-get install dpkg-dev bzip2 gzip zstd -y
     
     - name: Check deb files
       run: |
@@ -39,31 +39,41 @@ jobs:
         rm -f Packages Packages.bz2 Packages.gz
         
         if [ -n "$(find debs -name '*.deb' -print -quit)" ]; then
-          # Use -m to allow multiple versions of the same package
           dpkg-scanpackages -m debs /dev/null > Packages
           
-          # Fix pathing for Sileo compatibility
           sed -i 's|Filename: debs/|Filename: ./debs/|g' Packages
           
-          # Update Release file date to refresh Sileo cache
-          if [ -f "Release" ]; then
-            sed -i "s/^Date: .*/Date: $(date -R)/" Release
+          if [ ! -f "Release" ]; then
+            echo "Origin: MyRepo" > Release
+            echo "Label: MyRepo" >> Release
+            echo "Suite: stable" >> Release
+            echo "Version: 1.0" >> Release
+            echo "Codename: ios" >> Release
+            echo "Architectures: iphoneos-arm iphoneos-arm64 iphoneos-arm64e" >> Release
+            echo "Components: main" >> Release
+            echo "Description: My Custom Sileo Repo" >> Release
           fi
+          
+          if ! grep -q "iphoneos-arm64e" Release; then
+            sed -i 's/Architectures: /Architectures: iphoneos-arm64e /' Release
+          fi
+          
+          sed -i "s/^Date: .*/Date: $(date -R)/" Release || echo "Date: $(date -R)" >> Release
+          
         else
           touch Packages
         fi
     
     - name: Create compressed versions
       run: |
-        if [ -f "Packages" ]; then
+        if [ -s "Packages" ]; then
           bzip2 -9fk Packages
           gzip -9fk Packages
           
-          # Create a simple manifest for tracking
           echo "Repository: $(basename ${{ github.repository }})" > VERSIONS.txt
           echo "Last Updated: $(date)" >> VERSIONS.txt
           echo "---" >> VERSIONS.txt
-          grep -E '^Package:|^Version:' Packages >> VERSIONS.txt
+          grep -E '^Package:|^Version:|^Architecture:' Packages >> VERSIONS.txt
         fi
     
     - name: Commit and push changes
