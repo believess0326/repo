@@ -1,5 +1,5 @@
 Repository: repo
-Last Updated: Sat Apr 11 02:03:00 UTC 2026
+Last Updated: Sat Apr 11 02:03:48 UTC 2026
 ---
 Package: Flex3beta
 Version: 1:3~Beta92
@@ -147,6 +147,21 @@ Version: 1.3.7
 Architecture: iphoneos-arm64e
 Package: com.tigisoftware.filza64bit
 Version: 4.0.1-4~roothide
+Architecture: iphoneos-arm64e
+Package: com.xybp888.callassist16.dopamine.roothide
+Version: 2.2.0
+Architecture: iphoneos-arm64e
+Package: com.xybp888.callassist16.dopamine.roothide
+Version: 2.2.1
+Architecture: iphoneos-arm64e
+Package: com.xybp888.callassist16.dopamine.roothide
+Version: 2.2.2
+Architecture: iphoneos-arm64e
+Package: com.xybp888.callassist16.dopamine.roothide
+Version: 2.2.3
+Architecture: iphoneos-arm64e
+Package: com.xybp888.callassist16.dopamine.roothide
+Version: 2.2.4
 Architecture: iphoneos-arm64e
 Package: com.xybp888.callassist16.dopamine.roothide
 Version: 2.2.5
