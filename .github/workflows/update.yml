@@ -1,4 +1,4 @@
-Name: Update Sileo Repository
+name: Update Sileo Repository
 
 on:
   push:
