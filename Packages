@@ -273,6 +273,24 @@ Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.hello.memorystatus.png
 Name: Hello Memory Status
 Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.hello.memorystatus
 
+Package: cn.zqbb.hello.memorystatus
+Version: 3.6.0-5
+Architecture: iphoneos-arm64e
+Maintainer: zqbb
+Installed-Size: 10768
+Depends: mobilesubstrate (>= 0.9.5000) , firmware (>= 14.0), preferenceloader, launchctl
+Filename: ./debs/cn.zqbb.hello.memorystatus_3.6.0-5_iphoneos-arm64e.deb
+Size: 2895492
+MD5sum: 93c28044d3667d2c4ac299c6c0e9618d
+SHA1: b17a0e5ab36e8c6809a44f4e2f41d5f9dbdcf4ad
+SHA256: 9851fd7caaa191fb26115062d2642f6c6c391fbdcf1d4ec2c0e686d104eb95ca
+Section: Tweaks
+Description: Set memorystatus to avoid being killed by the system
+Author: zqbb
+Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.hello.memorystatus.png
+Name: Hello Memory Status
+Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.hello.memorystatus
+
 Package: cn.zqbb.holdcpu
 Version: 2.3.4-16
 Architecture: iphoneos-arm64e
@@ -718,6 +736,22 @@ SHA1: a4e8c811ef149726195e3a6a52fc0f4aaa192eef
 SHA256: a4d48e7cc24ca222d7616c92172449014bd1b6b18ce8116547ae518909710903
 Section: Tweaks
 Description: 封堵最近传的很火的网页漏洞，配合最新版的roothide使用。
+Author: roothide
+Name: lockdown
+
+Package: com.roothide.lockdown
+Version: 2.0
+Architecture: iphoneos-arm64e
+Maintainer: roothide
+Installed-Size: 136
+Depends: mobilesubstrate (>= 0.9.5000)
+Filename: ./debs/com.roothide.lockdown_2.0_iphoneos-arm64e.deb
+Size: 5256
+MD5sum: 6b62ffea6abd0054b8d32d3d32789c37
+SHA1: 1a5fdb1dbbf1389db596c2eb6b3aca3491a01818
+SHA256: 503928cc010c1b4c037ec31d714581ce59470837a8b6f225d3cc17509c317ac4
+Section: Tweaks
+Description: JSC security hardening for WebContent process. Configures JavaScriptCore options to eliminate exploit primitives (addrof/fakeobj, JIT type confusion, GC UAF). Enabled by default!
 Author: roothide
 Name: lockdown
 
