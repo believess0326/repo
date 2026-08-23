@@ -314,6 +314,24 @@ Name: Hello Memory Status
 Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.hello.memorystatus
 
 Package: cn.zqbb.hello.memorystatus
+Version: 3.6.0-6
+Architecture: iphoneos-arm64e
+Maintainer: zqbb
+Installed-Size: 10816
+Depends: mobilesubstrate (>= 0.9.5000) , firmware (>= 14.0), preferenceloader, launchctl
+Filename: ./debs/cn.zqbb.hello.memorystatus_3.6.0-6_iphoneos-arm64e.deb
+Size: 2991404
+MD5sum: f4da251e50d23ebbe2ce186f816bd4cf
+SHA1: c8d759c41917c4e7fa53b6cbf52fff468a0ee0b5
+SHA256: bd2350d5c95770a64e4166bef28da35eaeabeca3228dd2f3cea055bf085eef95
+Section: Tweaks
+Description: Set memorystatus to avoid being killed by the system
+Author: zqbb
+Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.hello.memorystatus.png
+Name: Hello Memory Status
+Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.hello.memorystatus
+
+Package: cn.zqbb.hello.memorystatus
 Version: 3.6.9-1
 Architecture: iphoneos-arm64e
 Maintainer: zqbb
@@ -622,6 +640,25 @@ Section: 实用插件
 Description: safari增强，已带汉化。
 Author: 0xkuj
 Name: SafariX
+
+Package: com.Axs.kongzhidiy
+Version: 2.3.3-end
+Architecture: iphoneos-arm64e
+Maintainer: binglan
+Installed-Size: 3028
+Pre-Depends: rootless-compat(>= 0.9)
+Depends: mobilesubstrate, firmware (>= 15.0)
+Filename: ./debs/com.axs.kongzhidiy_2.3.3-end_iphoneos-arm64e.deb
+Size: 1513360
+MD5sum: 2027649ddcb64fb2c88a7ac56cde0936
+SHA1: 952dd43e826326021c503109873ddf359cb9c354
+SHA256: a54e4b5bd26db03887cd950ca72decbaa331ee027c79cdaf67b8c75b2fdbf105
+Section: 控制中心
+Description: 这是一个简单的控制中心美化插件。
+Author: binglan
+Icon: https://axs66.github.io/pro/icon/kongzhidiy.png
+Name: 控制中心美化
+Sileodepiction: https://axs66.github.io/pro/sileodepiction/kongzhidiy/js.json
 
 Package: com.baiy.switchtheme
 Version: 1.0.0
