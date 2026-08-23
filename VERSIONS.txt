@@ -1,5 +1,5 @@
 Repository: repo
-Last Updated: Sun Aug 23 11:54:21 UTC 2026
+Last Updated: Sun Aug 23 12:53:11 UTC 2026
 ---
 Package: Flex3beta
 Version: 1:3~Beta92
@@ -318,6 +318,9 @@ Version: 0.0.1-104
 Architecture: iphoneos-arm64e
 Package: com.xybp888.perfectdynamiclsland.roothide
 Version: 1.2-30
+Architecture: iphoneos-arm64e
+Package: com.xybp888.perfectdynamiclsland.roothide
+Version: 1.2-31
 Architecture: iphoneos-arm64e
 Package: dylv.liquidass
 Version: 0.1.1b

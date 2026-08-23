@@ -1914,6 +1914,24 @@ Depiction: https://apt.htv123.com/view/281
 Name: 灵动通知iOS16-正式版(RootHide)
 Sileodepiction: https://apt.htv123.com/sileo/281
 
+Package: com.xybp888.perfectdynamiclsland.roothide
+Version: 1.2-31
+Architecture: iphoneos-arm64e
+Maintainer: xybp888
+Depends: firmware (>= 16.0), mobilesubstrate
+Filename: ./debs/com.xybp888.perfectdynamiclsland.roothide_1.2-31_iphoneos-arm64e.deb
+Size: 544738
+MD5sum: 1793978b159cb7243f3a79b59cdd30b0
+SHA1: 6691c1f3cd37713e96e6630f379d2738a506c35f
+SHA256: babbd41ba9d1146ac5e2dd616f367f67534f3973e409ad6a5d87da8ee3d8cff6
+Section: System
+Priority: optional
+Description: 完美的使用原生灵动岛展示系统通知等...
+Author: xybp888
+Depiction: https://apt.htv123.com/view/621
+Name: 灵动通知iOS16-正式版(RootHide)
+Sileodepiction: https://apt.htv123.com/sileo/621
+
 Package: dylv.liquidass
 Version: 0.1.1b
 Architecture: iphoneos-arm64e
