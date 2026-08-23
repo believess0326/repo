@@ -1859,6 +1859,24 @@ Depiction: https://apt.htv123.com/view/281
 Name: 灵动通知iOS16-正式版(RootHide)
 Sileodepiction: https://apt.htv123.com/sileo/281
 
+Package: dylv.liquidass
+Version: 0.1.1b
+Architecture: iphoneos-arm64e
+Maintainer: dylv
+Installed-Size: 8008
+Pre-Depends: rootless-compat(>= 0.9)
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), firmware (<< 26.0), preferenceloader
+Filename: ./debs/dylv.liquidass_0.1.1b_iphoneos-arm64e.deb
+Size: 3593204
+MD5sum: 392ce50413c8bf1ae25c896158913dd9
+SHA1: 5bd0a9b1991244f330647973c614e7eda0ca409b
+SHA256: de3e67b3a833e9be34cbc584c4b25e00b2fdf098658cb9e09a641c89d76e470c
+Section: Tweaks
+Description: 仿ios26锁屏，应朋友要求上传
+Author: dylv
+Icon: https://winaviation.github.io/repo/depictions/dylv.liquidass/icon.png
+Name: Liquid (Gl)ass
+
 Package: gzip
 Version: 1.12
 Architecture: iphoneos-arm64e
