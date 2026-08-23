@@ -39,6 +39,28 @@ Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.fix120hz
 Name: Hello 120Hz
 Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.fix120hz
 
+Package: cn.zqbb.fix120hz
+Version: 3.3.0-3
+Architecture: iphoneos-arm64e
+Maintainer: zqbb
+Installed-Size: 1120
+Depends: mobilesubstrate (>= 0.9.5000) , firmware (>= 15.0), preferenceloader, com.opa334.altlist
+Conflicts: cn.zqbb.fix120hz15, com.zqbb.fix120hz, com.zqbb.dynamic120hz
+Filename: ./debs/cn.zqbb.fix120hz_3.3.0-3_iphoneos-arm64e.deb
+Size: 327998
+MD5sum: 04f267b30b14d31d3769ca6565c76ab2
+SHA1: 3f1060f2172b71e5a7e6db069886d2b4c394aa6b
+SHA256: ccda507a2a43ef6bf357c78f0e294fc48f9872aa23fa1027aa763292785d610d
+Section: Tweaks
+Description:
+ - Unlock dynamic refresh rate from 80hz to 120hz
+ - .
+ - 解锁动态刷新率80hz到120hz.
+Author: zqbb
+Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.fix120hz
+Name: Hello 120Hz
+Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.fix120hz
+
 Package: cn.zqbb.hello.memorystatus
 Version: 3.3.2-1
 Architecture: iphoneos-arm64e
@@ -291,6 +313,150 @@ Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.hello.memorystatus.png
 Name: Hello Memory Status
 Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.hello.memorystatus
 
+Package: cn.zqbb.hello.memorystatus
+Version: 3.6.9-1
+Architecture: iphoneos-arm64e
+Maintainer: zqbb
+Installed-Size: 11348
+Depends: mobilesubstrate (>= 0.9.5000) , firmware (>= 14.0), preferenceloader, launchctl
+Filename: ./debs/cn.zqbb.hello.memorystatus_3.6.9-1_iphoneos-arm64e.deb
+Size: 3079838
+MD5sum: 46959c3bbfa7798d39c3c55247c2d741
+SHA1: 23c72e77d939fd6be904ae25b2b407d6abf62d7a
+SHA256: 7e62a42a0f443af8bd490925454a371bfec4b5ed74c333704dbe3f8f647ce0f5
+Section: Tweaks
+Description: Set memorystatus to avoid being killed by the system
+Author: zqbb
+Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.hello.memorystatus.png
+Name: Hello Memory Status
+Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.hello.memorystatus
+
+Package: cn.zqbb.hello.memorystatus
+Version: 3.6.9-2
+Architecture: iphoneos-arm64e
+Maintainer: zqbb
+Installed-Size: 11492
+Depends: mobilesubstrate (>= 0.9.5000) , firmware (>= 14.0), preferenceloader, launchctl
+Filename: ./debs/cn.zqbb.hello.memorystatus_3.6.9-2_iphoneos-arm64e.deb
+Size: 3137278
+MD5sum: 43715685306a663351c3f21a5bb0e1cd
+SHA1: 5971d37751e1cc92963f6d3e56671c5dc2743d73
+SHA256: 6efb05d69d5abc4087adab2ae3503802ca1e7e56670d0fe194c10f486f89f570
+Section: zqbb Tweaks
+Description: Set memorystatus to avoid being killed by the system
+Author: zqbb
+Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.hello.memorystatus.png
+Name: Hello Memory Status
+Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.hello.memorystatus
+
+Package: cn.zqbb.hello.memorystatus
+Version: 3.6.9-3
+Architecture: iphoneos-arm64e
+Maintainer: zqbb
+Installed-Size: 11348
+Depends: mobilesubstrate (>= 0.9.5000) , firmware (>= 14.0), preferenceloader, launchctl
+Filename: ./debs/cn.zqbb.hello.memorystatus_3.6.9-3_iphoneos-arm64e.deb
+Size: 3096424
+MD5sum: 7fd9b31cb1b5419411ee23ed0556af76
+SHA1: b0d2b653568b46cc70cddeb99118e13dba7bfc99
+SHA256: 0ae13c1471ebafb774afae0821ff96df9a7bc96ca97d3d1481728dabfcfe326b
+Section: zqbb Tweaks
+Description: Set memorystatus to avoid being killed by the system
+Author: zqbb
+Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.hello.memorystatus.png
+Name: Hello Memory Status
+Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.hello.memorystatus
+
+Package: cn.zqbb.hello.memorystatus
+Version: 3.6.9-5
+Architecture: iphoneos-arm64e
+Maintainer: zqbb
+Installed-Size: 11540
+Depends: mobilesubstrate (>= 0.9.5000) , firmware (>= 14.0), preferenceloader, launchctl
+Filename: ./debs/cn.zqbb.hello.memorystatus_3.6.9-5_iphoneos-arm64e.deb
+Size: 3160806
+MD5sum: 7387a9a7dea3e8e3d5f2a6142fd437f3
+SHA1: 6f575c0b528157c9b60fa5d00fd1e2fe23e4e808
+SHA256: 93ec559d6107ceefef3b6f42800336e46ee46802244f10d44a2d12b91dd03dd5
+Section: zqbb Tweaks
+Description: Set memorystatus to avoid being killed by the system
+Author: zqbb
+Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.hello.memorystatus.png
+Name: Hello Memory Status
+Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.hello.memorystatus
+
+Package: cn.zqbb.hello.memorystatus
+Version: 3.6.9-6
+Architecture: iphoneos-arm64e
+Maintainer: zqbb
+Installed-Size: 11492
+Depends: mobilesubstrate (>= 0.9.5000) , firmware (>= 14.0), preferenceloader, launchctl
+Filename: ./debs/cn.zqbb.hello.memorystatus_3.6.9-6_iphoneos-arm64e.deb
+Size: 3128728
+MD5sum: 37acd5f9e1e5ebc99a2d1a537f688a7f
+SHA1: c0f23d867a73b8c91a1de533762b2a78dd96a66e
+SHA256: 811bcc7ad24d10fda819a9d6e1c633599b5f07305a73932fcae1bb628a796a87
+Section: zqbb Tweaks
+Description: Set memorystatus to avoid being killed by the system
+Author: zqbb
+Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.hello.memorystatus.png
+Name: Hello Memory Status
+Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.hello.memorystatus
+
+Package: cn.zqbb.hello.memorystatus
+Version: 3.6.9-8
+Architecture: iphoneos-arm64e
+Maintainer: zqbb
+Installed-Size: 11844
+Depends: mobilesubstrate (>= 0.9.5000) , firmware (>= 14.0), preferenceloader, launchctl
+Filename: ./debs/cn.zqbb.hello.memorystatus_3.6.9-8_iphoneos-arm64e.deb
+Size: 3232364
+MD5sum: 5d7882f6d37e0bd95e161ca1f53ea745
+SHA1: 3f1391140f9e8ed3c652ded517ab7fcda845db9f
+SHA256: fe595b125876a0317063422789f65dac8e9dade16b170e6483ae224542ff6c9d
+Section: zqbb Tweaks
+Description: Set memorystatus to avoid being killed by the system
+Author: zqbb
+Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.hello.memorystatus.png
+Name: Hello Memory Status
+Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.hello.memorystatus
+
+Package: cn.zqbb.hello.memorystatus
+Version: 3.9.0-2
+Architecture: iphoneos-arm64e
+Maintainer: zqbb
+Installed-Size: 12296
+Depends: mobilesubstrate (>= 0.9.5000) , firmware (>= 14.0), preferenceloader, launchctl
+Filename: ./debs/cn.zqbb.hello.memorystatus_3.9.0-2_iphoneos-arm64e.deb
+Size: 3231482
+MD5sum: 895f389101a432f555ee938f8b82e662
+SHA1: 4475f016e06ed3a6bba82498dded03477b225b34
+SHA256: f5ee73e51d3c0290298b10019ddf6b08e702bfdbc83ab6910bd7edd7ccfd356a
+Section: zqbb Tweaks
+Description: Set memorystatus to avoid being killed by the system
+Author: zqbb
+Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.hello.memorystatus.png
+Name: Hello Memory Status
+Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.hello.memorystatus
+
+Package: cn.zqbb.hello.memorystatus
+Version: 3.9.0-3
+Architecture: iphoneos-arm64e
+Maintainer: zqbb
+Installed-Size: 12248
+Depends: mobilesubstrate (>= 0.9.5000) , firmware (>= 14.0), preferenceloader, launchctl
+Filename: ./debs/cn.zqbb.hello.memorystatus_3.9.0-3_iphoneos-arm64e.deb
+Size: 3226498
+MD5sum: b572dad1d65aff09da4ee0d57c71c769
+SHA1: 68464a204a8320d33fb28332cda52f1c06fbef24
+SHA256: 59393c3caebb60d40000fdb6466e7fbb050013f53b794442f22bb84ec3cb564f
+Section: zqbb Tweaks
+Description: Set memorystatus to avoid being killed by the system
+Author: zqbb
+Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.hello.memorystatus.png
+Name: Hello Memory Status
+Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.hello.memorystatus
+
 Package: cn.zqbb.holdcpu
 Version: 2.3.4-16
 Architecture: iphoneos-arm64e
@@ -381,6 +547,25 @@ MD5sum: a88a116794274340441ee289835d3e4e
 SHA1: e5abdaac1a18432a429858164507f2a894a5ae8a
 SHA256: d12974e3910a945cf81b17735062539606b3f11ed8b66d58d76334ea665605ef
 Section: Tweaks
+Description: (解除温控) (锁定低电量CPU频率)
+Author: zqbb
+Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.holdcpu
+Name: Hello CPU
+Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.holdcpu
+
+Package: cn.zqbb.holdcpu
+Version: 2.3.5-5
+Architecture: iphoneos-arm64e
+Maintainer: zqbb
+Installed-Size: 3672
+Depends: mobilesubstrate (>= 0.9.5000) , firmware (>= 15.0), preferenceloader, com.opa334.ccsupport
+Conflicts: com.yourepo.0xash.powercuff, byg.iosios.net.powercuff, com.dao.powercuff, com.rpetrich.powercuff, com.yourepo.0xash.devicemonitor, com.yourepo.0xash.fuckthermal, com.shadow.fuckthermal, com.dao.fuckthermal, byg.iosios.net.monitor, byg.iosios.net.disablethermalmonitord, com.nan.disablethermalmonitord
+Filename: ./debs/cn.zqbb.holdcpu_2.3.5-5_iphoneos-arm64e.deb
+Size: 1305230
+MD5sum: b75c116e907f4a82c204e5528a759fb1
+SHA1: 0d4aea4986f9c9250a08918a00da1ecd7e87a1b9
+SHA256: 8da1866839216c87a62b64e0547f97cc73f8016586570bf4295114172c51b8c7
+Section: zqbb Tweaks
 Description: (解除温控) (锁定低电量CPU频率)
 Author: zqbb
 Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.holdcpu
