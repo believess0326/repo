@@ -1,5 +1,5 @@
 Repository: repo
-Last Updated: Sun Aug 23 11:46:32 UTC 2026
+Last Updated: Sun Aug 23 11:50:12 UTC 2026
 ---
 Package: Flex3beta
 Version: 1:3~Beta92
@@ -75,6 +75,9 @@ Version: 3.9.0-2
 Architecture: iphoneos-arm64e
 Package: cn.zqbb.hello.memorystatus
 Version: 3.9.0-3
+Architecture: iphoneos-arm64e
+Package: cn.zqbb.hello.memorystatus
+Version: 3.9.0-5
 Architecture: iphoneos-arm64e
 Package: cn.zqbb.holdcpu
 Version: 2.3.4-16
