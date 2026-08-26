@@ -1,5 +1,5 @@
 Repository: repo
-Last Updated: Sun Aug 23 12:53:11 UTC 2026
+Last Updated: Wed Aug 26 00:49:07 UTC 2026
 ---
 Package: Flex3beta
 Version: 1:3~Beta92
@@ -114,6 +114,9 @@ Version: 1.0.0
 Architecture: iphoneos-arm64e
 Package: com.cannathea.afc2d-arm64e
 Version: 1.1.7-21
+Architecture: iphoneos-arm64e
+Package: com.dao.appstoretroller
+Version: 0.1.2
 Architecture: iphoneos-arm64e
 Package: com.dao.carbridge13
 Version: 2.0.14
@@ -312,6 +315,15 @@ Version: 2.5.2
 Architecture: iphoneos-arm64e
 Package: com.xybp888.callassist16.dopamine.roothide
 Version: 2.5.3
+Architecture: iphoneos-arm64e
+Package: com.xybp888.callassist16.dopamine.roothide
+Version: 2.5.4
+Architecture: iphoneos-arm64e
+Package: com.xybp888.callassist16.dopamine.roothide
+Version: 2.5.5
+Architecture: iphoneos-arm64e
+Package: com.xybp888.callassist16.dopamine.roothide
+Version: 2.5.6
 Architecture: iphoneos-arm64e
 Package: com.xybp888.noapplemobilerepair
 Version: 0.0.1-104
