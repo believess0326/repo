@@ -1,8 +1,32 @@
 Repository: repo
-Last Updated: Thu Sep 17 03:23:33 UTC 2026
+Last Updated: Thu Sep 17 03:24:52 UTC 2026
 ---
 Package: Flex3beta
 Version: 1:3~Beta92
+Architecture: iphoneos-arm64e
+Package: byg.iosios.net.atria.rootless
+Version: 1.4.1-4
+Architecture: iphoneos-arm64e
+Package: byg.iosios.net.atria.rootless
+Version: 1.4.1-8
+Architecture: iphoneos-arm64e
+Package: byg.iosios.net.camera.rootless
+Version: 0.1-2
+Architecture: iphoneos-arm64e
+Package: byg.iosios.net.onesettings
+Version: 2.2.1
+Architecture: iphoneos-arm64e
+Package: cn.llld.appfix
+Version: 0.0.36
+Architecture: iphoneos-arm64e
+Package: cn.llld.appfix
+Version: 1.0.0
+Architecture: iphoneos-arm64e
+Package: cn.llld.appfix
+Version: 1.2.21
+Architecture: iphoneos-arm64e
+Package: cn.octoforce.squidextender
+Version: 3.7.4+offline.1
 Architecture: iphoneos-arm64e
 Package: cn.zqbb.fix120hz
 Version: 3.3.0-1
