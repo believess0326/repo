@@ -1105,6 +1105,26 @@ Description: ios16上可以抓取图标的版本
 Author: Spark & Dennis D. Bednarz
 Name: SnowBoard
 
+Package: com.spark.snowboard
+Version: 1.5.37-Beta4-rootless
+Architecture: iphoneos-arm64e
+Maintainer: Spark
+Installed-Size: 3268
+Pre-Depends: rootless-compat(>= 0.9)
+Depends: mobilesubstrate, preferenceloader
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Filename: ./debs/com.spark.snowboard_1.5.37-Beta4-rootless_iphoneos-arm64e.deb
+Size: 1130536
+MD5sum: f8329dbb7db3347759c6bc1ba38a7309
+SHA1: 300a208ab0a721d80df23ffc53fb89faaab926e4
+SHA256: 252c5ee867938311efd87e5be567323459a6cba0e8dc77d7a7a2c3df16a81271
+Section: 滑雪板组合
+Description: 补齐了几处汉化，此版本在ios16上不能开启图标抓取功能也不能调整主题（会导致长按出现注销的bug），但能加载角标，抓取图标或调整主题时需回退1.5.26版本。
+Author: Spark & Dennis D. Bednarz
+Name: SnowBoard
+
 Package: com.spark.snowboard.effects
 Version: 1.2.2-Beta2-rootless
 Architecture: iphoneos-arm64e
