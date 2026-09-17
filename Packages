@@ -2021,6 +2021,132 @@ Depiction: https://apt.htv123.com/view/621
 Name: 灵动通知iOS16-正式版(RootHide)
 Sileodepiction: https://apt.htv123.com/sileo/621
 
+Package: com.xybp888.perfectdynamiclsland.roothide
+Version: 1.3.0
+Architecture: iphoneos-arm64e
+Maintainer: xybp888
+Depends: firmware (>= 16.0), mobilesubstrate
+Filename: ./debs/com.xybp888.perfectdynamiclsland.roothide_1.3.0_iphoneos-arm64e.deb
+Size: 696292
+MD5sum: a21c947a6a7055c346c11011a613cca4
+SHA1: 88522d610fa11859cd609c0a735c4961aaaacf09
+SHA256: 7eec552ef08f75320713a34f8e1510b23e5327819d08ffc9a6a25deae54803be
+Section: System
+Priority: optional
+Description: 完美的使用原生灵动岛展示系统通知等...
+Author: xybp888
+Depiction: https://apt.htv123.com/view/951
+Name: 灵动通知iOS16-正式版(RootHide)
+Sileodepiction: https://apt.htv123.com/sileo/951
+
+Package: com.xybp888.perfectdynamiclsland.roothide
+Version: 1.3.1
+Architecture: iphoneos-arm64e
+Maintainer: xybp888
+Depends: firmware (>= 16.0), mobilesubstrate
+Filename: ./debs/com.xybp888.perfectdynamiclsland.roothide_1.3.1_iphoneos-arm64e.deb
+Size: 699270
+MD5sum: 71902063de1087b89ed0a3a9cb29a054
+SHA1: 104fcf3daa4f4a6ee41233bea55040d3ee26f17f
+SHA256: ddf00d4d72988cd0a1cfc57a0074fb7046ba169e7030bddef900fa3b443c3689
+Section: System
+Priority: optional
+Description: 完美的使用原生灵动岛展示系统通知等...
+Author: xybp888
+Depiction: https://apt.htv123.com/view/955
+Name: 灵动通知iOS16-正式版(RootHide)
+Sileodepiction: https://apt.htv123.com/sileo/955
+
+Package: com.xybp888.perfectdynamiclsland.roothide
+Version: 1.3.2
+Architecture: iphoneos-arm64e
+Maintainer: xybp888
+Depends: firmware (>= 16.0), mobilesubstrate
+Filename: ./debs/com.xybp888.perfectdynamiclsland.roothide_1.3.2_iphoneos-arm64e.deb
+Size: 859140
+MD5sum: 75ca23d47630ee5804b8c93ec13598f5
+SHA1: 62e50afc88161e4f46bee6edd054c17c611eca7e
+SHA256: 67c35fc901928d5c6325592788876ce69b710e639babecba05c256169c7a05f7
+Section: System
+Priority: optional
+Description: 完美的使用原生灵动岛展示系统通知等...
+Author: xybp888
+Depiction: https://apt.htv123.com/view/959
+Name: 灵动通知iOS16-正式版(RootHide)
+Sileodepiction: https://apt.htv123.com/sileo/959
+
+Package: com.xybp888.perfectdynamiclsland.roothide
+Version: 1.3.3
+Architecture: iphoneos-arm64e
+Maintainer: xybp888
+Depends: firmware (>= 16.0), mobilesubstrate
+Filename: ./debs/com.xybp888.perfectdynamiclsland.roothide_1.3.3_iphoneos-arm64e.deb
+Size: 860526
+MD5sum: c29d8e40b0a6e31055fd1bd356950b60
+SHA1: a7d059b0c3b735dbcced8a3aecc452564178c6e7
+SHA256: 5696e7c545f9f4baeb3f628c629f3df602db5fd6650829f79c24df2fbf73c40f
+Section: System
+Priority: optional
+Description: 完美的使用原生灵动岛展示系统通知等...
+Author: xybp888
+Depiction: https://apt.htv123.com/view/965
+Name: 灵动通知iOS16-正式版(RootHide)
+Sileodepiction: https://apt.htv123.com/sileo/965
+
+Package: com.xybp888.perfectdynamiclsland.roothide
+Version: 1.3.4
+Architecture: iphoneos-arm64e
+Maintainer: xybp888
+Depends: firmware (>= 16.0), mobilesubstrate
+Filename: ./debs/com.xybp888.perfectdynamiclsland.roothide_1.3.4_iphoneos-arm64e.deb
+Size: 869488
+MD5sum: d239f96bed5cd4c0ec3462a4f125a336
+SHA1: 0a766eb275bf70534653e8ae923b468bfc4835bd
+SHA256: 6157be7e20e2cc1706fd4baa17a0699c96793d088b7dec5ead46a79f39edb0ad
+Section: System
+Priority: optional
+Description: 完美的使用原生灵动岛展示系统通知等...
+Author: xybp888
+Depiction: https://apt.htv123.com/view/969
+Name: 灵动通知iOS16-正式版(RootHide)
+Sileodepiction: https://apt.htv123.com/sileo/969
+
+Package: com.xybp888.perfectdynamiclsland.roothide
+Version: 1.3.5
+Architecture: iphoneos-arm64e
+Maintainer: xybp888
+Depends: firmware (>= 16.0), mobilesubstrate
+Filename: ./debs/com.xybp888.perfectdynamiclsland.roothide_1.3.5_iphoneos-arm64e.deb
+Size: 920724
+MD5sum: fb09df3ec28e6460c31887ce5f1b2570
+SHA1: 8783b1aa529304fd936693e46df52d27d8122b5d
+SHA256: c857e77727c944fb446e5ab851161317301d1426351942a886f8e33d823b363a
+Section: System
+Priority: optional
+Description: 完美的使用原生灵动岛展示系统通知等...
+Author: xybp888
+Depiction: https://apt.htv123.com/view/973
+Name: 灵动通知iOS16-正式版(RootHide)
+Sileodepiction: https://apt.htv123.com/sileo/973
+
+Package: com.xybp888.perfectdynamiclsland.roothide
+Version: 1.3.6
+Architecture: iphoneos-arm64e
+Maintainer: xybp888
+Depends: firmware (>= 16.0), mobilesubstrate
+Filename: ./debs/com.xybp888.perfectdynamiclsland.roothide_1.3.6_iphoneos-arm64e.deb
+Size: 925102
+MD5sum: df1ddea6bc630d7c1a648ed9a94b1147
+SHA1: c6069a68ea62f6add3021fe5e580484fe3030ced
+SHA256: 6d8f53ef8fc9379448b193c73bb8e409c24fa0447e812cd7aa93df3244f88154
+Section: System
+Priority: optional
+Description: 完美的使用原生灵动岛展示系统通知等...
+Author: xybp888
+Depiction: https://apt.htv123.com/view/979
+Name: 灵动通知iOS16-正式版(RootHide)
+Sileodepiction: https://apt.htv123.com/sileo/979
+
 Package: dylv.liquidass
 Version: 0.1.1b
 Architecture: iphoneos-arm64e
