@@ -2651,6 +2651,150 @@ Depiction: https://apt.htv123.com/view/914
 Name: 电话助手iOS16-正式版(Roothide)
 Sileodepiction: https://apt.htv123.com/sileo/914
 
+Package: com.xybp888.callassist16.dopamine.roothide
+Version: 2.9.5
+Architecture: iphoneos-arm64e
+Maintainer: xybp888
+Depends: firmware (>= 16.0), preferenceloader, com.opa334.libsandy
+Filename: ./debs/com.xybp888.callassist16.dopamine.roothide_2.9.5_iphoneos-arm64e.deb
+Size: 3428866
+MD5sum: e3752b01cbb9f652b9d4efe50ac18ff5
+SHA1: 0a78a1eb2cb3373395de5e066fd84b417f8e0eb2
+SHA256: 0fd1d10ec11b52637bda688ea622910447f614d7d903e0eb7c8d414d97e944eb
+Section: Tweaks
+Priority: optional
+Description: 电话助手授权版本,通话录音,通话记录合并,T9双卡选卡拨号键盘,短信双卡选卡,来去电归属地,黑名单,骚扰拦截,状态栏图标替换,时间格式修改,常用小功能等强大插件
+Author: xybp888
+Depiction: https://apt.htv123.com/view/918
+Name: 电话助手iOS16-正式版(Roothide)
+Sileodepiction: https://apt.htv123.com/sileo/918
+
+Package: com.xybp888.callassist16.dopamine.roothide
+Version: 2.9.6
+Architecture: iphoneos-arm64e
+Maintainer: xybp888
+Depends: firmware (>= 16.0), preferenceloader, com.opa334.libsandy
+Filename: ./debs/com.xybp888.callassist16.dopamine.roothide_2.9.6_iphoneos-arm64e.deb
+Size: 3436410
+MD5sum: 23ee7dd23bba6d1d37a284cef8bd6235
+SHA1: 29b3db3518fb1dd2fe7b2502fd978f8e206d62b1
+SHA256: 91bb7bac6412ae1f52594893b83aa31a42e087b2e0bde11a5c953e48b72ad8c1
+Section: Tweaks
+Priority: optional
+Description: 电话助手授权版本,通话录音,通话记录合并,T9双卡选卡拨号键盘,短信双卡选卡,来去电归属地,黑名单,骚扰拦截,状态栏图标替换,时间格式修改,常用小功能等强大插件
+Author: xybp888
+Depiction: https://apt.htv123.com/view/922
+Name: 电话助手iOS16-正式版(Roothide)
+Sileodepiction: https://apt.htv123.com/sileo/922
+
+Package: com.xybp888.callassist16.dopamine.roothide
+Version: 2.9.7
+Architecture: iphoneos-arm64e
+Maintainer: xybp888
+Depends: firmware (>= 16.0), preferenceloader, com.opa334.libsandy
+Filename: ./debs/com.xybp888.callassist16.dopamine.roothide_2.9.7_iphoneos-arm64e.deb
+Size: 3440008
+MD5sum: 48c74204400a656faa04ad5a53a80e68
+SHA1: 9fc16eb22712b6b6c497611635ba22164b877a09
+SHA256: f03a7d9025b28341d2be23c90b04f107ca468f7b8c200a1819c31b22e6e11987
+Section: Tweaks
+Priority: optional
+Description: 电话助手授权版本,通话录音,通话记录合并,T9双卡选卡拨号键盘,短信双卡选卡,来去电归属地,黑名单,骚扰拦截,状态栏图标替换,时间格式修改,常用小功能等强大插件
+Author: xybp888
+Depiction: https://apt.htv123.com/view/926
+Name: 电话助手iOS16-正式版(Roothide)
+Sileodepiction: https://apt.htv123.com/sileo/926
+
+Package: com.xybp888.callassist16.dopamine.roothide
+Version: 2.9.9
+Architecture: iphoneos-arm64e
+Maintainer: xybp888
+Depends: firmware (>= 16.0), preferenceloader, com.opa334.libsandy
+Filename: ./debs/com.xybp888.callassist16.dopamine.roothide_2.9.9_iphoneos-arm64e.deb
+Size: 3444206
+MD5sum: 5824220b18af4acac4cd4308ea4eafb4
+SHA1: c478f30716e5c24ff612939ab858e392654c7e3a
+SHA256: 14aa57ae8d8a5c7cfcd8c521611d08e14d0b9483f0082873197008703ba9c38f
+Section: Tweaks
+Priority: optional
+Description: 电话助手授权版本,通话录音,通话记录合并,T9双卡选卡拨号键盘,短信双卡选卡,来去电归属地,黑名单,骚扰拦截,状态栏图标替换,时间格式修改,常用小功能等强大插件
+Author: xybp888
+Depiction: https://apt.htv123.com/view/935
+Name: 电话助手iOS16-正式版(Roothide)
+Sileodepiction: https://apt.htv123.com/sileo/935
+
+Package: com.xybp888.callassist16.dopamine.roothide
+Version: 3.0.0
+Architecture: iphoneos-arm64e
+Maintainer: xybp888
+Depends: firmware (>= 16.0), preferenceloader, com.opa334.libsandy
+Filename: ./debs/com.xybp888.callassist16.dopamine.roothide_3.0.0_iphoneos-arm64e.deb
+Size: 3481468
+MD5sum: dbbfdb46ad007623bbeb7813f2550896
+SHA1: 9b16914088adffab5550eb641761752ebb45c128
+SHA256: f11782ccf2802518968f2c144d95089bb9146faa55d0850eddba8607a1aeeb00
+Section: Tweaks
+Priority: optional
+Description: 电话助手授权版本,通话录音,通话记录合并,T9双卡选卡拨号键盘,短信双卡选卡,来去电归属地,黑名单,骚扰拦截,状态栏图标替换,时间格式修改,常用小功能等强大插件
+Author: xybp888
+Depiction: https://apt.htv123.com/view/939
+Name: 电话助手iOS16-正式版(Roothide)
+Sileodepiction: https://apt.htv123.com/sileo/939
+
+Package: com.xybp888.callassist16.dopamine.roothide
+Version: 3.0.1
+Architecture: iphoneos-arm64e
+Maintainer: xybp888
+Depends: firmware (>= 16.0), preferenceloader, com.opa334.libsandy
+Filename: ./debs/com.xybp888.callassist16.dopamine.roothide_3.0.1_iphoneos-arm64e.deb
+Size: 3513990
+MD5sum: 26cba6462c08f41e20d7e35bfa14c20f
+SHA1: 0ace68a85b449910cc651e253db92869c01cbb5e
+SHA256: 10d4687e1560208321c8a8f612f7b4775edb3fb52b3f564acba418a27925224d
+Section: Tweaks
+Priority: optional
+Description: 电话助手授权版本,通话录音,通话记录合并,T9双卡选卡拨号键盘,短信双卡选卡,来去电归属地,黑名单,骚扰拦截,状态栏图标替换,时间格式修改,常用小功能等强大插件
+Author: xybp888
+Depiction: https://apt.htv123.com/view/943
+Name: 电话助手iOS16-正式版(Roothide)
+Sileodepiction: https://apt.htv123.com/sileo/943
+
+Package: com.xybp888.callassist16.dopamine.roothide
+Version: 3.0.2
+Architecture: iphoneos-arm64e
+Maintainer: xybp888
+Depends: firmware (>= 16.0), preferenceloader, com.opa334.libsandy
+Filename: ./debs/com.xybp888.callassist16.dopamine.roothide_3.0.2_iphoneos-arm64e.deb
+Size: 3508358
+MD5sum: be1600a879d8415b3a68c7ac74594f9e
+SHA1: f6c98f68e27b9e97b6f95b31ac3e27fd99b83c71
+SHA256: dc0d207453c7f4ac1cb2e217aafc38ba611bc3bd38522526056cf0878f48246b
+Section: Tweaks
+Priority: optional
+Description: 电话助手授权版本,通话录音,通话记录合并,T9双卡选卡拨号键盘,短信双卡选卡,来去电归属地,黑名单,骚扰拦截,状态栏图标替换,时间格式修改,常用小功能等强大插件
+Author: xybp888
+Depiction: https://apt.htv123.com/view/947
+Name: 电话助手iOS16-正式版(Roothide)
+Sileodepiction: https://apt.htv123.com/sileo/947
+
+Package: com.xybp888.callassist16.dopamine.roothide
+Version: 3.0.3
+Architecture: iphoneos-arm64e
+Maintainer: xybp888
+Depends: firmware (>= 16.0), preferenceloader, com.opa334.libsandy
+Filename: ./debs/com.xybp888.callassist16.dopamine.roothide_3.0.3_iphoneos-arm64e.deb
+Size: 3476568
+MD5sum: fa830e73a24f2b0b03474cd426b32463
+SHA1: f2c06998e4ec35987eb320fc014c845f8955fc05
+SHA256: 3e572f81790326bd0cb1faf1e6a28b2411f01b9b966e3859fd46498bef717381
+Section: Tweaks
+Priority: optional
+Description: 电话助手授权版本,通话录音,通话记录合并,T9双卡选卡拨号键盘,短信双卡选卡,来去电归属地,黑名单,骚扰拦截,状态栏图标替换,时间格式修改,常用小功能等强大插件
+Author: xybp888
+Depiction: https://apt.htv123.com/view/977
+Name: 电话助手iOS16-正式版(Roothide)
+Sileodepiction: https://apt.htv123.com/sileo/977
+
 Package: com.xybp888.noapplemobilerepair
 Version: 0.0.1-104
 Architecture: iphoneos-arm64e
