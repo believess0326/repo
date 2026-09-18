@@ -171,6 +171,24 @@ Author: SquidForce, Backup
 Name: SquidExtender (RootHide Offline Recovery Test)
 Sileodepiction: https://lclrc.github.io/repo/depictions/native/cn.octoforce.squidextender/depiction.json
 
+Package: cn.octoforce.squidgesturepro
+Version: 2.7.6-1
+Architecture: iphoneos-arm64e
+Maintainer: 刀哥
+Installed-Size: 6762
+Depends: mobilesubstrate, preferenceloader, firmware (>= 15.0)
+Conflicts: com.lclrc.squidgesture, com.lclrc.squidgesturepro
+Filename: ./debs/cn.octoforce.squidgesturepro_2.7.6-1_iphoneos-arm64e.deb
+Size: 1795530
+MD5sum: 7c6302df4be1663f6f4381156dc17e50
+SHA1: 65f142334cc8b089221e21b1a559de13239594e2
+SHA256: 35c4b0b2cef9bdc2f6ceec0a3c6feb61a2ff9f7dc94da34150fc68a38213f0d7
+Section: Tweaks
+Description: Local device-bound license recovery for SquidGesturePro 2.7.6-1. No activation server required. Device validation pending.
+Author: 刀哥
+Name: SquidGesturePro
+Sileodepiction: https://lclrc.github.io/repo/depictions/native/cn.octoforce.squidgesturepro/depiction.json
+
 Package: cn.zqbb.fix120hz
 Version: 3.3.0-1
 Architecture: iphoneos-arm64e
@@ -849,6 +867,23 @@ Description: 这是一款全新的开关主题，用皮卡丘的元素来装饰�
 Author: 白衣
 Name: SwitchTheme-皮卡丘
 
+Package: com.binglan.dynamicfx
+Version: 1.0.7
+Architecture: iphoneos-arm64e
+Maintainer: 冰蓝
+Installed-Size: 772
+Pre-Depends: rootless-compat(>= 0.9)
+Depends: mobilesubstrate, preferenceloader, firmware (>= 15.0)
+Filename: ./debs/com.binglan.dynamicfx_1.0.7_iphoneos-arm64e.deb
+Size: 169272
+MD5sum: 103766ae7a2fe91d0015b16416055a2f
+SHA1: df70803b08b436808f26dac9114da61304484af6
+SHA256: a28b1b36a059b09e2c4c3cca81a6ef468a0761e3490251530d912afea7ccaafc
+Section: Tweaks
+Description: 灵动岛背景？
+Author: 冰蓝
+Name: DynamicFX
+
 Package: com.cannathea.afc2d-arm64e
 Version: 1.1.7-21
 Architecture: iphoneos-arm64e
@@ -871,6 +906,23 @@ Tag: purpose::daemon, role::enduser
 Author: saurik, Cannathea, i_82, Shadow-
 Depiction: https://cydia.akemi.ai/?page/com.cannathea.afc2d-arm64
 Name: Apple File Conduit "2" (RootHide)
+
+Package: com.charlieleung.liquidify
+Version: 1.3.7-4+repair.4
+Architecture: iphoneos-arm64e
+Maintainer: 一刀
+Installed-Size: 40967
+Pre-Depends: rootless-compat(>= 0.9)
+Depends: mobilesubstrate (>= 0.9.5000)
+Filename: ./debs/88液态玻璃插件_1.3.7-4_键盘模糊修复版_RootHide.deb
+Size: 15420862
+MD5sum: cf51e38b2985912fb1c8b0ee39bce089
+SHA1: 7b71b1358d9e6338946144c4f529c6272e51e99b
+SHA256: f716b21cf694d5fc1b025151931472c6032fbb31ea53886f70c4892d59e9b91a
+Section: Tweaks
+Description: 液态玻璃
+Author: 一刀
+Name: 88液态玻璃插件 1.3.7-4
 
 Package: com.dao.appstoretroller
 Version: 0.1.2
