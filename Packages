@@ -3150,6 +3150,24 @@ Depiction: https://apt.htv123.com/view/1015
 Name: 电话助手iOS16-正式版(Roothide)
 Sileodepiction: https://apt.htv123.com/sileo/1015
 
+Package: com.xybp888.callassist16.dopamine.roothide
+Version: 3.0.9
+Architecture: iphoneos-arm64e
+Maintainer: xybp888
+Depends: firmware (>= 16.0), preferenceloader, com.opa334.libsandy
+Filename: ./debs/com.xybp888.callassist16.dopamine.roothide_3.0.9_iphoneos-arm64e.deb
+Size: 3538718
+MD5sum: 82737b096134be35db11412a24a72848
+SHA1: 942508a35b5c6e755e979000f37db3c7b7b6de5a
+SHA256: e513bab19367f7b5b961acdc2a7f51260bcbf5e000bd25f973f18f52c19ec161
+Section: Tweaks
+Priority: optional
+Description: 电话助手授权版本,通话录音,通话记录合并,T9双卡选卡拨号键盘,短信双卡选卡,来去电归属地,黑名单,骚扰拦截,状态栏图标替换,时间格式修改,常用小功能等强大插件
+Author: xybp888
+Depiction: https://apt.htv123.com/view/1019
+Name: 电话助手iOS16-正式版(Roothide)
+Sileodepiction: https://apt.htv123.com/sileo/1019
+
 Package: com.xybp888.noapplemobilerepair
 Version: 0.0.1-104
 Architecture: iphoneos-arm64e
