@@ -943,6 +943,23 @@ Description: 灵动岛背景？
 Author: 冰蓝
 Name: DynamicFX
 
+Package: com.binglanqjsy.deb
+Version: 4.1.6-end
+Architecture: iphoneos-arm64e
+Maintainer: 冰蓝
+Installed-Size: 2496
+Pre-Depends: rootless-compat(>= 0.9), rootless-compat(>= 0.9)
+Depends: mobilesubstrate, preferenceloader
+Filename: ./debs/com.binglanqjsy.deb_4.1.6-end_iphoneos-arm64e.deb
+Size: 484932
+MD5sum: b01eedc95aa66536dab0a17a4218639b
+SHA1: 32e0407352360696f345a80c5233cce5abac7200
+SHA256: 32f6fb4a9ca3777770333dab2a8a3e01439bad369bb7a94950fa40de829a68d7
+Section: Tweaks
+Description: 让简单截图，拥有更多可能。
+Author: 冰蓝
+Name: 全局水印Pro
+
 Package: com.cannathea.afc2d-arm64e
 Version: 1.1.7-21
 Architecture: iphoneos-arm64e
