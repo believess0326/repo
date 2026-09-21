@@ -850,6 +850,65 @@ Icon: https://axs66.github.io/pro/icon/kongzhidiy.png
 Name: 控制中心美化
 Sileodepiction: https://axs66.github.io/pro/sileodepiction/kongzhidiy/js.json
 
+Package: com.axs.snapper3tag
+Version: 5.2.0-326
+Architecture: iphoneos-arm64e
+Maintainer: Axs <qiaozhini000@163.com>
+Installed-Size: 1052
+Pre-Depends: rootless-compat(>= 0.9)
+Depends: mobilesubstrate
+Filename: ./debs/com.axs.snapper3tag_5.2.0-326_iphoneos-arm64e.deb
+Size: 247106
+MD5sum: ccb5bc18138c746139d0c2d9d512216c
+SHA1: 80367b92ba3a7c83f5ef402b0f72e5cbc682f49b
+SHA256: 2201f4b333089e74d38d230daab9940be286b6a540670e55deb8d552348f000d
+Section: Axs-Tweaks
+Description: Snapper3 功能扩展，目前包含：截图标记 + 长截图 + OCR识别 + 翻译 + AI互译 + AI问答 + Sileo长按翻译，修复了原snapper3主体插件第7个图标遮挡一半的bug；将菜单工具栏最后一个“关闭”图标进行固定，增加滑动视觉效果。
+ * 一、【自定义图标】
+ * 创建 "/var/mobile/Axs/Snapper3图标/自定义文件夹" ，放入以下对应素材，即可替换默认图标：
+ *   标记    ：tag.png   / tag_menu.png
+ *   长截图  ：long.png  / long_menu.png
+ *   ocr识别 ：ocr.png   / ocr_menu.png
+ *   翻译    ：trans.png / trans_menu.png
+ *   Ai互译  ：huyi.png  / huyi_menu.png
+ *   Ai回答  ：wenda.png / wenda_menu.png
+ * 二、【截图标记】
+ * 颜色选择：红/黄/蓝/绿/白/黑等6种颜色；
+ * 箭头标记：手指拖拽绘制方向箭头；
+ * 自由画线：手指跟随绘制任意曲线；
+ * 文字标注：点击图片任意位置弹出输入框与键盘，输入文字落点标注，支持字号滑条实时调节；
+ * 矩形图标：点击1次是矩形框选+点击2次是矩形填充；
+ * 圆形图标：点击1次是圆形框选+点击2次是圆形填充；
+ * 高亮图标：点击1次是高亮框选+点击2次是半透明填充；
+ * 马赛克图标：网格分块打码，颗粒固定细腻；
+ * 撤回操作：一键撤销上一步标注；
+ * 删除操作：一键删除所有标注；
+ * 保存相册：渲染并写入系统相册；
+ * 复制剪贴板：一键复制标注后截图；
+ * 三、【长截图 Pro】
+ * 两种模式可选：滚动拼接/ 一键到底；
+ * 智能帧匹配，自动拼接；
+ * 支持保存到相册、复制到剪贴板；
+ * 四、【OCR识别】
+ * 使用 PaddleOCR模型识别截图文字；
+ * 半屏浮层展示，支持涂抹选择、一键复制；
+ * 需自备API Token。
+ * 五、【翻译】
+ * 百度翻译 API，自动检测语言双向翻译；
+ * 支持图片翻译和文本翻译两种通道；
+ * 半屏浮层展示，支持涂抹选择、一键复制；
+ * 需自备百度开发者信息中的 AppID 和 密钥。
+ * 六、【Ai互译+问答】
+ * 支持中英文互译和中文问答；
+ * 半屏浮层展示，支持涂抹选择、一键复制；
+ * 需自备阿里云 API Key。
+ * 七、【长按音量-冻结】
+ * 开启后，长按音量减键约0.2秒即可调出Snapper3冻结模式，适合无手势（不开启悬浮球/手势）的用户，用物理按键直接使用本插件全部标注功能。
+Author: Axs <qiaozhini000@163.com>
+Icon: https://axs66.github.io/pro/icon/snapper.png
+Name: Snapper3 Expand
+Sileodepiction: https://axs66.github.io/pro/sileodepiction/snapper3expand/js.json
+
 Package: com.baiy.switchtheme
 Version: 1.0.0
 Architecture: iphoneos-arm64e
@@ -3001,6 +3060,96 @@ Depiction: https://apt.htv123.com/view/977
 Name: 电话助手iOS16-正式版(Roothide)
 Sileodepiction: https://apt.htv123.com/sileo/977
 
+Package: com.xybp888.callassist16.dopamine.roothide
+Version: 3.0.4
+Architecture: iphoneos-arm64e
+Maintainer: xybp888
+Depends: firmware (>= 16.0), preferenceloader, com.opa334.libsandy
+Filename: ./debs/com.xybp888.callassist16.dopamine.roothide_3.0.4_iphoneos-arm64e.deb
+Size: 3480548
+MD5sum: 082182d3ca83e527481e3524fffe72fa
+SHA1: d8a8441fe8e9d9aae593de9f7093732f18c7eb55
+SHA256: f961c2435957ab60c9c79f0b03de5c02c9a23476a0c5745b69b7bed1810fd085
+Section: Tweaks
+Priority: optional
+Description: 电话助手授权版本,通话录音,通话记录合并,T9双卡选卡拨号键盘,短信双卡选卡,来去电归属地,黑名单,骚扰拦截,状态栏图标替换,时间格式修改,常用小功能等强大插件
+Author: xybp888
+Depiction: https://apt.htv123.com/view/995
+Name: 电话助手iOS16-正式版(Roothide)
+Sileodepiction: https://apt.htv123.com/sileo/995
+
+Package: com.xybp888.callassist16.dopamine.roothide
+Version: 3.0.5
+Architecture: iphoneos-arm64e
+Maintainer: xybp888
+Depends: firmware (>= 16.0), preferenceloader, com.opa334.libsandy
+Filename: ./debs/com.xybp888.callassist16.dopamine.roothide_3.0.5_iphoneos-arm64e.deb
+Size: 3471296
+MD5sum: 5dbf91a471388360eb95485beac8f75e
+SHA1: 707514b67ba4a0303653d372d9ce1ce572d6b566
+SHA256: 9ebbe703f3ef60d6eba1dcd99c7eaaa185dcdb7ae485c39bf10ac529178ed141
+Section: Tweaks
+Priority: optional
+Description: 电话助手授权版本,通话录音,通话记录合并,T9双卡选卡拨号键盘,短信双卡选卡,来去电归属地,黑名单,骚扰拦截,状态栏图标替换,时间格式修改,常用小功能等强大插件
+Author: xybp888
+Depiction: https://apt.htv123.com/view/1003
+Name: 电话助手iOS16-正式版(Roothide)
+Sileodepiction: https://apt.htv123.com/sileo/1003
+
+Package: com.xybp888.callassist16.dopamine.roothide
+Version: 3.0.6
+Architecture: iphoneos-arm64e
+Maintainer: xybp888
+Depends: firmware (>= 16.0), preferenceloader, com.opa334.libsandy
+Filename: ./debs/com.xybp888.callassist16.dopamine.roothide_3.0.6_iphoneos-arm64e.deb
+Size: 3480508
+MD5sum: 5346743743a86fa79e954df0a38495f5
+SHA1: 1f19c05de7d1eb87f9093f5dc0c733b91f11d0cc
+SHA256: 627536eeecaa434ff8ec07c7b70fbe99298e029946ecbf757bf37a04ee7923fe
+Section: Tweaks
+Priority: optional
+Description: 电话助手授权版本,通话录音,通话记录合并,T9双卡选卡拨号键盘,短信双卡选卡,来去电归属地,黑名单,骚扰拦截,状态栏图标替换,时间格式修改,常用小功能等强大插件
+Author: xybp888
+Depiction: https://apt.htv123.com/view/1007
+Name: 电话助手iOS16-正式版(Roothide)
+Sileodepiction: https://apt.htv123.com/sileo/1007
+
+Package: com.xybp888.callassist16.dopamine.roothide
+Version: 3.0.7
+Architecture: iphoneos-arm64e
+Maintainer: xybp888
+Depends: firmware (>= 16.0), preferenceloader, com.opa334.libsandy
+Filename: ./debs/com.xybp888.callassist16.dopamine.roothide_3.0.7_iphoneos-arm64e.deb
+Size: 3500644
+MD5sum: b4b7c46e165c85f342d57d9b730f594e
+SHA1: 02d5e261bdec73f977b59f3dec7265bedf78aca9
+SHA256: ce181904adfbd2799cb85cf6e3d72bc0dbe292b7bd925bb198b61d736e88f028
+Section: Tweaks
+Priority: optional
+Description: 电话助手授权版本,通话录音,通话记录合并,T9双卡选卡拨号键盘,短信双卡选卡,来去电归属地,黑名单,骚扰拦截,状态栏图标替换,时间格式修改,常用小功能等强大插件
+Author: xybp888
+Depiction: https://apt.htv123.com/view/1011
+Name: 电话助手iOS16-正式版(Roothide)
+Sileodepiction: https://apt.htv123.com/sileo/1011
+
+Package: com.xybp888.callassist16.dopamine.roothide
+Version: 3.0.8
+Architecture: iphoneos-arm64e
+Maintainer: xybp888
+Depends: firmware (>= 16.0), preferenceloader, com.opa334.libsandy
+Filename: ./debs/com.xybp888.callassist16.dopamine.roothide_3.0.8_iphoneos-arm64e.deb
+Size: 3525370
+MD5sum: 2922c56270370ed3028ceb69916f88da
+SHA1: fee29b606c8e6d6ca46efc2fca0be6c7851add02
+SHA256: 273756073c2dc8e5b3df4c1772e65001aed1c27b29d0828ffb71a685455566b0
+Section: Tweaks
+Priority: optional
+Description: 电话助手授权版本,通话录音,通话记录合并,T9双卡选卡拨号键盘,短信双卡选卡,来去电归属地,黑名单,骚扰拦截,状态栏图标替换,时间格式修改,常用小功能等强大插件
+Author: xybp888
+Depiction: https://apt.htv123.com/view/1015
+Name: 电话助手iOS16-正式版(Roothide)
+Sileodepiction: https://apt.htv123.com/sileo/1015
+
 Package: com.xybp888.noapplemobilerepair
 Version: 0.0.1-104
 Architecture: iphoneos-arm64e
@@ -3180,6 +3329,60 @@ Author: xybp888
 Depiction: https://apt.htv123.com/view/979
 Name: 灵动通知iOS16-正式版(RootHide)
 Sileodepiction: https://apt.htv123.com/sileo/979
+
+Package: com.xybp888.perfectdynamiclsland.roothide
+Version: 1.3.7
+Architecture: iphoneos-arm64e
+Maintainer: xybp888
+Depends: firmware (>= 16.0), mobilesubstrate
+Filename: ./debs/com.xybp888.perfectdynamiclsland.roothide_1.3.7_iphoneos-arm64e.deb
+Size: 924432
+MD5sum: 537d37eb9e8b042d0e33b3e5f5b5b8f7
+SHA1: ef9ea979e5ee25531d8d7cc2f8134c952ab85633
+SHA256: ca3b531723a234c88dd4c173db28c11f9211801f4e6c9a691c6ebb220fead10e
+Section: System
+Priority: optional
+Description: 完美的使用原生灵动岛展示系统通知等...
+Author: xybp888
+Depiction: https://apt.htv123.com/view/983
+Name: 灵动通知iOS16-正式版(RootHide)
+Sileodepiction: https://apt.htv123.com/sileo/983
+
+Package: com.xybp888.perfectdynamiclsland.roothide
+Version: 1.3.9
+Architecture: iphoneos-arm64e
+Maintainer: xybp888
+Depends: firmware (>= 16.0), mobilesubstrate
+Filename: ./debs/com.xybp888.perfectdynamiclsland.roothide_1.3.9_iphoneos-arm64e.deb
+Size: 919016
+MD5sum: c3a8e1a71783f368925896a194d06519
+SHA1: 2ca6cb59aa41e35440d31eeb81ef945ad336a6ca
+SHA256: e6e0bb24cfdb2b872c21bc4cb01cbfccf3b405c5399719ed4c1d30b8232cf301
+Section: System
+Priority: optional
+Description: 完美的使用原生灵动岛展示系统通知等...
+Author: xybp888
+Depiction: https://apt.htv123.com/view/991
+Name: 灵动通知iOS16-正式版(RootHide)
+Sileodepiction: https://apt.htv123.com/sileo/991
+
+Package: com.xybp888.perfectdynamiclsland.roothide
+Version: 1.4.0
+Architecture: iphoneos-arm64e
+Maintainer: xybp888
+Depends: firmware (>= 16.0), mobilesubstrate
+Filename: ./debs/com.xybp888.perfectdynamiclsland.roothide_1.4.0_iphoneos-arm64e.deb
+Size: 922314
+MD5sum: 0c2e7bf6845270af5d2155722e6bf166
+SHA1: f98c31684da2ce8c47375e1f228edf7a9f56ac70
+SHA256: bcaeec09627fe09eba39e698ff5d6e574cd0f490c57023bba4673ca6567f0883
+Section: System
+Priority: optional
+Description: 完美的使用原生灵动岛展示系统通知等...
+Author: xybp888
+Depiction: https://apt.htv123.com/view/999
+Name: 灵动通知iOS16-正式版(RootHide)
+Sileodepiction: https://apt.htv123.com/sileo/999
 
 Package: dylv.liquidass
 Version: 0.1.1b
