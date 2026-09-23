@@ -1348,6 +1348,24 @@ Description: JSC security hardening for WebContent process. Configures JavaScrip
 Author: roothide
 Name: lockdown
 
+Package: com.simon.ccweathermodule
+Version: 1.2.4
+Architecture: iphoneos-arm64e
+Maintainer: simon
+Installed-Size: 976
+Pre-Depends: rootless-compat(>= 0.9)
+Depends: mobilesubstrate, com.opa334.ccsupport, firmware (>= 14.0)
+Filename: ./debs/com.simon.ccweathermodule_1.2.4_iphoneos-arm64e.deb
+Size: 294234
+MD5sum: 4e35b19d317c5813e709d84254177f5c
+SHA1: 0cc68485d13b95afdf0ebf28f8ad6947ffdaca8e
+SHA256: be8def137d996f6b6d698558f04fd0946a4c165909248134628a5690e81d422e
+Section: Tweaks
+Description: 控制中心的天气模块。 显示当前天气、温度和每小时预报。
+Author: simon
+Icon: https://i.imgs.ovh/2026/09/20/17d0953ee53152da8e61955e8bcf444a.png
+Name: CCWeather Module
+
 Package: com.skypain.flexloader
 Version: 5.25.19-1
 Architecture: iphoneos-arm64e
@@ -3576,6 +3594,32 @@ Size: 10101720
 MD5sum: 7c0c4806ab4c5fc06df09a02a9216d39
 SHA1: 2d705f3b3a9578500b3213c1d5128772ca69e356
 SHA256: 52095ec2f3bdb566ad84db957e5128707acec9f03b79b95cae76d7d2aace4f87
+Section: Applications
+Priority: optional
+Homepage: https://github.com/Lakr233/Irisin
+Description: Modern package manager for roothide custom firmware
+ Browse your repositories, install and remove packages, keep tweaks updated
+ and read every depiction, on iPhone and iPad. The app runs without root;
+ installs go through a small on-demand root daemon whose helper installs
+ packages natively and registers apps with LaunchServices itself. No dpkg,
+ no uicache.
+Author: OwnGoal Studio <no-reply@owngoal.dev>
+Depiction: https://lakr233.github.io/Irisin/
+Icon: https://lakr233.github.io/Irisin/icon.png
+Name: Irisin
+Sileodepiction: https://lakr233.github.io/Irisin/depiction.json
+
+Package: wiki.qaq.irisin
+Version: 4.3.9
+Architecture: iphoneos-arm64e
+Maintainer: OwnGoal Studio <no-reply@owngoal.dev>
+Installed-Size: 37568
+Depends: firmware (>= 16.0)
+Filename: ./debs/wiki.qaq.irisin_4.3.9_iphoneos-arm64e.deb
+Size: 10151612
+MD5sum: af23dcafde9eefb9d94f914bbd8967fe
+SHA1: ab096589fae063e74e3069e010ff1d7e45d20cf2
+SHA256: e518400643c6fe2d9b7d4d78e7af6c12b237fb6a0d1a98e5ebb23904f4204c83
 Section: Applications
 Priority: optional
 Homepage: https://github.com/Lakr233/Irisin
