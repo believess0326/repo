@@ -1,0 +1,39 @@
+name: Clean Old Workflow Runs
+on: workflow_dispatch
+
+jobs:
+  clean:
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+    steps:
+      - name: Install gh cli
+        run: sudo apt install gh -y
+      - name: Delete Update Sileo Repository runs
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          gh api --paginate "/repos/$GH_REPO/actions/runs?workflow_name=Update%20Sileo%20Repository" \
+            --jq '[.workflow_runs[] | select(.conclusion != null)] | .[].id' \
+          | while read -r runid; do
+              if [ -n "$runid" ]; then
+                echo "Del Sileo run: $runid"
+                gh api -X DELETE "/repos/$GH_REPO/actions/runs/$runid"
+                sleep 0.4
+              fi
+            done
+      - name: Delete pages-build-deployment runs
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          gh api --paginate "/repos/$GH_REPO/actions/runs?workflow_name=pages-build-deployment" \
+            --jq '[.workflow_runs[] | select(.conclusion != null)] | .[].id' \
+          | while read -r runid; do
+              if [ -n "$runid" ]; then
+                echo "Del Pages run: $runid"
+                gh api -X DELETE "/repos/$GH_REPO/actions/runs/$runid"
+                sleep 0.4
+              fi
+            done
