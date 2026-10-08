@@ -233,6 +233,50 @@ Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.fix120hz
 Name: Hello 120Hz
 Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.fix120hz
 
+Package: cn.zqbb.fix120hz
+Version: 3.3.3-1
+Architecture: iphoneos-arm64e
+Maintainer: zqbb
+Installed-Size: 1168
+Depends: mobilesubstrate (>= 0.9.5000) , firmware (>= 15.0), preferenceloader, com.opa334.altlist
+Conflicts: cn.zqbb.fix120hz15, com.zqbb.fix120hz, com.zqbb.dynamic120hz
+Filename: ./debs/cn.zqbb.fix120hz_3.3.3-1_iphoneos-arm64e.deb
+Size: 387640
+MD5sum: f5a7f129f30cc9cf325667dbac212f7e
+SHA1: 4aaeee098d1891ba42122af9b0efd38633a45625
+SHA256: 536611d2e602348845883420b909c17b0f53d448009decfcf1a1dc25f90df5ab
+Section: zqbb Tweaks
+Description:
+ - Unlock dynamic refresh rate from 80hz to 120hz
+ - .
+ - 解锁动态刷新率80hz到120hz.
+Author: zqbb
+Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.fix120hz
+Name: Hello 120Hz
+Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.fix120hz
+
+Package: cn.zqbb.fix120hz
+Version: 3.3.3-3
+Architecture: iphoneos-arm64e
+Maintainer: zqbb
+Installed-Size: 1216
+Depends: mobilesubstrate (>= 0.9.5000) , firmware (>= 15.0), preferenceloader, com.opa334.altlist
+Conflicts: cn.zqbb.fix120hz15, com.zqbb.fix120hz, com.zqbb.dynamic120hz
+Filename: ./debs/cn.zqbb.fix120hz_3.3.3-3_iphoneos-arm64e.deb
+Size: 407862
+MD5sum: 167cbc7f4b14e3e3eaf20c607593167c
+SHA1: 9f54c3731d04bab67ebc2090ab5dd38ca378d40e
+SHA256: c608195c55e632cc3c2842f9c8259ff196a6dfc25416e39232938b60798d3212
+Section: zqbb Tweaks
+Description:
+ - Unlock dynamic refresh rate from 80hz to 120hz
+ - .
+ - 解锁动态刷新率80hz到120hz.
+Author: zqbb
+Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.fix120hz
+Name: Hello 120Hz
+Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.fix120hz
+
 Package: cn.zqbb.hello.memorystatus
 Version: 3.3.2-1
 Architecture: iphoneos-arm64e
@@ -3365,6 +3409,60 @@ Depiction: https://apt.htv123.com/view/1055
 Name: 电话助手iOS16-正式版(Roothide)
 Sileodepiction: https://apt.htv123.com/sileo/1055
 
+Package: com.xybp888.callassist16.dopamine.roothide
+Version: 3.1.8
+Architecture: iphoneos-arm64e
+Maintainer: xybp888
+Depends: firmware (>= 16.0), preferenceloader, com.opa334.libsandy
+Filename: ./debs/com.xybp888.callassist16.dopamine.roothide_3.1.8_iphoneos-arm64e.deb
+Size: 3646642
+MD5sum: 5bd998715ba18911f92497f9fdc9153a
+SHA1: 33ef12f67ad66d7686db4a7908587ec2a3cfb11e
+SHA256: f33a570b85dcb4b55909aa113831d27e78eeee825f87b134597493e77d665057
+Section: Tweaks
+Priority: optional
+Description: 电话助手授权版本,通话录音,通话记录合并,T9双卡选卡拨号键盘,短信双卡选卡,来去电归属地,黑名单,骚扰拦截,状态栏图标替换,时间格式修改,常用小功能等强大插件
+Author: xybp888
+Depiction: https://apt.htv123.com/view/1059
+Name: 电话助手iOS16-正式版(Roothide)
+Sileodepiction: https://apt.htv123.com/sileo/1059
+
+Package: com.xybp888.callassist16.dopamine.roothide
+Version: 3.1.9
+Architecture: iphoneos-arm64e
+Maintainer: xybp888
+Depends: firmware (>= 16.0), preferenceloader, com.opa334.libsandy
+Filename: ./debs/com.xybp888.callassist16.dopamine.roothide_3.1.9_iphoneos-arm64e.deb
+Size: 3637478
+MD5sum: 920def202ed8b8070ac3c980f340d123
+SHA1: 2fc614daa8997df0de9e463f8737c05c2c43da10
+SHA256: 4eb0d07fb571a879de7432a7979635961ef0d0c90e51f1712acc2bdcc391734c
+Section: Tweaks
+Priority: optional
+Description: 电话助手授权版本,通话录音,通话记录合并,T9双卡选卡拨号键盘,短信双卡选卡,来去电归属地,黑名单,骚扰拦截,状态栏图标替换,时间格式修改,常用小功能等强大插件
+Author: xybp888
+Depiction: https://apt.htv123.com/view/1063
+Name: 电话助手iOS16-正式版(Roothide)
+Sileodepiction: https://apt.htv123.com/sileo/1063
+
+Package: com.xybp888.callassist16.dopamine.roothide
+Version: 3.2.0
+Architecture: iphoneos-arm64e
+Maintainer: xybp888
+Depends: firmware (>= 16.0), preferenceloader, com.opa334.libsandy
+Filename: ./debs/com.xybp888.callassist16.dopamine.roothide_3.2.0_iphoneos-arm64e.deb
+Size: 3641776
+MD5sum: d96fc9c05d9d8108acb6dfd3bdcc0512
+SHA1: 5fffa53908692f618b78cf947741af2abbf00b77
+SHA256: 290fa1dfbad0620ec6ae814f9a9acdcdc2869c6b87a3a040fb3585362e36c685
+Section: Tweaks
+Priority: optional
+Description: 电话助手授权版本,通话录音,通话记录合并,T9双卡选卡拨号键盘,短信双卡选卡,来去电归属地,黑名单,骚扰拦截,状态栏图标替换,时间格式修改,常用小功能等强大插件
+Author: xybp888
+Depiction: https://apt.htv123.com/view/1067
+Name: 电话助手iOS16-正式版(Roothide)
+Sileodepiction: https://apt.htv123.com/sileo/1067
+
 Package: com.xybp888.noapplemobilerepair
 Version: 0.0.1-104
 Architecture: iphoneos-arm64e
@@ -3796,6 +3894,50 @@ Depiction: https://lakr233.github.io/Irisin/
 Icon: https://lakr233.github.io/Irisin/icon.png
 Name: Irisin
 Sileodepiction: https://lakr233.github.io/Irisin/depiction.json
+
+Package: wiki.qaq.irisin
+Version: 4.5.23
+Architecture: iphoneos-arm64e
+Maintainer: OwnGoal Studio <no-reply@owngoal.dev>
+Installed-Size: 18844
+Depends: firmware (>= 16.0)
+Filename: ./debs/wiki.qaq.irisin_4.5.23_iphoneos-arm64e.deb
+Size: 5692972
+MD5sum: ca587fbd576fd99242b15b88cce98c3b
+SHA1: b9c71c4d3ed95c54d14d50283fbec3af2acc6242
+SHA256: c911a9a7af984da663ba90b990de351b24557ff7c39998e059abdce39870214e
+Section: Applications
+Priority: optional
+Homepage: https://github.com/Lakr233/Irisin
+Description: Modern package manager for roothide custom firmware
+ Browse your repositories, install and remove packages, keep tweaks updated
+ and read every depiction, on iPhone and iPad. The app runs without root;
+ installs go through a small on-demand root daemon whose helper installs
+ packages natively and registers apps with LaunchServices itself. No dpkg,
+ no uicache.
+Author: OwnGoal Studio <no-reply@owngoal.dev>
+Depiction: https://lakr233.github.io/Irisin/
+Icon: https://lakr233.github.io/Irisin/icon.png
+Name: Irisin
+Sileodepiction: https://lakr233.github.io/Irisin/depiction.json
+
+Package: wiki.qaq.umbra
+Version: 2.0
+Architecture: iphoneos-arm64e
+Maintainer: OwnGoal Studio <not-gonna-reply@owngoal.dev>
+Installed-Size: 1880
+Depends: firmware (>= 15.0)
+Conflicts: com.roothide.manager
+Replaces: com.roothide.manager
+Filename: ./debs/wiki.qaq.umbra_2.0_iphoneos-arm64e.deb
+Size: 1018384
+MD5sum: 7a45709ffea5211b15d7f95bda1a3293
+SHA1: 7dd51770f92a1d28db4bfbdab9ed08e484f88a4e
+SHA256: d62cb01efe2cf2ec41df96fa2c5eaf19b2c1ef5a689f6b14ee677967e3f3ef3f
+Section: Utilities
+Description: Manage jailbreak concealment in RootHide environments.
+Author: OwnGoal Studio <not-gonna-reply@owngoal.dev>
+Name: Umbra (RootHide Manager)
 
 Package: xz-utils
 Version: 5.4.1
