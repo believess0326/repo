@@ -299,6 +299,28 @@ Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.fix120hz
 Name: Hello 120Hz
 Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.fix120hz
 
+Package: cn.zqbb.fix120hz
+Version: 3.3.3-6
+Architecture: iphoneos-arm64e
+Maintainer: zqbb
+Installed-Size: 6284
+Depends: mobilesubstrate (>= 0.9.5000) , firmware (>= 15.0), preferenceloader, com.opa334.altlist
+Conflicts: cn.zqbb.fix120hz15, com.zqbb.fix120hz, com.zqbb.dynamic120hz
+Filename: ./debs/cn.zqbb.fix120hz_3.3.3-6_iphoneos-arm64e.deb
+Size: 1826514
+MD5sum: 2f15f9b1d65b614877dbf35c3ea92a57
+SHA1: b7fbb1bbc6c64deb2874f290511506f558030273
+SHA256: 8aebd6fa1a441ffb24d24ae9935f1da1167fa7291e4cca75001b7faf25232af7
+Section: zqbb Tweaks
+Description:
+ - Unlock dynamic refresh rate from 80hz to 120hz
+ - .
+ - 解锁动态刷新率80hz到120hz.
+Author: zqbb
+Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.fix120hz
+Name: Hello 120Hz
+Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.fix120hz
+
 Package: cn.zqbb.hello.memorystatus
 Version: 3.3.2-1
 Architecture: iphoneos-arm64e
@@ -749,6 +771,24 @@ Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.hello.memorystatus.png
 Name: Hello Memory Status
 Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.hello.memorystatus
 
+Package: cn.zqbb.hello.memorystatus
+Version: 3.9.0-9
+Architecture: iphoneos-arm64e
+Maintainer: zqbb
+Installed-Size: 13952
+Depends: mobilesubstrate (>= 0.9.5000) , firmware (>= 14.0), preferenceloader, launchctl
+Filename: ./debs/cn.zqbb.hello.memorystatus_3.9.0-9_iphoneos-arm64e.deb
+Size: 4003512
+MD5sum: 335a97c396e708f59f28f45f0b8976e2
+SHA1: d65e5bf6a883e087744f47f54759999bd965b3bd
+SHA256: 656b457f0d5931f093e72286cc3bb754178d0f2135af4b8ebbc41af69c3dfe0b
+Section: zqbb Tweaks
+Description: Set memorystatus to avoid being killed by the system
+Author: zqbb
+Icon: https://rootless.002599.xyz/web/icon/cn.zqbb.hello.memorystatus.png
+Name: Hello Memory Status
+Sileodepiction: https://rootless.002599.xyz/web/cn.zqbb.hello.memorystatus
+
 Package: cn.zqbb.holdcpu
 Version: 2.3.4-16
 Architecture: iphoneos-arm64e
@@ -991,6 +1031,22 @@ Section: 美化插件
 Description: 这是一款全新的开关主题，用皮卡丘的元素来装饰你的开关，让你的开关变得可爱起来
 Author: 白衣
 Name: SwitchTheme-皮卡丘
+
+Package: com.be-huge.insulation
+Version: 0.1.38.1
+Architecture: iphoneos-arm64e
+Maintainer: doimty
+Installed-Size: 780
+Depends: firmware (>= 15.0)
+Filename: ./debs/com.be-huge.insulation_0.1.38.1_iphoneos-arm64e.deb
+Size: 57024
+MD5sum: 548758f431fed3ae2df216bb491d6c62
+SHA1: fd40899f9d37489c30a01a79d245d80c20af9f45
+SHA256: 75d9920232145bae39c8a3217091e8cb3dec60d0074df265fbfa86a7d44e19c9
+Section: Tweaks
+Description: 解除温控，一切从简即可。支持命令行切换模式：ins off（原生温控）/ ins low（低功耗）/ ins max（全性能）/ ins status（查看当前模式）
+Author: be-huge & doimty
+Name: insulation
 
 Package: com.binglan.dynamicfx
 Version: 1.0.7
@@ -3539,6 +3595,42 @@ Depiction: https://apt.htv123.com/view/1079
 Name: 电话助手iOS16-正式版(Roothide)
 Sileodepiction: https://apt.htv123.com/sileo/1079
 
+Package: com.xybp888.callassist16.dopamine.roothide
+Version: 3.2.4
+Architecture: iphoneos-arm64e
+Maintainer: xybp888
+Depends: firmware (>= 16.0), preferenceloader, com.opa334.libsandy
+Filename: ./debs/com.xybp888.callassist16.dopamine.roothide_3.2.4_iphoneos-arm64e.deb
+Size: 3579736
+MD5sum: 30c5f4231db3ec8ea6133701a44db4aa
+SHA1: 5fe535f7a729196c8adb2f6b4480fcded1e9716b
+SHA256: d3aaf1416b824f5a16814b4d1ca4100314880f265228bf1345747e2c26e1b814
+Section: Tweaks
+Priority: optional
+Description: 电话助手授权版本,通话录音,通话记录合并,T9双卡选卡拨号键盘,短信双卡选卡,来去电归属地,黑名单,骚扰拦截,状态栏图标替换,时间格式修改,常用小功能等强大插件
+Author: xybp888
+Depiction: https://apt.htv123.com/view/1083
+Name: 电话助手iOS16-正式版(Roothide)
+Sileodepiction: https://apt.htv123.com/sileo/1083
+
+Package: com.xybp888.callassist16.dopamine.roothide
+Version: 3.2.5
+Architecture: iphoneos-arm64e
+Maintainer: xybp888
+Depends: firmware (>= 16.0), preferenceloader, com.opa334.libsandy
+Filename: ./debs/com.xybp888.callassist16.dopamine.roothide_3.2.5_iphoneos-arm64e.deb
+Size: 3477408
+MD5sum: 5364341a06776e7d7835bd54e49fde99
+SHA1: e1fe38ea53c92258ae1f9dcbecd72da90d2f055d
+SHA256: 89813f5d5526839a8a7961e4af9839b3d82b99c641b4a6eea759498625e2005c
+Section: Tweaks
+Priority: optional
+Description: 电话助手授权版本,通话录音,通话记录合并,T9双卡选卡拨号键盘,短信双卡选卡,来去电归属地,黑名单,骚扰拦截,状态栏图标替换,时间格式修改,常用小功能等强大插件
+Author: xybp888
+Depiction: https://apt.htv123.com/view/1087
+Name: 电话助手iOS16-正式版(Roothide)
+Sileodepiction: https://apt.htv123.com/sileo/1087
+
 Package: com.xybp888.noapplemobilerepair
 Version: 0.0.1-104
 Architecture: iphoneos-arm64e
@@ -4127,6 +4219,84 @@ Icon: https://lakr233.github.io/Irisin/icon.png
 Name: Irisin
 Sileodepiction: https://lakr233.github.io/Irisin/depiction.json
 
+Package: wiki.qaq.irisin
+Version: 4.7.0
+Architecture: iphoneos-arm64e
+Maintainer: OwnGoal Studio <no-reply@owngoal.dev>
+Installed-Size: 17652
+Depends: firmware (>= 15.0)
+Filename: ./debs/wiki.qaq.irisin_4.7.0_iphoneos-arm64e.deb
+Size: 5077472
+MD5sum: 1b480dd83be88a57e984b5fc5c3d65a0
+SHA1: 2399392a28fd93b21af59d094aa35d263377fb30
+SHA256: 35f77971bacc371297684661ec2281bc801debd54e6bbd9e5860ef925eb66ac8
+Section: Applications
+Priority: optional
+Homepage: https://github.com/Lakr233/Irisin
+Description: Modern package manager for roothide custom firmware
+ Browse your repositories, install and remove packages, keep tweaks updated
+ and read every depiction, on iPhone and iPad. The app runs without root;
+ installs go through a small on-demand root daemon whose helper installs
+ packages natively and registers apps with LaunchServices itself. No dpkg,
+ no uicache.
+Author: OwnGoal Studio <no-reply@owngoal.dev>
+Depiction: https://lakr233.github.io/Irisin/
+Icon: https://lakr233.github.io/Irisin/icon.png
+Name: Irisin
+Sileodepiction: https://lakr233.github.io/Irisin/depiction.json
+
+Package: wiki.qaq.irisin
+Version: 4.7.1
+Architecture: iphoneos-arm64e
+Maintainer: OwnGoal Studio <no-reply@owngoal.dev>
+Installed-Size: 17716
+Depends: firmware (>= 15.0)
+Filename: ./debs/wiki.qaq.irisin_4.7.1_iphoneos-arm64e.deb
+Size: 5097168
+MD5sum: 9363c281d64084c38f51a4c9f8ed3666
+SHA1: 606cd74c9396cc97e216fe297fba965fdb1b9ec2
+SHA256: 873dd531c5f0f3fae57ec222349d7644bb3e07279ffc88dee57e143657863669
+Section: Applications
+Priority: optional
+Homepage: https://github.com/Lakr233/Irisin
+Description: Modern package manager for roothide custom firmware
+ Browse your repositories, install and remove packages, keep tweaks updated
+ and read every depiction, on iPhone and iPad. The app runs without root;
+ installs go through a small on-demand root daemon whose helper installs
+ packages natively and registers apps with LaunchServices itself. No dpkg,
+ no uicache.
+Author: OwnGoal Studio <no-reply@owngoal.dev>
+Depiction: https://lakr233.github.io/Irisin/
+Icon: https://lakr233.github.io/Irisin/icon.png
+Name: Irisin
+Sileodepiction: https://lakr233.github.io/Irisin/depiction.json
+
+Package: wiki.qaq.irisin
+Version: 4.7.2
+Architecture: iphoneos-arm64e
+Maintainer: OwnGoal Studio <no-reply@owngoal.dev>
+Installed-Size: 17732
+Depends: firmware (>= 15.0)
+Filename: ./debs/wiki.qaq.irisin_4.7.2_iphoneos-arm64e.deb
+Size: 5102640
+MD5sum: e6e289f57380a3c8e73850cccd827da0
+SHA1: 5dd09484bda51ea7d414df32fc4f83bd34185717
+SHA256: 5c2f4a38bd20ed1e0bc0c0c944682d731a88fd2579038de14d83988ff04cde50
+Section: Applications
+Priority: optional
+Homepage: https://github.com/Lakr233/Irisin
+Description: Modern package manager for roothide custom firmware
+ Browse your repositories, install and remove packages, keep tweaks updated
+ and read every depiction, on iPhone and iPad. The app runs without root;
+ installs go through a small on-demand root daemon whose helper installs
+ packages natively and registers apps with LaunchServices itself. No dpkg,
+ no uicache.
+Author: OwnGoal Studio <no-reply@owngoal.dev>
+Depiction: https://lakr233.github.io/Irisin/
+Icon: https://lakr233.github.io/Irisin/icon.png
+Name: Irisin
+Sileodepiction: https://lakr233.github.io/Irisin/depiction.json
+
 Package: wiki.qaq.umbra
 Version: 2.0
 Architecture: iphoneos-arm64e
@@ -4142,6 +4312,24 @@ SHA1: 7dd51770f92a1d28db4bfbdab9ed08e484f88a4e
 SHA256: d62cb01efe2cf2ec41df96fa2c5eaf19b2c1ef5a689f6b14ee677967e3f3ef3f
 Section: Utilities
 Description: Manage jailbreak concealment in RootHide environments.
+Author: OwnGoal Studio <not-gonna-reply@owngoal.dev>
+Name: Umbra (RootHide Manager)
+
+Package: wiki.qaq.umbra
+Version: 2.1
+Architecture: iphoneos-arm64e
+Maintainer: OwnGoal Studio <not-gonna-reply@owngoal.dev>
+Installed-Size: 1416
+Depends: firmware (>= 15.0)
+Conflicts: com.roothide.manager
+Replaces: com.roothide.manager
+Filename: ./debs/wiki.qaq.umbra_2.1_iphoneos-arm64e.deb
+Size: 947688
+MD5sum: 57346a87943eab299f6fe499dc113925
+SHA1: 24f7eeeb181f3a8a1fb3a8830cfb762f00ec535b
+SHA256: 3948d41c523900f1d5fcfc96a5ff9fb92af903be6e550cca9157ce04cf4e35dc
+Section: Utilities
+Description: Hide custom firmware from apps in RootHide environments.
 Author: OwnGoal Studio <not-gonna-reply@owngoal.dev>
 Name: Umbra (RootHide Manager)
 
