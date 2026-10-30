@@ -57,25 +57,6 @@ Icon: https://chinesebuilding.club/pic/cydia.png
 Name: Atria桌面图标自定义
 Sponsor: 搬运工
 
-Package: byg.iosios.net.camera.rootless
-Version: 0.1-2
-Architecture: iphoneos-arm64e
-Maintainer: 搬运工
-Installed-Size: 168
-Pre-Depends: rootless-compat(>= 0.9)
-Depends: mobilesubstrate (>= 0.9.5000)
-Filename: ./debs/byg.iosios.net.camera.rootless_0.1-2_iphoneos-arm64e.deb
-Size: 4722
-MD5sum: f2e0c14f42470239d77a5c14cf014990
-SHA1: f2c6532f4a6af8b125fd3a05bc5bb1e1489061e0
-SHA256: b7526bfc09f3936dae36650baf3d3470a756c22f573f6aa0abc856f354f55a36
-Section: 系统增强
-Description: 系统相机开启全屏拍照，禁用拍照提示音。此插件由搬运工源iOSign免费首发，搬运工源只为给您带来最好的iPhone体验！永久免费的搬运工源！越狱必加！
-Author: iOSign
-Icon: https://chinesebuilding.club/pic/cydia.png
-Name: 全屏相机-Rootless
-Sponsor: 搬运工
-
 Package: byg.iosios.net.onesettings
 Version: 2.2.1
 Architecture: iphoneos-arm64e
