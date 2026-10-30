@@ -1,5 +1,5 @@
 Repository: repo
-Last Updated: Fri Oct 30 01:44:50 UTC 2026
+Last Updated: Fri Oct 30 01:46:01 UTC 2026
 ---
 Package: Flex3beta
 Version: 1:3~Beta92
@@ -261,6 +261,27 @@ Version: 1.3.9
 Architecture: iphoneos-arm64e
 Package: com.roothide.manager
 Version: 1.4.0
+Architecture: iphoneos-arm64e
+Package: com.roothide.patcher
+Version: 2.1-1+debug
+Architecture: iphoneos-arm64e
+Package: com.roothide.patcher
+Version: 2.1.2-1+debug
+Architecture: iphoneos-arm64e
+Package: com.roothide.patcher
+Version: 2.1.3-1+debug
+Architecture: iphoneos-arm64e
+Package: com.roothide.patcher
+Version: 2.1.4-1+debug
+Architecture: iphoneos-arm64e
+Package: com.roothide.patchloader
+Version: 0.0.6-7
+Architecture: iphoneos-arm64e
+Package: com.roothide.patchloader
+Version: 0.0.7
+Architecture: iphoneos-arm64e
+Package: com.roothide.patchloader
+Version: 0.0.8
 Architecture: iphoneos-arm64e
 Package: com.simon.ccweathermodule
 Version: 1.2.4

@@ -1630,6 +1630,130 @@ Depiction: https://github.com/roothide/RootHideManagerApp
 Name: RootHide Manager
 Support: https://github.com/roothide/RootHideManagerApp
 
+Package: com.roothide.patcher
+Version: 2.1-1+debug
+Architecture: iphoneos-arm64e
+Maintainer: roothide
+Installed-Size: 4128
+Depends: firmware (>= 15.0), libxar1, ldid, file, dpkg, gawk, plutil(>= 0.2.2-1), uikittools(>= 2.1.6-4)
+Filename: ./debs/com.roothide.patcher_2.1-1+debug_iphoneos-arm64e.deb
+Size: 1202686
+MD5sum: 40259b0ca66bff47c765a3b41b63cf59
+SHA1: 1aa5bae9ee6576f2b67a941aa291cd229b37c52e
+SHA256: 8e95be62faccec2cd7fe47de9aefb5bd551a16cddff784c67a9d4e9e4ae25b9b
+Section: Utilities
+Description: patch rootless package to roothide, not work for all packages.
+Author: roothide
+Depiction: https://github.com/roothide/RootHidePatcher
+Icon: https://github.com/roothide/RootHidePatcher/blob/master/derootifier-2-modified.png?raw=true
+Name: RootHide Patcher
+Support: https://github.com/roothide/RootHidePatcher
+
+Package: com.roothide.patcher
+Version: 2.1.2-1+debug
+Architecture: iphoneos-arm64e
+Maintainer: roothide
+Installed-Size: 4128
+Depends: firmware (>= 15.0), libxar1, ldid, file, dpkg, gawk, plutil(>= 0.2.2-1), uikittools(>= 2.1.6-4)
+Filename: ./debs/com.roothide.patcher_2.1.2-1+debug_iphoneos-arm64e.deb
+Size: 1202674
+MD5sum: 407eaabea9aa3b8aeec7a868b8b82511
+SHA1: c2d92c981d23e831cf04fc5bc3bcedf8d033c3ad
+SHA256: dfa9dd31f04a801307579da60b93e84f1791cc9034998a513315d03354f2ec8a
+Section: Utilities
+Description: patch rootless package to roothide, not work for all packages.
+Author: roothide
+Depiction: https://github.com/roothide/RootHidePatcher
+Icon: https://github.com/roothide/RootHidePatcher/blob/master/derootifier-2-modified.png?raw=true
+Name: RootHide Patcher
+Support: https://github.com/roothide/RootHidePatcher
+
+Package: com.roothide.patcher
+Version: 2.1.3-1+debug
+Architecture: iphoneos-arm64e
+Maintainer: roothide
+Installed-Size: 4124
+Depends: firmware (>= 15.0), libxar1, ldid, file, dpkg, gawk, plutil(>= 0.2.2-1), uikittools(>= 2.1.6-4)
+Filename: ./debs/com.roothide.patcher_2.1.3-1+debug_iphoneos-arm64e.deb
+Size: 1202276
+MD5sum: 9d7a0aa497e2fc7851addf5bb3a05e39
+SHA1: d6ead4f3d11cee759170a39f43bebc1c5bf04bbc
+SHA256: d6d5970feee6fedcd610d8673ca8041a53d89fb9c7ce41b0c31778232c4b578d
+Section: Utilities
+Description: patch rootless package to roothide, not work for all packages.
+Author: roothide
+Depiction: https://github.com/roothide/RootHidePatcher
+Icon: https://github.com/roothide/RootHidePatcher/blob/master/derootifier-2-modified.png?raw=true
+Name: RootHide Patcher
+Support: https://github.com/roothide/RootHidePatcher
+
+Package: com.roothide.patcher
+Version: 2.1.4-1+debug
+Architecture: iphoneos-arm64e
+Maintainer: roothide
+Installed-Size: 4124
+Depends: firmware (>= 15.0), libxar1, ldid, file, dpkg, gawk, plutil(>= 0.2.2-1), uikittools(>= 2.1.6-4)
+Filename: ./debs/com.roothide.patcher_2.1.4-1+debug_iphoneos-arm64e.deb
+Size: 1202360
+MD5sum: 55fabb004a2a813381b2830c63593d05
+SHA1: 0c3c5018b28d1130742a57ef92969b01aef642cf
+SHA256: 40b9aaddd4bd3a294337cc7694c57dbd3496714c3871c6c1c4646c72abc1ee86
+Section: Utilities
+Description: patch rootless package to roothide, not work for all packages.
+Author: roothide
+Depiction: https://github.com/roothide/RootHidePatcher
+Icon: https://github.com/roothide/RootHidePatcher/blob/master/derootifier-2-modified.png?raw=true
+Name: RootHide Patcher
+Support: https://github.com/roothide/RootHidePatcher
+
+Package: com.roothide.patchloader
+Version: 0.0.6-7
+Architecture: iphoneos-arm64e
+Maintainer: roothide
+Installed-Size: 132
+Filename: ./debs/com.roothide.patchloader_0.0.6-7_iphoneos-arm64e.deb
+Size: 3550
+MD5sum: 354403bb1669b034a7658c1d6d7beab3
+SHA1: fc98a79217b73de2dc63fb070cbe5bd076684087
+SHA256: 759d5a22a0f8d3d2bb9e95854cb7aacf2af5fb05233a4f4917efeee256659096
+Section: System
+Description: RootHide Dynamic Patches Loader
+Tag: role::developer
+Author: roothide
+Name: PatchLoader
+
+Package: com.roothide.patchloader
+Version: 0.0.7
+Architecture: iphoneos-arm64e
+Maintainer: roothide
+Installed-Size: 132
+Filename: ./debs/com.roothide.patchloader_0.0.7_iphoneos-arm64e.deb
+Size: 3908
+MD5sum: 0b74e254bcfae60699b91a73d0d0df8a
+SHA1: 15f27a35ed857893d9deebbe020ed4610416a89e
+SHA256: 89baec06197ec3d0a7fb09d14296fbf45abd8b2d54fe367f02eacbacbbb1e431
+Section: System
+Description: RootHide Dynamic Patches Loader
+Tag: role::developer
+Author: roothide
+Name: PatchLoader
+
+Package: com.roothide.patchloader
+Version: 0.0.8
+Architecture: iphoneos-arm64e
+Maintainer: roothide
+Installed-Size: 132
+Filename: ./debs/com.roothide.patchloader_0.0.8_iphoneos-arm64e.deb
+Size: 3930
+MD5sum: 50811beb07159320a3606de37b4604dc
+SHA1: a5e692536cf006f32a80be98131c546047405643
+SHA256: ed3d0c2e72865e70166752d8508006a9a32b4d76407fb838a2c485d5e6613d3a
+Section: System
+Description: RootHide Dynamic Patches Loader
+Tag: role::developer
+Author: roothide
+Name: PatchLoader
+
 Package: com.simon.ccweathermodule
 Version: 1.2.4
 Architecture: iphoneos-arm64e
