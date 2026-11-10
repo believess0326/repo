@@ -1,5 +1,5 @@
 Repository: repo
-Last Updated: Fri Oct 30 01:52:57 UTC 2026
+Last Updated: Tue Nov 10 12:58:20 UTC 2026
 ---
 Package: Flex3beta
 Version: 1:3~Beta92
@@ -657,6 +657,39 @@ Version: 3.3.0
 Architecture: iphoneos-arm64e
 Package: com.xybp888.callassist16.dopamine.roothide
 Version: 3.3.1
+Architecture: iphoneos-arm64e
+Package: com.xybp888.callassist16.dopamine.roothide
+Version: 3.3.2
+Architecture: iphoneos-arm64e
+Package: com.xybp888.callassist16.dopamine.roothide
+Version: 3.3.3
+Architecture: iphoneos-arm64e
+Package: com.xybp888.callassist16.dopamine.roothide
+Version: 3.3.4
+Architecture: iphoneos-arm64e
+Package: com.xybp888.callassist16.dopamine.roothide
+Version: 3.3.5
+Architecture: iphoneos-arm64e
+Package: com.xybp888.callassist16.dopamine.roothide
+Version: 3.3.6
+Architecture: iphoneos-arm64e
+Package: com.xybp888.callassist16.dopamine.roothide
+Version: 3.3.7
+Architecture: iphoneos-arm64e
+Package: com.xybp888.callassist16.dopamine.roothide
+Version: 3.3.8
+Architecture: iphoneos-arm64e
+Package: com.xybp888.callassist16.dopamine.roothide
+Version: 3.3.9
+Architecture: iphoneos-arm64e
+Package: com.xybp888.callassist16.dopamine.roothide
+Version: 3.4.1
+Architecture: iphoneos-arm64e
+Package: com.xybp888.callassist16.dopamine.roothide
+Version: 3.4.2
+Architecture: iphoneos-arm64e
+Package: com.xybp888.callassist16.dopamine.roothide
+Version: 3.4.3
 Architecture: iphoneos-arm64e
 Package: com.xybp888.noapplemobilerepair
 Version: 0.0.1-104
