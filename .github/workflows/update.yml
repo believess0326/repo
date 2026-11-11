@@ -7,87 +7,227 @@ on:
   workflow_dispatch:
     inputs:
       force_rebuild:
-        description: 'Force rebuild all indexes'
+        description: 'Force full rebuild of all indexes'
         required: false
         default: 'false'
 
 jobs:
   rebuild-index:
     runs-on: ubuntu-latest
-    
+    permissions:
+      contents: write
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-      with:
-        fetch-depth: 0
-    
-    - name: Install dependencies
-      run: |
-        sudo apt-get update
-        sudo apt-get install dpkg-dev bzip2 gzip zstd -y
-    
-    - name: Check and fix permissions
-      run: |
-        if [ ! -d "debs" ]; then
-          mkdir -p debs
-        fi
-        chmod -R 755 debs
-        COUNT=$(find debs -name "*.deb" -type f | wc -l)
-        echo "Found $COUNT .deb files"
-    
-    - name: Generate Packages with ALL versions
-      run: |
-        rm -f Packages Packages.bz2 Packages.gz
-        
-        if [ -n "$(find debs -name '*.deb' -print -quit)" ]; then
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y dpkg-dev bzip2 gzip zstd coreutils
+
+      - name: Check and fix permissions
+        run: |
+          if [ ! -d "debs" ]; then
+            mkdir -p debs
+          fi
+          chmod -R 755 debs
+          COUNT=$(find debs -name "*.deb" -type f | wc -l)
+          echo "Found $COUNT .deb files"
+
+      - name: Validate deb packages
+        run: |
+          echo "Validating .deb packages..."
+          for deb in debs/*.deb; do
+            [ -f "$deb" ] || continue
+            if ! dpkg-deb -I "$deb" >/dev/null 2>&1; then
+              echo "ERROR: Corrupt deb: $deb"
+              exit 1
+            fi
+            for field in Package Version Architecture; do
+              if ! dpkg-deb -f "$deb" "$field" >/dev/null 2>&1; then
+                echo "ERROR: Missing $field in $deb"
+                exit 1
+              fi
+            done
+          done
+          echo "All packages validated."
+
+      - name: Detect new/changed packages
+        id: detect
+        run: |
+          # Get existing files from current Packages (if exists)
+          if [ -f Packages ]; then
+            grep '^Filename:' Packages | sed 's/^Filename: //' | sort > /tmp/existing_files.txt
+          else
+            touch /tmp/existing_files.txt
+          fi
+
+          # Get current files in debs/
+          find debs -name '*.deb' -printf '%P\n' | sort > /tmp/current_files.txt
+
+          # New files (in current but not in existing)
+          comm -13 /tmp/existing_files.txt /tmp/current_files.txt > /tmp/new_files.txt
+
+          # Removed files (in existing but not in current) - for info only
+          comm -23 /tmp/existing_files.txt /tmp/current_files.txt > /tmp/removed_files.txt
+
+          NEW_COUNT=$(wc -l < /tmp/new_files.txt)
+          REMOVED_COUNT=$(wc -l < /tmp/removed_files.txt)
+
+          echo "new_count=$NEW_COUNT" >> $GITHUB_OUTPUT
+          echo "removed_count=$REMOVED_COUNT" >> $GITHUB_OUTPUT
+
+          if [ "$NEW_COUNT" -gt 0 ]; then
+            echo "New packages detected:"
+            cat /tmp/new_files.txt | sed 's/^/  + /'
+          fi
+          if [ "$REMOVED_COUNT" -gt 0 ]; then
+            echo "Removed packages detected:"
+            cat /tmp/removed_files.txt | sed 's/^/  - /'
+          fi
+
+      - name: Generate Packages (full rebuild)
+        if: steps.detect.outputs.new_count != '0' || github.event.inputs.force_rebuild == 'true' || ! hashFiles('Packages')
+        run: |
+          echo "Performing full rebuild..."
+          rm -f Packages Packages.bz2 Packages.gz
           sudo dpkg-scanpackages -m debs /dev/null > Packages
-          
-          sudo sed -i 's|Filename: debs/|Filename: ./debs/|g' Packages
-          
-          if [ ! -f "Release" ]; then
-            echo "Origin: MyRepo" > Release
-            echo "Label: MyRepo" >> Release
-            echo "Suite: stable" >> Release
-            echo "Version: 1.0" >> Release
-            echo "Codename: ios" >> Release
-            echo "Architectures: iphoneos-arm iphoneos-arm64 iphoneos-arm64e" >> Release
-            echo "Components: main" >> Release
-            echo "Description: My Custom Sileo Repo" >> Release
-          fi
-          
-          if ! grep -q "iphoneos-arm64e" Release; then
-            sed -i 's/Architectures: /Architectures: iphoneos-arm64e /' Release
-          fi
-          
-          sed -i "s/^Date: .*/Date: $(date -R)/" Release || echo "Date: $(date -R)" >> Release
-          
-        else
-          touch Packages
-        fi
-    
-    - name: Create compressed versions
-      run: |
-        if [ -s "Packages" ]; then
+          # Standard path format: Filename: debs/xxx.deb (no ./ prefix)
+
+      - name: Generate Packages (incremental merge)
+        if: steps.detect.outputs.new_count != '0' && github.event.inputs.force_rebuild != 'true' && hashFiles('Packages')
+        run: |
+          echo "Performing incremental merge..."
+          # Python script to merge new packages into existing Packages
+          cat > /tmp/merge_packages.py << 'PYEOF'
+          import subprocess, sys, os, hashlib
+
+          # Read existing Packages
+          existing = {}
+          if os.path.exists('Packages'):
+              with open('Packages', 'r') as f:
+                  pkg = {}
+                  for line in f:
+                      line = line.rstrip('\n')
+                      if not line:
+                          if pkg.get('Package'):
+                              existing[pkg['Package']] = pkg
+                          pkg = {}
+                      elif ':' in line:
+                          k, v = line.split(':', 1)
+                          pkg[k.strip()] = v.strip()
+                  if pkg.get('Package'):
+                      existing[pkg['Package']] = pkg
+
+          # Read new files list
+          with open('/tmp/new_files.txt', 'r') as f:
+              new_files = [line.strip() for line in f if line.strip()]
+
+          for rel_path in new_files:
+              deb_path = f'debs/{rel_path}'
+              if not os.path.exists(deb_path):
+                  continue
+              # Extract control fields
+              out = subprocess.check_output(['dpkg-deb', '-f', deb_path], text=True)
+              pkg = {}
+              for line in out.splitlines():
+                  if ':' in line:
+                      k, v = line.split(':', 1)
+                      pkg[k.strip()] = v.strip()
+              pkg['Filename'] = rel_path
+              pkg['Size'] = str(os.path.getsize(deb_path))
+              # Compute checksums
+              with open(deb_path, 'rb') as df:
+                  data = df.read()
+                  pkg['MD5sum'] = hashlib.md5(data).hexdigest()
+                  pkg['SHA1'] = hashlib.sha1(data).hexdigest()
+                  pkg['SHA256'] = hashlib.sha256(data).hexdigest()
+              existing[pkg['Package']] = pkg  # New version replaces old
+
+          # Write merged Packages
+          with open('Packages', 'w') as f:
+              for pkg in existing.values():
+                  for k, v in pkg.items():
+                      f.write(f'{k}: {v}\n')
+                  f.write('\n')
+          PYEOF
+          python3 /tmp/merge_packages.py
+
+      - name: Create compressed versions
+        if: steps.detect.outputs.new_count != '0' || github.event.inputs.force_rebuild == 'true' || ! hashFiles('Packages')
+        run: |
           bzip2 -9fk Packages
           gzip -9fk Packages
-          
-          echo "Repository: $(basename ${{ github.repository }})" > VERSIONS.txt
-          echo "Last Updated: $(date)" >> VERSIONS.txt
-          echo "---" >> VERSIONS.txt
-          grep -E '^Package:|^Version:|^Architecture:' Packages >> VERSIONS.txt
-        fi
-    
-    - name: Commit and push changes
-      run: |
-        git config --local user.email "actions@github.com"
-        git config --local user.name "GitHub Actions"
-        
-        git add Packages Packages.bz2 Packages.gz VERSIONS.txt Release
-        
-        if git diff --cached --quiet; then
-          echo "No changes to commit"
-        else
-          git commit -m "chore: update repository index [$(date +%Y%m%d-%H%M%S)]"
-          git push
-        fi
 
+      - name: Generate Release with full checksums
+        if: steps.detect.outputs.new_count != '0' || github.event.inputs.force_rebuild == 'true' || ! hashFiles('Packages')
+        run: |
+          # Calculate all checksums for Packages, Packages.bz2, Packages.gz
+          calc_sums() {
+            local file=$1
+            local size=$(stat -c%s "$file")
+            local md5=$(md5sum "$file" | cut -d' ' -f1)
+            local sha1=$(sha1sum "$file" | cut -d' ' -f1)
+            local sha256=$(sha256sum "$file" | cut -d' ' -f1)
+            local sha512=$(sha512sum "$file" | cut -d' ' -f1)
+            echo "$size|$md5|$sha1|$sha256|$sha512"
+          }
+
+          IFS='|' read P_SZ P_MD5 P_SHA1 P_SHA256 P_SHA512 <<< "$(calc_sums Packages)"
+          IFS='|' read BZ2_SZ BZ2_MD5 BZ2_SHA1 BZ2_SHA256 BZ2_SHA512 <<< "$(calc_sums Packages.bz2)"
+          IFS='|' read GZ_SZ GZ_MD5 GZ_SHA1 GZ_SHA256 GZ_SHA512 <<< "$(calc_sums Packages.gz)"
+
+          cat > Release <<EOF
+Origin: Believess Repo
+Label: Believess Repo
+Suite: stable
+Version: 1.0
+Codename: ios
+Date: $(date -R)
+Architectures: iphoneos-arm64e
+Components: main
+Description: RootHide Jailbreak Repository
+Icon: https://raw.githubusercontent.com/believess0326/repo/main/CydiaIcon.png
+MD5Sum:
+ ${P_MD5} ${P_SZ} Packages
+ ${BZ2_MD5} ${BZ2_SZ} Packages.bz2
+ ${GZ_MD5} ${GZ_SZ} Packages.gz
+SHA1:
+ ${P_SHA1} ${P_SZ} Packages
+ ${BZ2_SHA1} ${BZ2_SZ} Packages.bz2
+ ${GZ_SHA1} ${GZ_SZ} Packages.gz
+SHA256:
+ ${P_SHA256} ${P_SZ} Packages
+ ${BZ2_SHA256} ${BZ2_SZ} Packages.bz2
+ ${GZ_SHA256} ${GZ_SZ} Packages.gz
+SHA512:
+ ${P_SHA512} ${P_SZ} Packages
+ ${BZ2_SHA512} ${BZ2_SZ} Packages.bz2
+ ${GZ_SHA512} ${GZ_SZ} Packages.gz
+EOF
+
+      - name: Generate VERSIONS.txt
+        if: steps.detect.outputs.new_count != '0' || github.event.inputs.force_rebuild == 'true' || ! hashFiles('Packages')
+        run: |
+          echo "Repository: repo" > VERSIONS.txt
+          echo "Last Updated: $(date -u '+%a %b %d %H:%M:%S UTC %Y')" >> VERSIONS.txt
+          echo "---" >> VERSIONS.txt
+          grep -E '^Package:|^Version:|^Architecture:' Packages | \
+            sed 'N;N;s/\n/ /g' | \
+            sed 's/Package: \(.*\) Version: \(.*\) Architecture: \(.*\)/\1 \2 \3/' >> VERSIONS.txt
+
+      - name: Commit and push changes
+        if: steps.detect.outputs.new_count != '0' || github.event.inputs.force_rebuild == 'true' || ! hashFiles('Packages')
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add Packages Packages.bz2 Packages.gz Release VERSIONS.txt debs/
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: update repository index [$(date '+%Y%m%d-%H%M%S')]"
+            git push
+          fi
