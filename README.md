@@ -4,7 +4,7 @@ A RootHide-based jailbreak repository.
 ![Believess Icon](https://raw.githubusercontent.com/believess0326/repo/main/CydiaIcon.png)
 
  📌 This repo is for **RootHide jailbreak** only.
- Supports: iPhone / iPad with RootHide, architecture: `iphoneos-arm64` & `iphoneos-arm64e`
+ Supports: iPhone / iPad with RootHide, architecture:  `iphoneos-arm64e`
 
 中文
 这是一个面向 RootHide 越狱的插件源，仅适配 RootHide 环境，不支持传统（taurine / checkra1n 等）以及其他越狱。
